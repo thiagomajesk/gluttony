@@ -38,46 +38,46 @@ defmodule Gluttony.Parsers.RSS2 do
   end
 
   def handle_event(:characters, chars, {current_tag, scope, feed}) do
-    case {current_tag, scope} do
-      {"title", :item} ->
+    case {scope, current_tag} do
+      {:item, "title"} ->
         feed = update_feed_item(feed, :title, chars)
         {:ok, {"channel", scope, feed}}
 
-      {"link", :item} ->
+      {:item, "link"} ->
         feed = update_feed_item(feed, :link, chars)
         {:ok, {"channel", scope, feed}}
 
-      {"guid", :item} ->
+      {:item, "guid"} ->
         feed = update_feed_item(feed, :guid, chars)
         {:ok, {"channel", scope, feed}}
 
-      {"pubDate", :item} ->
+      {:item, "pubDate"} ->
         date = parse_datetime(chars)
         feed = update_feed_item(feed, :pub_date, date)
         {:ok, {"channel", scope, feed}}
 
-      {"description", :item} ->
+      {:item, "description"} ->
         cdata = parse_cdata(chars)
         feed = update_feed_item(feed, :description, cdata)
         {:ok, {"channel", scope, feed}}
 
-      {"title", :feed} ->
+      {:feed, "title"} ->
         feed = %{feed | title: chars}
         {:ok, {"channel", scope, feed}}
 
-      {"description", :feed} ->
+      {:feed, "description"} ->
         feed = %{feed | description: chars}
         {:ok, {"channel", scope, feed}}
 
-      {"link", :feed} ->
+      {:feed, "link"} ->
         feed = %{feed | link: chars}
         {:ok, {"channel", scope, feed}}
 
-      {"lastBuildDate", :feed} ->
+      {:feed, "lastBuildDate"} ->
         feed = %{feed | last_build_date: chars}
         {:ok, {"channel", scope, feed}}
 
-      {"managingEditor", :feed} ->
+      {:feed, "managingEditor"} ->
         feed = %{feed | managing_editor: chars}
         {:ok, {"channel", scope, feed}}
 
