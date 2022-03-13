@@ -40,45 +40,25 @@ defmodule Gluttony.Parsers.RSS2 do
   def handle_event(:characters, chars, {current_tag, scope, feed}) do
     case {current_tag, scope} do
       {"title", :item} ->
-        [current_item | items] = feed.items
-        current_item = %{current_item | title: chars}
-        items = [current_item | items]
-        feed = %{feed | items: items}
+        feed = update_feed_item(feed, :title, chars)
         {:ok, {"channel", scope, feed}}
 
       {"link", :item} ->
-        [current_item | items] = feed.items
-        current_item = %{current_item | link: chars}
-        items = [current_item | items]
-        feed = %{feed | items: items}
+        feed = update_feed_item(feed, :link, chars)
         {:ok, {"channel", scope, feed}}
 
       {"guid", :item} ->
-        [current_item | items] = feed.items
-        current_item = %{current_item | guid: chars}
-        items = [current_item | items]
-        feed = %{feed | items: items}
+        feed = update_feed_item(feed, :guid, chars)
         {:ok, {"channel", scope, feed}}
 
       {"pubDate", :item} ->
-        [current_item | items] = feed.items
-        date = Timex.parse!(chars, "{RFC1123}")
-        current_item = %{current_item | pub_date: date}
-        items = [current_item | items]
-        feed = %{feed | items: items}
+        date = parse_datetime(chars)
+        feed = update_feed_item(feed, :pub_date, date)
         {:ok, {"channel", scope, feed}}
 
       {"description", :item} ->
-        [current_item | items] = feed.items
-
-        chars =
-          chars
-          |> Phoenix.HTML.html_escape()
-          |> Phoenix.HTML.Safe.to_iodata()
-
-        current_item = %{current_item | description: chars}
-        items = [current_item | items]
-        feed = %{feed | items: items}
+        cdata = parse_cdata(chars)
+        feed = update_feed_item(feed, :description, cdata)
         {:ok, {"channel", scope, feed}}
 
       {"title", :feed} ->
@@ -104,5 +84,27 @@ defmodule Gluttony.Parsers.RSS2 do
       _ ->
         {:ok, {current_tag, scope, feed}}
     end
+  end
+
+  # Update the most recent feed item put into the list.
+  defp update_feed_item(feed, key, value) do
+    [current_item | items] = feed.items
+    current_item = Map.put(current_item, key, value)
+    %{feed | items: [current_item | items]}
+  end
+
+  # Parses according to spec or returns the original value.
+  defp parse_datetime(str) do
+    case Timex.parse(str, "{RFC1123}") do
+      {:ok, datetime} -> datetime
+      {:error, value} -> value
+    end
+  end
+
+  # Transforms all cdata into iodata.
+  defp parse_cdata(str) do
+    str
+    |> Phoenix.HTML.html_escape()
+    |> Phoenix.HTML.Safe.to_iodata()
   end
 end
