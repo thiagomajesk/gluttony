@@ -1,6 +1,11 @@
 defmodule Gluttony do
   @moduledoc """
-  Documentation for `Gluttony`.
+  Parses RSS 2.0 and Atom 1.0 feeds.
+
+  # References
+  - RSS 2.0 Specs: https://www.rssboard.org/rss-specification
+  - Atom 1.0 Specs: https://xml2rfc.tools.ietf.org/public/rfc/html/rfc4287.html
+  - W3C Feed Docs: https://validator.w3.org/feed/docs/
   """
 
   def detect(xml) do
