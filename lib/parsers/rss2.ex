@@ -9,7 +9,7 @@ defmodule Gluttony.Parsers.RSS2 do
     defstruct [:title, :link, :guid, :pub_date, :description]
   end
 
-  def handle_event(:start_document, [encoding: "utf-8", version: "1.0"], _state) do
+  def handle_event(:start_document, _prolog, _state) do
     {:ok, {nil, nil, nil}}
   end
 
