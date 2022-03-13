@@ -1,11 +1,11 @@
-defmodule Gluttony.Parsers.RSS_2_0Test do
+defmodule Gluttony.Parsers.RSS2Test do
   use ExUnit.Case
-  doctest Gluttony.Parsers.RSS_2_0
+  doctest Gluttony.Parsers.RSS2
 
-  @rss_2_0 File.read!("test/fixtures/rss_2_0")
+  @rss2 File.read!("test/fixtures/basic_rss2")
 
   setup do
-    {:ok, feed} = Saxy.parse_string(@rss_2_0, Gluttony.Parsers.RSS_2_0, nil)
+    {:ok, feed} = Saxy.parse_string(@rss2, Gluttony.Parsers.RSS2, nil)
     {:ok, feed: feed}
   end
 

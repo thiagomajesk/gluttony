@@ -1,4 +1,4 @@
-defmodule Gluttony.Parsers.RSS_2_0 do
+defmodule Gluttony.Parsers.RSS2 do
   @behaviour Saxy.Handler
 
   defmodule Feed do

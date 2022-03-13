@@ -2,14 +2,14 @@ defmodule GluttonyTest do
   use ExUnit.Case
   doctest Gluttony
 
-  @rss_2_0 File.read!("test/fixtures/rss_2_0")
-  @atom_1_0 File.read!("test/fixtures/atom_1_0")
+  @rss2 File.read!("test/fixtures/basic_rss2")
+  @atom1 File.read!("test/fixtures/basic_atom1")
 
   test "detect rss 2.0" do
-    assert Gluttony.detect(@rss_2_0) == :rss_2_0
+    assert Gluttony.detect(@rss2) == :rss2
   end
 
   test "detect atom 1.0" do
-    assert Gluttony.detect(@atom_1_0) == :atom_1_0
+    assert Gluttony.detect(@atom1) == :atom1
   end
 end
