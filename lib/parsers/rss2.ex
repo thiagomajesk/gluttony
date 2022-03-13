@@ -51,7 +51,7 @@ defmodule Gluttony.Parsers.RSS2 do
       {_, "item"} ->
         items = [%FeedItem{} | feed.items]
         feed = %{feed | items: items}
-        {:ok, {name, :item, feed}}
+        {:ok, {name, :feed_item, feed}}
 
       {:feed, "image"} ->
         image = %FeedImage{}
@@ -182,24 +182,24 @@ defmodule Gluttony.Parsers.RSS2 do
       # Item elements
       #
 
-      {:item, "title"} ->
+      {:feed_item, "title"} ->
         feed = update_feed_item(feed, :title, chars)
         {:ok, {"channel", scope, feed}}
 
-      {:item, "link"} ->
+      {:feed_item, "link"} ->
         feed = update_feed_item(feed, :link, chars)
         {:ok, {"channel", scope, feed}}
 
-      {:item, "guid"} ->
+      {:feed_item, "guid"} ->
         feed = update_feed_item(feed, :guid, chars)
         {:ok, {"channel", scope, feed}}
 
-      {:item, "pubDate"} ->
+      {:feed_item, "pubDate"} ->
         date = parse_datetime(chars)
         feed = update_feed_item(feed, :pub_date, date)
         {:ok, {"channel", scope, feed}}
 
-      {:item, "description"} ->
+      {:feed_item, "description"} ->
         cdata = parse_cdata(chars)
         feed = update_feed_item(feed, :description, cdata)
         {:ok, {"channel", scope, feed}}
