@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>GoUpstate.com News Headlines</title>
+    <link>http://www.goupstate.com/</link>
+    <description>The latest news from GoUpstate.com, a Spartanburg Herald-Journal Web site.</description>
+    <language>en-us</language>
+    <copyright>Copyright 2002, Spartanburg Herald-Journal</copyright>
+    <managingEditor>geo@herald.com (George Matesky)</managingEditor>
+    <webMaster>betty@herald.com (Betty Guernsey)</webMaster>
+    <pubDate>Sat, 07 Sep 2002 00:00:01 GMT</pubDate>
+    <lastBuildDate>Sat, 07 Sep 2002 09:42:31 GMT</lastBuildDate>
+    <category>Newspapers</category>
+    <category>General</category>
+    <generator>MightyInHouse Content System v2.3</generator>
+    <docs>https://www.rssboard.org/rss-specification</docs>
+    <cloud domain="rpc.sys.com" port="80" path="/RPC2" registerProcedure="pingMe" protocol="soap" />
+    <ttl>60</ttl>
+    <image>
+      <url>http://www.goupstate.com/images/goupstate_logo.gif</url>
+      <title>GoUpstate.com News Headlines</title>
+      <link>http://www.goupstate.com/</link>
+      <width>140</width>
+      <height>35</height>
+      <description>Breaking news and stories from GoUpstate.com, a Spartanburg Herald-Journal Web site.</description>
+    </image>
+    <textInput>
+      <title>Search</title>
+      <description>Search GoUpstate.com</description>
+      <name>s</name>
+      <link>https://www.goupstate.com/search.php</link>
+    </textInput>
+    <item>
+      <title>Atom-Powered Robots Run Amok</title>
+      <link>http://example.org/2003/12/13/atom03</link>
+      <description>Some text.</description>
+      <author>lawyer@boyer.net (Lawyer Boyer)</author>
+      <category>Grateful Dead</category>
+      <category domain="http://www.fool.com/cusips">MSFT</category>
+      <comments>http://ekzemplo.com/entry/4403/comments</comments>
+      <enclosure url="http://www.scripting.com/mp3s/weatherReportSuite.mp3" length="12216320" type="audio/mpeg" />
+      <guid isPermaLink="true">http://inessential.com/2002/09/01.php#a2</guid>
+      <pubDate>Sun, 19 May 2002 15:21:36 GMT</pubDate>
+      <source url="http://www.tomalak.org/links2.xml">Tomalak's Realm</source>
+    </item>
+  </channel>
+</rss>

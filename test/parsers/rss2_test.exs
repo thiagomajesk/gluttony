@@ -4,57 +4,77 @@ defmodule Gluttony.Parsers.RSS2Test do
 
   # If CDATA is not getting pickedup, make sure this
   # this files were not processed or formatted: https://github.com/qcam/saxy/issues/98
-  @basic_rss2 File.read!("test/fixtures/basic_rss2")
-  @complex_rss2 File.read!("test/fixtures/techcrunch_rss2")
+  @standard_rss2 File.read!("test/fixtures/rss2/standard_rss2")
 
-  describe "parsed basic rss 2.0" do
-    setup do
-      {:ok, feed} = Saxy.parse_string(@basic_rss2, Gluttony.Parsers.RSS2, nil)
-      {:ok, feed: feed}
+  setup_all do
+    {:ok, feed} = Saxy.parse_string(@standard_rss2, Gluttony.Parsers.RSS2, nil)
+    {:ok, feed: feed}
+  end
+
+  describe "required rss 2.0 elements" do
+    test "title", %{feed: feed} do
+      assert feed.title == "GoUpstate.com News Headlines"
     end
 
-    test "contains title", %{feed: feed} do
-      assert feed.title == "Example Feed"
+    test "link", %{feed: feed} do
+      assert feed.link == "http://www.goupstate.com/"
     end
 
-    test "contains description", %{feed: feed} do
-      assert feed.description == "Insert witty or insightful remark here"
-    end
-
-    test "contains link", %{feed: feed} do
-      assert feed.link == "http://example.org/"
-    end
-
-    test "contains last_build_date", %{feed: feed} do
-      assert feed.last_build_date == ~U[2003-12-13 18:30:02Z]
-    end
-
-    test "contains managing_editor", %{feed: feed} do
-      assert feed.managing_editor == "johndoe@example.com (John Doe)"
+    test "description", %{feed: feed} do
+      assert feed.description ==
+               "The latest news from GoUpstate.com, a Spartanburg Herald-Journal Web site."
     end
   end
 
-  describe "complex rss 2.0" do
-    setup do
-      {:ok, feed} = Saxy.parse_string(@complex_rss2, Gluttony.Parsers.RSS2, nil)
-      {:ok, feed: feed}
+  describe "optional rss 2.0 elements" do
+    test "language", %{feed: feed} do
+      assert feed.language == "en-us"
     end
 
-    test "item contains cdata description", %{feed: feed} do
-      guid = "https://techcrunch.com/?p=2275698"
-      item = Enum.find(feed.items, &(&1.guid == guid))
-      assert item.description != nil
+    test "copyright", %{feed: feed} do
+      assert feed.copyright == "Copyright 2002, Spartanburg Herald-Journal"
     end
 
-    test "parses feed image", %{feed: feed} do
+    test "managing_editor", %{feed: feed} do
+      assert feed.managing_editor == "geo@herald.com (George Matesky)"
+    end
+
+    test "web_master", %{feed: feed} do
+      assert feed.web_master == "betty@herald.com (Betty Guernsey)"
+    end
+
+    test "pub_date", %{feed: feed} do
+      assert feed.pub_date == ~U[2002-09-07 00:00:01Z]
+    end
+
+    test "last_build_date", %{feed: feed} do
+      assert feed.last_build_date == ~U[2002-09-07 09:42:31Z]
+    end
+
+    test "categories", %{feed: feed} do
+      assert feed.categories == ["General", "Newspapers"]
+    end
+
+    test "generator", %{feed: feed} do
+      assert feed.generator == "MightyInHouse Content System v2.3"
+    end
+
+    test "docs", %{feed: feed} do
+      assert feed.docs == "https://www.rssboard.org/rss-specification"
+    end
+
+    test "cloud", %{feed: feed} do
       assert %{
-               url:
-                 "https://techcrunch.com/wp-content/uploads/2015/02/cropped-cropped-favicon-gradient.png?w=32",
-               title: "TechCrunch",
-               link: "https://techcrunch.com",
-               width: 32,
-               height: 32
-             } = feed.image
+               domain: "rpc.sys.com",
+               path: "/RPC2",
+               port: 80,
+               protocol: "soap",
+               register_procedure: "pingMe"
+             } = feed.cloud
+    end
+
+    test "ttl", %{feed: feed} do
+      assert feed.ttl == 60
     end
   end
 end

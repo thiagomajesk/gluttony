@@ -12,7 +12,6 @@ defmodule Gluttony.Parsers.RSS2 do
       :web_master,
       :pub_date,
       :last_build_date,
-      :category,
       :generator,
       :docs,
       :cloud,
@@ -22,12 +21,17 @@ defmodule Gluttony.Parsers.RSS2 do
       :text_input,
       :skip_hours,
       :skip_days,
+      categories: [],
       items: []
     ]
   end
 
   defmodule FeedImage do
     defstruct [:url, :title, :link, :width, :height, :description]
+  end
+
+  defmodule FeedCloud do
+    defstruct [:domain, :port, :path, :register_procedure, :protocol]
   end
 
   defmodule FeedItem do
@@ -42,7 +46,7 @@ defmodule Gluttony.Parsers.RSS2 do
     {:ok, feed}
   end
 
-  def handle_event(:start_element, {name, _attributes}, {_current_tag, scope, feed}) do
+  def handle_event(:start_element, {name, attributes}, {_current_tag, scope, feed}) do
     case {scope, name} do
       {_, "channel"} ->
         feed = %Feed{}
@@ -57,6 +61,11 @@ defmodule Gluttony.Parsers.RSS2 do
         image = %FeedImage{}
         feed = %{feed | image: image}
         {:ok, {name, :feed_image, feed}}
+
+      {:feed, "cloud"} ->
+        cloud = parse_cloud_attributes(attributes)
+        feed = %{feed | cloud: cloud}
+        {:ok, {name, scope, feed}}
 
       _ ->
         {:ok, {name, scope, feed}}
@@ -114,7 +123,8 @@ defmodule Gluttony.Parsers.RSS2 do
         {:ok, {"channel", scope, feed}}
 
       {:feed, "category"} ->
-        feed = %{feed | category: chars}
+        categories = [chars | feed.categories]
+        feed = %{feed | categories: categories}
         {:ok, {"channel", scope, feed}}
 
       {:feed, "generator"} ->
@@ -125,16 +135,8 @@ defmodule Gluttony.Parsers.RSS2 do
         feed = %{feed | docs: chars}
         {:ok, {"channel", scope, feed}}
 
-      {:feed, "cloud"} ->
-        feed = %{feed | cloud: chars}
-        {:ok, {"channel", scope, feed}}
-
       {:feed, "ttl"} ->
-        feed = %{feed | ttl: chars}
-        {:ok, {"channel", scope, feed}}
-
-      {:feed, "image"} ->
-        feed = %{feed | image: chars}
+        feed = %{feed | ttl: parse_integer(chars)}
         {:ok, {"channel", scope, feed}}
 
       {:feed, "rating"} ->
@@ -176,6 +178,10 @@ defmodule Gluttony.Parsers.RSS2 do
       {:feed_image, "height"} ->
         height = parse_integer(chars)
         feed = update_feed_image(feed, :height, height)
+        {:ok, {"channel", scope, feed}}
+
+      {:feed_image, "description"} ->
+        feed = update_feed_image(feed, :description, chars)
         {:ok, {"channel", scope, feed}}
 
       #
@@ -243,5 +249,17 @@ defmodule Gluttony.Parsers.RSS2 do
     str
     |> Phoenix.HTML.html_escape()
     |> Phoenix.HTML.Safe.to_iodata()
+  end
+
+  def parse_cloud_attributes(list) do
+    attrs = Map.new(list)
+
+    %FeedCloud{
+      domain: attrs["domain"],
+      port: parse_integer(attrs["port"]),
+      path: attrs["path"],
+      register_procedure: attrs["registerProcedure"],
+      protocol: attrs["protocol"]
+    }
   end
 end
