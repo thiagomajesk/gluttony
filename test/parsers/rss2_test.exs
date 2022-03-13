@@ -5,7 +5,7 @@ defmodule Gluttony.Parsers.RSS2Test do
   # If CDATA is not getting pickedup, make sure this
   # this files were not processed or formatted: https://github.com/qcam/saxy/issues/98
   @basic_rss2 File.read!("test/fixtures/basic_rss2")
-  @complex_rss2 File.read!("test/fixtures/jovem_nerd_rss2")
+  @complex_rss2 File.read!("test/fixtures/techcrunch_rss2")
 
   describe "parsed basic rss 2.0" do
     setup do
@@ -26,7 +26,7 @@ defmodule Gluttony.Parsers.RSS2Test do
     end
 
     test "contains last_build_date", %{feed: feed} do
-      assert feed.last_build_date == "Sat, 13 Dec 2003 18:30:02 GMT"
+      assert feed.last_build_date == ~U[2003-12-13 18:30:02Z]
     end
 
     test "contains managing_editor", %{feed: feed} do
@@ -40,14 +40,21 @@ defmodule Gluttony.Parsers.RSS2Test do
       {:ok, feed: feed}
     end
 
-    test "contains title", %{feed: feed} do
-      assert feed.title == "Jovem Nerd"
-    end
-
     test "item contains cdata description", %{feed: feed} do
-      guid = "https://jovemnerd.com.br/?post_type=news&p=488137"
+      guid = "https://techcrunch.com/?p=2275698"
       item = Enum.find(feed.items, &(&1.guid == guid))
       assert item.description != nil
+    end
+
+    test "parses feed image", %{feed: feed} do
+      assert %{
+               url:
+                 "https://techcrunch.com/wp-content/uploads/2015/02/cropped-cropped-favicon-gradient.png?w=32",
+               title: "TechCrunch",
+               link: "https://techcrunch.com",
+               width: 32,
+               height: 32
+             } = feed.image
     end
   end
 end

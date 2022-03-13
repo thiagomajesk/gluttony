@@ -2,7 +2,32 @@ defmodule Gluttony.Parsers.RSS2 do
   @behaviour Saxy.Handler
 
   defmodule Feed do
-    defstruct [:title, :description, :link, :last_build_date, :managing_editor, items: []]
+    defstruct [
+      :title,
+      :link,
+      :description,
+      :language,
+      :copyright,
+      :managing_editor,
+      :web_master,
+      :pub_date,
+      :last_build_date,
+      :category,
+      :generator,
+      :docs,
+      :cloud,
+      :ttl,
+      :image,
+      :rating,
+      :text_input,
+      :skip_hours,
+      :skip_days,
+      items: []
+    ]
+  end
+
+  defmodule FeedImage do
+    defstruct [:url, :title, :link, :width, :height, :description]
   end
 
   defmodule FeedItem do
@@ -18,15 +43,20 @@ defmodule Gluttony.Parsers.RSS2 do
   end
 
   def handle_event(:start_element, {name, _attributes}, {_current_tag, scope, feed}) do
-    case name do
-      "channel" ->
+    case {scope, name} do
+      {_, "channel"} ->
         feed = %Feed{}
         {:ok, {name, :feed, feed}}
 
-      "item" ->
+      {_, "item"} ->
         items = [%FeedItem{} | feed.items]
         feed = %{feed | items: items}
         {:ok, {name, :item, feed}}
+
+      {:feed, "image"} ->
+        image = %FeedImage{}
+        feed = %{feed | image: image}
+        {:ok, {name, :feed_image, feed}}
 
       _ ->
         {:ok, {name, scope, feed}}
@@ -39,6 +69,119 @@ defmodule Gluttony.Parsers.RSS2 do
 
   def handle_event(:characters, chars, {current_tag, scope, feed}) do
     case {scope, current_tag} do
+      #
+      # Required channel elements
+      #
+      {:feed, "title"} ->
+        feed = %{feed | title: chars}
+        {:ok, {"channel", scope, feed}}
+
+      {:feed, "link"} ->
+        feed = %{feed | link: chars}
+        {:ok, {"channel", scope, feed}}
+
+      {:feed, "description"} ->
+        feed = %{feed | description: chars}
+        {:ok, {"channel", scope, feed}}
+
+      #
+      # Optional channel elements
+      #
+      {:feed, "language"} ->
+        feed = %{feed | language: chars}
+        {:ok, {"channel", scope, feed}}
+
+      {:feed, "copyright"} ->
+        feed = %{feed | copyright: chars}
+        {:ok, {"channel", scope, feed}}
+
+      {:feed, "managingEditor"} ->
+        feed = %{feed | managing_editor: chars}
+        {:ok, {"channel", scope, feed}}
+
+      {:feed, "webMaster"} ->
+        feed = %{feed | web_master: chars}
+        {:ok, {"channel", scope, feed}}
+
+      {:feed, "pubDate"} ->
+        date = parse_datetime(chars)
+        feed = %{feed | pub_date: date}
+        {:ok, {"channel", scope, feed}}
+
+      {:feed, "lastBuildDate"} ->
+        date = parse_datetime(chars)
+        feed = %{feed | last_build_date: date}
+        {:ok, {"channel", scope, feed}}
+
+      {:feed, "category"} ->
+        feed = %{feed | category: chars}
+        {:ok, {"channel", scope, feed}}
+
+      {:feed, "generator"} ->
+        feed = %{feed | generator: chars}
+        {:ok, {"channel", scope, feed}}
+
+      {:feed, "docs"} ->
+        feed = %{feed | docs: chars}
+        {:ok, {"channel", scope, feed}}
+
+      {:feed, "cloud"} ->
+        feed = %{feed | cloud: chars}
+        {:ok, {"channel", scope, feed}}
+
+      {:feed, "ttl"} ->
+        feed = %{feed | ttl: chars}
+        {:ok, {"channel", scope, feed}}
+
+      {:feed, "image"} ->
+        feed = %{feed | image: chars}
+        {:ok, {"channel", scope, feed}}
+
+      {:feed, "rating"} ->
+        feed = %{feed | rating: chars}
+        {:ok, {"channel", scope, feed}}
+
+      {:feed, "textInput"} ->
+        feed = %{feed | text_input: chars}
+        {:ok, {"channel", scope, feed}}
+
+      {:feed, "skipHours"} ->
+        feed = %{feed | skip_hours: chars}
+        {:ok, {"channel", scope, feed}}
+
+      {:feed, "skipDays"} ->
+        feed = %{feed | skip_days: chars}
+        {:ok, {"channel", scope, feed}}
+
+      #
+      # Feed image elements
+      #
+      {:feed_image, "url"} ->
+        feed = update_feed_image(feed, :url, chars)
+        {:ok, {"channel", scope, feed}}
+
+      {:feed_image, "title"} ->
+        feed = update_feed_image(feed, :title, chars)
+        {:ok, {"channel", scope, feed}}
+
+      {:feed_image, "link"} ->
+        feed = update_feed_image(feed, :link, chars)
+        {:ok, {"channel", scope, feed}}
+
+      {:feed_image, "width"} ->
+        width = parse_integer(chars)
+        feed = update_feed_image(feed, :width, width)
+        {:ok, {"channel", scope, feed}}
+
+      {:feed_image, "height"} ->
+        height = parse_integer(chars)
+        feed = update_feed_image(feed, :height, height)
+        {:ok, {"channel", scope, feed}}
+
+      #
+      # Item elements
+      #
+
       {:item, "title"} ->
         feed = update_feed_item(feed, :title, chars)
         {:ok, {"channel", scope, feed}}
@@ -61,36 +204,22 @@ defmodule Gluttony.Parsers.RSS2 do
         feed = update_feed_item(feed, :description, cdata)
         {:ok, {"channel", scope, feed}}
 
-      {:feed, "title"} ->
-        feed = %{feed | title: chars}
-        {:ok, {"channel", scope, feed}}
-
-      {:feed, "description"} ->
-        feed = %{feed | description: chars}
-        {:ok, {"channel", scope, feed}}
-
-      {:feed, "link"} ->
-        feed = %{feed | link: chars}
-        {:ok, {"channel", scope, feed}}
-
-      {:feed, "lastBuildDate"} ->
-        feed = %{feed | last_build_date: chars}
-        {:ok, {"channel", scope, feed}}
-
-      {:feed, "managingEditor"} ->
-        feed = %{feed | managing_editor: chars}
-        {:ok, {"channel", scope, feed}}
-
       _ ->
         {:ok, {current_tag, scope, feed}}
     end
   end
 
-  # Update the most recent feed item put into the list.
+  # Updates the most recent feed item put into the list.
   defp update_feed_item(feed, key, value) do
     [current_item | items] = feed.items
     current_item = Map.put(current_item, key, value)
     %{feed | items: [current_item | items]}
+  end
+
+  # Updates the feed image struct
+  defp update_feed_image(feed, key, value) do
+    image = Map.put(feed.image, key, value)
+    %{feed | image: image}
   end
 
   # Parses according to spec or returns the original value.
@@ -98,6 +227,14 @@ defmodule Gluttony.Parsers.RSS2 do
     case Timex.parse(str, "{RFC1123}") do
       {:ok, datetime} -> datetime
       {:error, value} -> value
+    end
+  end
+
+  # Parses to integer or returns the original value
+  defp parse_integer(str) do
+    case Integer.parse(str) do
+      {integer, _} -> integer
+      :error -> str
     end
   end
 
