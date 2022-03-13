@@ -70,6 +70,12 @@ defmodule Gluttony.Parsers.RSS2 do
 
       {"description", :item} ->
         [current_item | items] = feed.items
+
+        chars =
+          chars
+          |> Phoenix.HTML.html_escape()
+          |> Phoenix.HTML.Safe.to_iodata()
+
         current_item = %{current_item | description: chars}
         items = [current_item | items]
         feed = %{feed | items: items}
@@ -98,9 +104,5 @@ defmodule Gluttony.Parsers.RSS2 do
       _ ->
         {:ok, {current_tag, scope, feed}}
     end
-  end
-
-  def handle_event(:cdata, _cdata, state) do
-    {:ok, state}
   end
 end

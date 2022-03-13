@@ -24,7 +24,8 @@ defmodule Gluttony.MixProject do
       {:saxy, "~> 1.4"},
       {:httpoison, "~> 1.8"},
       {:floki, "~> 0.32.0"},
-      {:timex, "~> 3.0"}
+      {:timex, "~> 3.0"},
+      {:phoenix_html, "~> 3.2"}
     ]
   end
 end
