@@ -1,4 +1,4 @@
-defmodule Gluttony.Parsers.Helpers do
+defmodule Gluttony.Helpers do
   @doc """
   Transforms a term into a underscore atom key.
   """

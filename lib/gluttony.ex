@@ -7,17 +7,4 @@ defmodule Gluttony do
   - Atom 1.0 Specs: https://xml2rfc.tools.ietf.org/public/rfc/html/rfc4287.html
   - W3C Feed Docs: https://validator.w3.org/feed/docs/
   """
-
-  def detect(xml) do
-    if parseable?(xml) do
-      cond do
-        Regex.match?(~r|<rss version="2.0"|i, xml) -> :rss2
-        Regex.match?(~r|<feed xmlns="http://www.w3.org/2005/Atom"|i, xml) -> :atom1
-      end
-    end
-  end
-
-  defp parseable?(xml) do
-    Regex.match?(~r|<\?xml version="1.0" encoding="utf-8"\?>|i, xml)
-  end
 end
