@@ -19,15 +19,21 @@ defmodule Gluttony.Parsers.RSS2 do
           %Feed{}
 
         {"channel", "item"} ->
-          items = [%FeedItem{} | feed.items]
-          %{feed | items: items}
+          Map.update(feed, :items, [], &[%FeedItem{} | &1])
 
         {"channel", "image"} ->
-          %{feed | image: %{}}
+          Map.put(feed, :image, %{})
 
         {"channel", "cloud"} ->
-          cloud = parse_cloud_attributes(attributes)
-          %{feed | cloud: cloud}
+          attrs = Map.new(attributes)
+
+          Map.put(feed, :cloud, %{
+            domain: attrs["domain"],
+            port: parse_integer(attrs["port"]),
+            path: attrs["path"],
+            register_procedure: attrs["registerProcedure"],
+            protocol: attrs["protocol"]
+          })
 
         _ ->
           feed
@@ -47,61 +53,61 @@ defmodule Gluttony.Parsers.RSS2 do
         # Required channel elements
         #
         {"channel", "title"} ->
-          %{feed | title: chars}
+          Map.put(feed, :title, chars)
 
         {"channel", "link"} ->
-          %{feed | link: chars}
+          Map.put(feed, :link, chars)
 
         {"channel", "description"} ->
-          %{feed | description: chars}
+          Map.put(feed, :description, chars)
 
         #
         # Optional channel elements
         #
         {"channel", "language"} ->
-          %{feed | language: chars}
+          Map.put(feed, :language, chars)
 
         {"channel", "copyright"} ->
-          %{feed | copyright: chars}
+          Map.put(feed, :copyright, chars)
 
         {"channel", "managingEditor"} ->
-          %{feed | managing_editor: chars}
+          Map.put(feed, :managing_editor, chars)
 
         {"channel", "webMaster"} ->
-          %{feed | web_master: chars}
+          Map.put(feed, :web_master, chars)
 
         {"channel", "pubDate"} ->
-          date = parse_datetime(chars)
-          %{feed | pub_date: date}
+          chars = parse_datetime(chars)
+          Map.put(feed, :pub_date, chars)
 
         {"channel", "lastBuildDate"} ->
-          date = parse_datetime(chars)
-          %{feed | last_build_date: date}
+          chars = parse_datetime(chars)
+          Map.put(feed, :last_build_date, chars)
 
         {"channel", "category"} ->
-          categories = [chars | feed.categories]
-          %{feed | categories: categories}
+          Map.update(feed, :categories, [], &[chars | &1])
 
         {"channel", "generator"} ->
-          %{feed | generator: chars}
+          Map.put(feed, :generator, chars)
 
         {"channel", "docs"} ->
-          %{feed | docs: chars}
+          Map.put(feed, :docs, chars)
 
         {"channel", "ttl"} ->
-          %{feed | ttl: parse_integer(chars)}
+          chars = parse_integer(chars)
+          Map.put(feed, :ttl, chars)
 
         {"channel", "rating"} ->
-          %{feed | rating: chars}
+          Map.put(feed, :rating, chars)
 
         {"channel", "textInput"} ->
-          %{feed | text_input: chars}
+          Map.put(feed, :text_input, chars)
 
         {"channel", "skipHours"} ->
-          %{feed | skip_hours: chars}
+          Map.put(feed, :skip_hours, chars)
 
         {"channel", "skipDays"} ->
-          %{feed | skip_days: chars}
+          Map.put(feed, :skip_days, chars)
 
         #
         # Feed image elements
@@ -116,12 +122,12 @@ defmodule Gluttony.Parsers.RSS2 do
           update_feed_image(feed, :link, chars)
 
         {"image", "width"} ->
-          width = parse_integer(chars)
-          update_feed_image(feed, :width, width)
+          chars = parse_integer(chars)
+          update_feed_image(feed, :width, chars)
 
         {"image", "height"} ->
-          height = parse_integer(chars)
-          update_feed_image(feed, :height, height)
+          chars = parse_integer(chars)
+          update_feed_image(feed, :height, chars)
 
         {"image", "description"} ->
           update_feed_image(feed, :description, chars)
@@ -152,6 +158,19 @@ defmodule Gluttony.Parsers.RSS2 do
       end
 
     {:ok, {scopes, feed}}
+  end
+
+  # Updates the most recent feed item (first one) added to the list.
+  defp update_feed_item(feed, key, value) do
+    Map.update(feed, :items, [], fn items ->
+      [item | items] = items
+      [Map.put(item, key, value) | items]
+    end)
+  end
+
+  # Updates the feed image struct with the given key and value.
+  defp update_feed_image(feed, key, value) do
+    Map.update(feed, :image, nil, &Map.put(&1, key, value))
   end
 
   # Returns parent tag for :start_document and :end_document.
