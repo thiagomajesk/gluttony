@@ -20,24 +20,26 @@ defmodule Gluttony.Parsers.RSS2 do
   end
 
   @doc false
-  def handle_event(:end_document, _data, {_scopes, feed}) do
+  def handle_event(:end_document, _data, {_stack, feed}) do
     {:ok, feed}
   end
 
   @doc false
-  def handle_event(:start_element, {name, attributes}, {scopes, feed}) do
+  def handle_event(:start_element, {name, attributes}, {stack, feed}) do
+    stack = push(name, stack)
+
     feed =
-      case {parent(scopes), name} do
-        {"rss", "channel"} ->
+      case stack do
+        ["channel", "rss"] ->
           %Feed{}
 
-        {"channel", "item"} ->
+        ["item", "channel", "rss"] ->
           Map.update(feed, :items, [], &[%FeedItem{} | &1])
 
-        {"channel", "image"} ->
+        ["image", "channel", "rss"] ->
           Map.put(feed, :image, %{})
 
-        {"channel", "cloud"} ->
+        ["cloud", "channel", "rss"] ->
           attrs = Map.new(attributes)
 
           Map.put(feed, :cloud, %{
@@ -52,119 +54,119 @@ defmodule Gluttony.Parsers.RSS2 do
           feed
       end
 
-    {:ok, {stack(name, scopes), feed}}
+    {:ok, {stack, feed}}
   end
 
   @doc false
-  def handle_event(:end_element, _name, {scopes, feed}) do
-    {:ok, {unstack(scopes), feed}}
+  def handle_event(:end_element, _name, {stack, feed}) do
+    {:ok, {pop(stack), feed}}
   end
 
   @doc false
-  def handle_event(:characters, chars, {scopes, feed}) do
+  def handle_event(:characters, chars, {stack, feed}) do
     feed =
-      case parent_and_current(scopes) do
+      case stack do
         #
         # Required channel elements
         #
-        {"channel", "title"} ->
+        ["title", "channel" | _] ->
           Map.put(feed, :title, chars)
 
-        {"channel", "link"} ->
+        ["link", "channel" | _] ->
           Map.put(feed, :link, chars)
 
-        {"channel", "description"} ->
+        ["description", "channel" | _] ->
           Map.put(feed, :description, chars)
 
         #
         # Optional channel elements
         #
-        {"channel", "language"} ->
+        ["language", "channel" | _] ->
           Map.put(feed, :language, chars)
 
-        {"channel", "copyright"} ->
+        ["copyright", "channel" | _] ->
           Map.put(feed, :copyright, chars)
 
-        {"channel", "managingEditor"} ->
+        ["managingEditor", "channel" | _] ->
           Map.put(feed, :managing_editor, chars)
 
-        {"channel", "webMaster"} ->
+        ["webMaster", "channel" | _] ->
           Map.put(feed, :web_master, chars)
 
-        {"channel", "pubDate"} ->
+        ["pubDate", "channel" | _] ->
           chars = parse_datetime(chars)
           Map.put(feed, :pub_date, chars)
 
-        {"channel", "lastBuildDate"} ->
+        ["lastBuildDate", "channel" | _] ->
           chars = parse_datetime(chars)
           Map.put(feed, :last_build_date, chars)
 
-        {"channel", "category"} ->
+        ["category", "channel" | _] ->
           Map.update(feed, :categories, [], &[chars | &1])
 
-        {"channel", "generator"} ->
+        ["generator", "channel" | _] ->
           Map.put(feed, :generator, chars)
 
-        {"channel", "docs"} ->
+        ["docs", "channel" | _] ->
           Map.put(feed, :docs, chars)
 
-        {"channel", "ttl"} ->
+        ["ttl", "channel" | _] ->
           chars = parse_integer(chars)
           Map.put(feed, :ttl, chars)
 
-        {"channel", "rating"} ->
+        ["rating", "channel" | _] ->
           Map.put(feed, :rating, chars)
 
-        {"channel", "textInput"} ->
+        ["textInput", "channel" | _] ->
           Map.put(feed, :text_input, chars)
 
-        {"channel", "skipHours"} ->
+        ["skipHours", "channel" | _] ->
           Map.put(feed, :skip_hours, chars)
 
-        {"channel", "skipDays"} ->
+        ["skipDays", "channel" | _] ->
           Map.put(feed, :skip_days, chars)
 
         #
         # Feed image elements
         #
-        {"image", "url"} ->
+        ["url", "image" | _] ->
           update_feed_image(feed, :url, chars)
 
-        {"image", "title"} ->
+        ["title", "image" | _] ->
           update_feed_image(feed, :title, chars)
 
-        {"image", "link"} ->
+        ["link", "image" | _] ->
           update_feed_image(feed, :link, chars)
 
-        {"image", "width"} ->
+        ["width", "image" | _] ->
           chars = parse_integer(chars)
           update_feed_image(feed, :width, chars)
 
-        {"image", "height"} ->
+        ["height", "image" | _] ->
           chars = parse_integer(chars)
           update_feed_image(feed, :height, chars)
 
-        {"image", "description"} ->
+        ["description", "image" | _] ->
           update_feed_image(feed, :description, chars)
 
         #
         # Item elements
         #
 
-        {"item", "title"} ->
+        ["title", "item" | _] ->
           update_feed_item(feed, :title, chars)
 
-        {"item", "link"} ->
+        ["link", "item" | _] ->
           update_feed_item(feed, :link, chars)
 
-        {"item", "guid"} ->
+        ["guid", "item" | _] ->
           update_feed_item(feed, :guid, chars)
 
-        {"item", "pubDate"} ->
+        ["pubDate", "item" | _] ->
           date = parse_datetime(chars)
           update_feed_item(feed, :pub_date, date)
 
-        {"item", "description"} ->
+        ["description", "item" | _] ->
           cdata = parse_cdata(chars)
           update_feed_item(feed, :description, cdata)
 
@@ -172,7 +174,7 @@ defmodule Gluttony.Parsers.RSS2 do
           feed
       end
 
-    {:ok, {scopes, feed}}
+    {:ok, {stack, feed}}
   end
 
   # Updates the most recent feed item (first one) added to the list.
@@ -188,16 +190,11 @@ defmodule Gluttony.Parsers.RSS2 do
     Map.update(feed, :image, nil, &Map.put(&1, key, value))
   end
 
-  # Returns parent tag for :start_document and :end_document.
-  defp parent([]), do: nil
-  defp parent(scopes), do: hd(scopes)
+  # Pushes a tag to the current hierachy.
+  defp push(tag, []), do: [tag]
+  defp push(tag, stack), do: [tag | stack]
 
-  # Returns the containing tag and its parent for :characters event.
-  defp parent_and_current(scopes) do
-    {parent(unstack(scopes)), parent(scopes)}
-  end
-
-  # Tracks the hieranchy (scope) of the current tag.
-  defp stack(tag, scopes), do: [tag | scopes]
-  defp unstack(scopes), do: tl(scopes)
+  # Removes the last tag from the current hierachy.
+  defp pop([]), do: []
+  defp pop(stack), do: tl(stack)
 end
