@@ -13,29 +13,28 @@ defmodule Gluttony.Parsers.RSS2 do
   end
 
   def handle_event(:start_element, {name, attributes}, {scopes, feed}) do
-    case {parent(scopes), name} do
-      {"rss", "channel"} ->
-        feed = %Feed{}
-        {:ok, {stack(name, scopes), feed}}
+    feed =
+      case {parent(scopes), name} do
+        {"rss", "channel"} ->
+          %Feed{}
 
-      {"channel", "item"} ->
-        items = [%FeedItem{} | feed.items]
-        feed = %{feed | items: items}
-        {:ok, {stack(name, scopes), feed}}
+        {"channel", "item"} ->
+          items = [%FeedItem{} | feed.items]
+          %{feed | items: items}
 
-      {"channel", "image"} ->
-        image = %FeedImage{}
-        feed = %{feed | image: image}
-        {:ok, {stack(name, scopes), feed}}
+        {"channel", "image"} ->
+          image = %FeedImage{}
+          %{feed | image: image}
 
-      {"channel", "cloud"} ->
-        cloud = parse_cloud_attributes(attributes)
-        feed = %{feed | cloud: cloud}
-        {:ok, {stack(name, scopes), feed}}
+        {"channel", "cloud"} ->
+          cloud = parse_cloud_attributes(attributes)
+          %{feed | cloud: cloud}
 
-      _ ->
-        {:ok, {stack(name, scopes), feed}}
-    end
+        _ ->
+          feed
+      end
+
+    {:ok, {stack(name, scopes), feed}}
   end
 
   def handle_event(:end_element, _name, {scopes, feed}) do
@@ -43,142 +42,117 @@ defmodule Gluttony.Parsers.RSS2 do
   end
 
   def handle_event(:characters, chars, {scopes, feed}) do
-    case parent_and_current(scopes) do
-      #
-      # Required channel elements
-      #
-      {"channel", "title"} ->
-        feed = %{feed | title: chars}
-        {:ok, {scopes, feed}}
+    feed =
+      case parent_and_current(scopes) do
+        #
+        # Required channel elements
+        #
+        {"channel", "title"} ->
+          %{feed | title: chars}
 
-      {"channel", "link"} ->
-        feed = %{feed | link: chars}
-        {:ok, {scopes, feed}}
+        {"channel", "link"} ->
+          %{feed | link: chars}
 
-      {"channel", "description"} ->
-        feed = %{feed | description: chars}
-        {:ok, {scopes, feed}}
+        {"channel", "description"} ->
+          %{feed | description: chars}
 
-      #
-      # Optional channel elements
-      #
-      {"channel", "language"} ->
-        feed = %{feed | language: chars}
-        {:ok, {scopes, feed}}
+        #
+        # Optional channel elements
+        #
+        {"channel", "language"} ->
+          %{feed | language: chars}
 
-      {"channel", "copyright"} ->
-        feed = %{feed | copyright: chars}
-        {:ok, {scopes, feed}}
+        {"channel", "copyright"} ->
+          %{feed | copyright: chars}
 
-      {"channel", "managingEditor"} ->
-        feed = %{feed | managing_editor: chars}
-        {:ok, {scopes, feed}}
+        {"channel", "managingEditor"} ->
+          %{feed | managing_editor: chars}
 
-      {"channel", "webMaster"} ->
-        feed = %{feed | web_master: chars}
-        {:ok, {scopes, feed}}
+        {"channel", "webMaster"} ->
+          %{feed | web_master: chars}
 
-      {"channel", "pubDate"} ->
-        date = parse_datetime(chars)
-        feed = %{feed | pub_date: date}
-        {:ok, {scopes, feed}}
+        {"channel", "pubDate"} ->
+          date = parse_datetime(chars)
+          %{feed | pub_date: date}
 
-      {"channel", "lastBuildDate"} ->
-        date = parse_datetime(chars)
-        feed = %{feed | last_build_date: date}
-        {:ok, {scopes, feed}}
+        {"channel", "lastBuildDate"} ->
+          date = parse_datetime(chars)
+          %{feed | last_build_date: date}
 
-      {"channel", "category"} ->
-        categories = [chars | feed.categories]
-        feed = %{feed | categories: categories}
-        {:ok, {scopes, feed}}
+        {"channel", "category"} ->
+          categories = [chars | feed.categories]
+          %{feed | categories: categories}
 
-      {"channel", "generator"} ->
-        feed = %{feed | generator: chars}
-        {:ok, {scopes, feed}}
+        {"channel", "generator"} ->
+          %{feed | generator: chars}
 
-      {"channel", "docs"} ->
-        feed = %{feed | docs: chars}
-        {:ok, {scopes, feed}}
+        {"channel", "docs"} ->
+          %{feed | docs: chars}
 
-      {"channel", "ttl"} ->
-        feed = %{feed | ttl: parse_integer(chars)}
-        {:ok, {scopes, feed}}
+        {"channel", "ttl"} ->
+          %{feed | ttl: parse_integer(chars)}
 
-      {"channel", "rating"} ->
-        feed = %{feed | rating: chars}
-        {:ok, {scopes, feed}}
+        {"channel", "rating"} ->
+          %{feed | rating: chars}
 
-      {"channel", "textInput"} ->
-        feed = %{feed | text_input: chars}
-        {:ok, {scopes, feed}}
+        {"channel", "textInput"} ->
+          %{feed | text_input: chars}
 
-      {"channel", "skipHours"} ->
-        feed = %{feed | skip_hours: chars}
-        {:ok, {scopes, feed}}
+        {"channel", "skipHours"} ->
+          %{feed | skip_hours: chars}
 
-      {"channel", "skipDays"} ->
-        feed = %{feed | skip_days: chars}
-        {:ok, {scopes, feed}}
+        {"channel", "skipDays"} ->
+          %{feed | skip_days: chars}
 
-      #
-      # Feed image elements
-      #
-      {"image", "url"} ->
-        feed = update_feed_image(feed, :url, chars)
-        {:ok, {scopes, feed}}
+        #
+        # Feed image elements
+        #
+        {"image", "url"} ->
+          update_feed_image(feed, :url, chars)
 
-      {"image", "title"} ->
-        feed = update_feed_image(feed, :title, chars)
-        {:ok, {scopes, feed}}
+        {"image", "title"} ->
+          update_feed_image(feed, :title, chars)
 
-      {"image", "link"} ->
-        feed = update_feed_image(feed, :link, chars)
-        {:ok, {scopes, feed}}
+        {"image", "link"} ->
+          update_feed_image(feed, :link, chars)
 
-      {"image", "width"} ->
-        width = parse_integer(chars)
-        feed = update_feed_image(feed, :width, width)
-        {:ok, {scopes, feed}}
+        {"image", "width"} ->
+          width = parse_integer(chars)
+          update_feed_image(feed, :width, width)
 
-      {"image", "height"} ->
-        height = parse_integer(chars)
-        feed = update_feed_image(feed, :height, height)
-        {:ok, {scopes, feed}}
+        {"image", "height"} ->
+          height = parse_integer(chars)
+          update_feed_image(feed, :height, height)
 
-      {"image", "description"} ->
-        feed = update_feed_image(feed, :description, chars)
-        {:ok, {scopes, feed}}
+        {"image", "description"} ->
+          update_feed_image(feed, :description, chars)
 
-      #
-      # Item elements
-      #
+        #
+        # Item elements
+        #
 
-      {"item", "title"} ->
-        feed = update_feed_item(feed, :title, chars)
-        {:ok, {scopes, feed}}
+        {"item", "title"} ->
+          update_feed_item(feed, :title, chars)
 
-      {"item", "link"} ->
-        feed = update_feed_item(feed, :link, chars)
-        {:ok, {scopes, feed}}
+        {"item", "link"} ->
+          update_feed_item(feed, :link, chars)
 
-      {"item", "guid"} ->
-        feed = update_feed_item(feed, :guid, chars)
-        {:ok, {scopes, feed}}
+        {"item", "guid"} ->
+          update_feed_item(feed, :guid, chars)
 
-      {"item", "pubDate"} ->
-        date = parse_datetime(chars)
-        feed = update_feed_item(feed, :pub_date, date)
-        {:ok, {scopes, feed}}
+        {"item", "pubDate"} ->
+          date = parse_datetime(chars)
+          update_feed_item(feed, :pub_date, date)
 
-      {"item", "description"} ->
-        cdata = parse_cdata(chars)
-        feed = update_feed_item(feed, :description, cdata)
-        {:ok, {scopes, feed}}
+        {"item", "description"} ->
+          cdata = parse_cdata(chars)
+          update_feed_item(feed, :description, cdata)
 
-      _ ->
-        {:ok, {scopes, feed}}
-    end
+        _ ->
+          feed
+      end
+
+    {:ok, {scopes, feed}}
   end
 
   # Returns parent tag for :start_document and :end_document.
