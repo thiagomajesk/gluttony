@@ -4,14 +4,27 @@ defmodule Gluttony.Parsers.RSS2 do
   import Gluttony.Parsers.Helpers
   alias Gluttony.{Feed, FeedItem}
 
+  @doc """
+  Parses the given xml string into a `%Feed{}` struct.
+  """
+  def parse_string(xml) do
+    case Saxy.parse_string(xml, __MODULE__, nil) do
+      {:ok, feed} -> feed
+      _ -> nil
+    end
+  end
+
+  @doc false
   def handle_event(:start_document, _prolog, _state) do
     {:ok, {[], nil}}
   end
 
+  @doc false
   def handle_event(:end_document, _data, {_scopes, feed}) do
     {:ok, feed}
   end
 
+  @doc false
   def handle_event(:start_element, {name, attributes}, {scopes, feed}) do
     feed =
       case {parent(scopes), name} do
@@ -42,10 +55,12 @@ defmodule Gluttony.Parsers.RSS2 do
     {:ok, {stack(name, scopes), feed}}
   end
 
+  @doc false
   def handle_event(:end_element, _name, {scopes, feed}) do
     {:ok, {unstack(scopes), feed}}
   end
 
+  @doc false
   def handle_event(:characters, chars, {scopes, feed}) do
     feed =
       case parent_and_current(scopes) do

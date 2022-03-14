@@ -7,8 +7,7 @@ defmodule Gluttony.Parsers.RSS2Test do
   @standard_rss2 File.read!("test/fixtures/rss2/standard_rss2")
 
   setup_all do
-    {:ok, feed} = Saxy.parse_string(@standard_rss2, Gluttony.Parsers.RSS2, nil)
-    {:ok, feed: feed}
+    {:ok, feed: Gluttony.Parsers.RSS2.parse_string(@standard_rss2)}
   end
 
   describe "required rss 2.0 elements" do
