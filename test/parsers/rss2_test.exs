@@ -76,5 +76,17 @@ defmodule Gluttony.Parsers.RSS2Test do
     test "ttl", %{feed: feed} do
       assert feed.ttl == 60
     end
+
+    test "image", %{feed: feed} do
+      assert %{
+               description:
+                 "Breaking news and stories from GoUpstate.com, a Spartanburg Herald-Journal Web site.",
+               height: 35,
+               link: "http://www.goupstate.com/",
+               title: "GoUpstate.com News Headlines",
+               url: "http://www.goupstate.com/images/goupstate_logo.gif",
+               width: 140
+             } = feed.image
+    end
   end
 end
