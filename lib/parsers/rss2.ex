@@ -2,7 +2,7 @@ defmodule Gluttony.Parsers.RSS2 do
   @behaviour Saxy.Handler
 
   import Gluttony.Parsers.Helpers
-  alias Gluttony.{Feed, FeedImage, FeedItem}
+  alias Gluttony.{Feed, FeedItem}
 
   def handle_event(:start_document, _prolog, _state) do
     {:ok, {[], nil}}
@@ -23,8 +23,7 @@ defmodule Gluttony.Parsers.RSS2 do
           %{feed | items: items}
 
         {"channel", "image"} ->
-          image = %FeedImage{}
-          %{feed | image: image}
+          %{feed | image: %{}}
 
         {"channel", "cloud"} ->
           cloud = parse_cloud_attributes(attributes)

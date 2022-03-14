@@ -23,14 +23,6 @@ defmodule Gluttony.Feed do
   ]
 end
 
-defmodule Gluttony.FeedImage do
-  defstruct [:url, :title, :link, :width, :height, :description]
-end
-
-defmodule Gluttony.FeedCloud do
-  defstruct [:domain, :port, :path, :register_procedure, :protocol]
-end
-
 defmodule Gluttony.FeedItem do
   defstruct [:title, :link, :guid, :pub_date, :description]
 end

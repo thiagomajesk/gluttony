@@ -1,6 +1,4 @@
 defmodule Gluttony.Parsers.Helpers do
-  alias Gluttony.FeedCloud
-
   # Updates the most recent feed item put into the list.
   def update_feed_item(feed, key, value) do
     [current_item | items] = feed.items
@@ -40,7 +38,7 @@ defmodule Gluttony.Parsers.Helpers do
   def parse_cloud_attributes(list) do
     attrs = Map.new(list)
 
-    %FeedCloud{
+    %{
       domain: attrs["domain"],
       port: parse_integer(attrs["port"]),
       path: attrs["path"],
