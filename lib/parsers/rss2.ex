@@ -2,7 +2,7 @@ defmodule Gluttony.Parsers.RSS2 do
   @behaviour Saxy.Handler
 
   import Gluttony.Parsers.Helpers
-  alias Gluttony.{Feed, FeedCloud, FeedImage, FeedItem}
+  alias Gluttony.{Feed, FeedImage, FeedItem}
 
   def handle_event(:start_document, _prolog, _state) do
     {:ok, {[], nil}}
