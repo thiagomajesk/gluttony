@@ -12,6 +12,15 @@ defmodule Gluttony.Handlers.RSS2Standard do
       ["category", "channel" | _] ->
         {Map.put_new(channel, :categories, []), items}
 
+      ["textInput", "channel" | _] ->
+        {Map.put(channel, :text_input, %{}), items}
+
+      ["skipDays", "channel" | _] ->
+        {Map.put_new(channel, :skip_days, []), items}
+
+      ["skipHours", "channel" | _] ->
+        {Map.put_new(channel, :skip_hours, []), items}
+
       ["cloud", "channel" | _] ->
         attrs = Map.new(attrs)
 
@@ -26,8 +35,19 @@ defmodule Gluttony.Handlers.RSS2Standard do
 
         {channel, items}
 
-      ["item", "channel", "rss"] ->
+      ["item", "channel" | _] ->
         {channel, [%{} | items]}
+
+      ["enclosure", "item" | _] ->
+        attrs = Map.new(attrs)
+
+        enclosure = %{
+          url: attrs["url"],
+          length: parse_integer(attrs["length"]),
+          type: attrs["type"]
+        }
+
+        {channel, put_new_for_current_item(items, :enclosure, enclosure)}
 
       _ ->
         {channel, items}
@@ -87,14 +107,17 @@ defmodule Gluttony.Handlers.RSS2Standard do
       ["rating", "channel" | _] ->
         {Map.put(channel, :rating, chars), items}
 
-      ["textInput", "channel" | _] ->
-        {Map.put(channel, :text_input, chars), items}
+      ["hour", "skipHours", "channel" | _] ->
+        chars = parse_integer(chars)
+        {Map.update!(channel, :skip_hours, &[chars | &1]), items}
 
-      ["skipHours", "channel" | _] ->
-        {Map.put(channel, :skip_hours, chars), items}
+      ["day", "skipDays", "channel" | _] ->
+        chars =
+          chars
+          |> String.downcase()
+          |> String.to_existing_atom()
 
-      ["skipDays", "channel" | _] ->
-        {Map.put(channel, :skip_days, chars), items}
+        {Map.update!(channel, :skip_days, &[chars | &1]), items}
 
       #
       # channel image elements
@@ -120,35 +143,64 @@ defmodule Gluttony.Handlers.RSS2Standard do
         {put_in(channel, [:image, :description], chars), items}
 
       #
-      # Item elements
+      # Channel textInput element
+      #
+      ["title", "textInput" | _] ->
+        {put_in(channel, [:text_input, :title], chars), items}
+
+      ["description", "textInput" | _] ->
+        {put_in(channel, [:text_input, :description], chars), items}
+
+      ["name", "textInput" | _] ->
+        {put_in(channel, [:text_input, :name], chars), items}
+
+      ["link", "textInput" | _] ->
+        {put_in(channel, [:text_input, :link], chars), items}
+
+      #
+      # Item element
       #
       ["title", "item" | _] ->
-        {channel, update_item(channel, :title, chars)}
+        {channel, put_new_for_current_item(items, :title, chars)}
 
       ["link", "item" | _] ->
-        {channel, update_item(channel, :link, chars)}
+        {channel, put_new_for_current_item(items, :link, chars)}
 
       ["guid", "item" | _] ->
-        {channel, update_item(channel, :guid, chars)}
+        {channel, put_new_for_current_item(items, :guid, chars)}
 
       ["pubDate", "item" | _] ->
         date = parse_datetime(chars)
-        {channel, update_item(channel, :pub_date, date)}
+        {channel, put_new_for_current_item(items, :pub_date, date)}
 
       ["description", "item" | _] ->
         cdata = parse_cdata(chars)
-        {channel, update_item(channel, :description, cdata)}
+        {channel, put_new_for_current_item(items, :description, cdata)}
+
+      ["author", "item" | _] ->
+        {channel, put_new_for_current_item(items, :author, chars)}
+
+      ["category", "item" | _] ->
+        {channel, append_new_for_current_item(items, :categories, chars)}
+
+      ["comments", "item" | _] ->
+        {channel, put_new_for_current_item(items, :comments, chars)}
+
+      ["source", "item" | _] ->
+        {channel, put_new_for_current_item(items, :source, chars)}
 
       _ ->
         {channel, items}
     end
   end
 
-  # Updates the most recent item (first one) added to the list.
-  defp update_item(channel, key, value) do
-    Map.update(channel, :items, [], fn items ->
-      [item | items] = items
-      [Map.put(item, key, value) | items]
-    end)
+  # Appends a new value to the key for the current item (recently created).
+  defp append_new_for_current_item([item | items], key, value) do
+    [Map.update(item, key, [value], &[value | &1]) | items]
+  end
+
+  # Puts a new value to the key for the current item (recently created).
+  defp put_new_for_current_item([item | items], key, value) do
+    [Map.put(item, key, value) | items]
   end
 end

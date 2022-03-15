@@ -24,12 +24,15 @@
       <height>35</height>
       <description>Breaking news and stories from GoUpstate.com, a Spartanburg Herald-Journal Web site.</description>
     </image>
+    <rating>(PICS-1.1 "http://www.gcf.org/v2.5" labels on "1994.11.05T08:15-0500" until "1995.12.31T23:59-0000" for "http://w3.org/PICS/Overview.html" ratings (suds 0.5 density 0 color/hue 1))</rating>
     <textInput>
       <title>Search</title>
       <description>Search GoUpstate.com</description>
       <name>s</name>
       <link>https://www.goupstate.com/search.php</link>
     </textInput>
+    <skipHours><hour>12</hour><hour>24</hour></skipHours>
+    <skipDays><day>Monday</day><day>Friday</day></skipDays> 
     <item>
       <title>Atom-Powered Robots Run Amok</title>
       <link>http://example.org/2003/12/13/atom03</link>

@@ -14,7 +14,7 @@ defmodule Gluttony.Parser do
 
   @doc false
   def handle_event(:start_document, _prolog, _opts) do
-    {:ok, %{channel: nil, items: nil, handler: nil, stack: []}}
+    {:ok, %{channel: nil, items: [], handler: nil, stack: []}}
   end
 
   @doc false

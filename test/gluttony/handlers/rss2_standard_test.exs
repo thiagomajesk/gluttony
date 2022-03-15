@@ -9,7 +9,7 @@ defmodule Gluttony.Handlers.RSS2StandardTest do
     Gluttony.Parser.parse_string(@standard_rss2)
   end
 
-  describe "required rss 2.0 elements" do
+  describe "required rss 2.0 channel elements" do
     test "title", %{channel: channel} do
       assert channel.title == "GoUpstate.com News Headlines"
     end
@@ -24,7 +24,7 @@ defmodule Gluttony.Handlers.RSS2StandardTest do
     end
   end
 
-  describe "optional rss 2.0 elements" do
+  describe "optional rss 2.0 channel elements" do
     test "language", %{channel: channel} do
       assert channel.language == "en-us"
     end
@@ -85,6 +85,74 @@ defmodule Gluttony.Handlers.RSS2StandardTest do
                url: "http://www.goupstate.com/images/goupstate_logo.gif",
                width: 140
              } = channel.image
+    end
+
+    test "rating", %{channel: channel} do
+      assert channel.rating ==
+               ~s|(PICS-1.1 "http://www.gcf.org/v2.5" labels on "1994.11.05T08:15-0500" until "1995.12.31T23:59-0000" for "http://w3.org/PICS/Overview.html" ratings (suds 0.5 density 0 color/hue 1))|
+    end
+
+    test "text_input", %{channel: channel} do
+      assert %{
+               description: "Search GoUpstate.com",
+               name: "s",
+               title: "Search",
+               link: "https://www.goupstate.com/search.php"
+             } = channel.text_input
+    end
+
+    test "skip_hours", %{channel: channel} do
+      assert channel.skip_hours == [24, 12]
+    end
+
+    test "skip_days", %{channel: channel} do
+      assert channel.skip_days == [:friday, :monday]
+    end
+  end
+
+  describe "rss 2.0 item elements" do
+    test "title", %{items: [item | _]} do
+      assert item.title == "Atom-Powered Robots Run Amok"
+    end
+
+    test "link", %{items: [item | _]} do
+      assert item.link == "http://example.org/2003/12/13/atom03"
+    end
+
+    test "description", %{items: [item | _]} do
+      assert item.description == "Some text."
+    end
+
+    test "author", %{items: [item | _]} do
+      assert item.author == "lawyer@boyer.net (Lawyer Boyer)"
+    end
+
+    test "categories", %{items: [item | _]} do
+      assert item.categories == ["MSFT", "Grateful Dead"]
+    end
+
+    test "comments", %{items: [item | _]} do
+      assert item.comments == "http://ekzemplo.com/entry/4403/comments"
+    end
+
+    test "enclosure", %{items: [item | _]} do
+      assert %{
+               url: "http://www.scripting.com/mp3s/weatherReportSuite.mp3",
+               length: 12_216_320,
+               type: "audio/mpeg"
+             } = item.enclosure
+    end
+
+    test "guid", %{items: [item | _]} do
+      assert item.guid == "http://inessential.com/2002/09/01.php#a2"
+    end
+
+    test "pub_date", %{items: [item | _]} do
+      assert item.pub_date == ~U[2002-05-19 15:21:36Z]
+    end
+
+    test "source", %{items: [item | _]} do
+      assert item.source == "Tomalak's Realm"
     end
   end
 end
