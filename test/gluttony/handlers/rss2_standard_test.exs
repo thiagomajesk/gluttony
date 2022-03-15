@@ -10,72 +10,72 @@ defmodule Gluttony.Handlers.RSS2StandardTest do
   end
 
   describe "required rss 2.0 channel elements" do
-    test "title", %{channel: channel} do
-      assert channel.title == "GoUpstate.com News Headlines"
+    test "title", %{feed: feed} do
+      assert feed.title == "GoUpstate.com News Headlines"
     end
 
-    test "link", %{channel: channel} do
-      assert channel.link == "http://www.goupstate.com/"
+    test "link", %{feed: feed} do
+      assert feed.link == "http://www.goupstate.com/"
     end
 
-    test "description", %{channel: channel} do
-      assert channel.description ==
+    test "description", %{feed: feed} do
+      assert feed.description ==
                "The latest news from GoUpstate.com, a Spartanburg Herald-Journal Web site."
     end
   end
 
   describe "optional rss 2.0 channel elements" do
-    test "language", %{channel: channel} do
-      assert channel.language == "en-us"
+    test "language", %{feed: feed} do
+      assert feed.language == "en-us"
     end
 
-    test "copyright", %{channel: channel} do
-      assert channel.copyright == "Copyright 2002, Spartanburg Herald-Journal"
+    test "copyright", %{feed: feed} do
+      assert feed.copyright == "Copyright 2002, Spartanburg Herald-Journal"
     end
 
-    test "managing_editor", %{channel: channel} do
-      assert channel.managing_editor == "geo@herald.com (George Matesky)"
+    test "managing_editor", %{feed: feed} do
+      assert feed.managing_editor == "geo@herald.com (George Matesky)"
     end
 
-    test "web_master", %{channel: channel} do
-      assert channel.web_master == "betty@herald.com (Betty Guernsey)"
+    test "web_master", %{feed: feed} do
+      assert feed.web_master == "betty@herald.com (Betty Guernsey)"
     end
 
-    test "pub_date", %{channel: channel} do
-      assert channel.pub_date == ~U[2002-09-07 00:00:01Z]
+    test "pub_date", %{feed: feed} do
+      assert feed.pub_date == ~U[2002-09-07 00:00:01Z]
     end
 
-    test "last_build_date", %{channel: channel} do
-      assert channel.last_build_date == ~U[2002-09-07 09:42:31Z]
+    test "last_build_date", %{feed: feed} do
+      assert feed.last_build_date == ~U[2002-09-07 09:42:31Z]
     end
 
-    test "categories", %{channel: channel} do
-      assert channel.categories == ["General", "Newspapers"]
+    test "categories", %{feed: feed} do
+      assert feed.categories == ["General", "Newspapers"]
     end
 
-    test "generator", %{channel: channel} do
-      assert channel.generator == "MightyInHouse Content System v2.3"
+    test "generator", %{feed: feed} do
+      assert feed.generator == "MightyInHouse Content System v2.3"
     end
 
-    test "docs", %{channel: channel} do
-      assert channel.docs == "https://www.rssboard.org/rss-specification"
+    test "docs", %{feed: feed} do
+      assert feed.docs == "https://www.rssboard.org/rss-specification"
     end
 
-    test "cloud", %{channel: channel} do
+    test "cloud", %{feed: feed} do
       assert %{
                domain: "rpc.sys.com",
                path: "/RPC2",
                port: 80,
                protocol: "soap",
                register_procedure: "pingMe"
-             } = channel.cloud
+             } = feed.cloud
     end
 
-    test "ttl", %{channel: channel} do
-      assert channel.ttl == 60
+    test "ttl", %{feed: feed} do
+      assert feed.ttl == 60
     end
 
-    test "image", %{channel: channel} do
+    test "image", %{feed: feed} do
       assert %{
                description:
                  "Breaking news and stories from GoUpstate.com, a Spartanburg Herald-Journal Web site.",
@@ -84,75 +84,75 @@ defmodule Gluttony.Handlers.RSS2StandardTest do
                title: "GoUpstate.com News Headlines",
                url: "http://www.goupstate.com/images/goupstate_logo.gif",
                width: 140
-             } = channel.image
+             } = feed.image
     end
 
-    test "rating", %{channel: channel} do
-      assert channel.rating ==
+    test "rating", %{feed: feed} do
+      assert feed.rating ==
                ~s|(PICS-1.1 "http://www.gcf.org/v2.5" labels on "1994.11.05T08:15-0500" until "1995.12.31T23:59-0000" for "http://w3.org/PICS/Overview.html" ratings (suds 0.5 density 0 color/hue 1))|
     end
 
-    test "text_input", %{channel: channel} do
+    test "text_input", %{feed: feed} do
       assert %{
                description: "Search GoUpstate.com",
                name: "s",
                title: "Search",
                link: "https://www.goupstate.com/search.php"
-             } = channel.text_input
+             } = feed.text_input
     end
 
-    test "skip_hours", %{channel: channel} do
-      assert channel.skip_hours == [24, 12]
+    test "skip_hours", %{feed: feed} do
+      assert feed.skip_hours == [24, 12]
     end
 
-    test "skip_days", %{channel: channel} do
-      assert channel.skip_days == [:friday, :monday]
+    test "skip_days", %{feed: feed} do
+      assert feed.skip_days == [:friday, :monday]
     end
   end
 
   describe "rss 2.0 item elements" do
-    test "title", %{items: [item | _]} do
-      assert item.title == "Atom-Powered Robots Run Amok"
+    test "title", %{entries: [entry | _]} do
+      assert entry.title == "Atom-Powered Robots Run Amok"
     end
 
-    test "link", %{items: [item | _]} do
-      assert item.link == "http://example.org/2003/12/13/atom03"
+    test "link", %{entries: [entry | _]} do
+      assert entry.link == "http://example.org/2003/12/13/atom03"
     end
 
-    test "description", %{items: [item | _]} do
-      assert item.description == "Some text."
+    test "description", %{entries: [entry | _]} do
+      assert entry.description == "Some text."
     end
 
-    test "author", %{items: [item | _]} do
-      assert item.author == "lawyer@boyer.net (Lawyer Boyer)"
+    test "author", %{entries: [entry | _]} do
+      assert entry.author == "lawyer@boyer.net (Lawyer Boyer)"
     end
 
-    test "categories", %{items: [item | _]} do
-      assert item.categories == ["MSFT", "Grateful Dead"]
+    test "categories", %{entries: [entry | _]} do
+      assert entry.categories == ["MSFT", "Grateful Dead"]
     end
 
-    test "comments", %{items: [item | _]} do
-      assert item.comments == "http://ekzemplo.com/entry/4403/comments"
+    test "comments", %{entries: [entry | _]} do
+      assert entry.comments == "http://ekzemplo.com/entry/4403/comments"
     end
 
-    test "enclosure", %{items: [item | _]} do
+    test "enclosure", %{entries: [entry | _]} do
       assert %{
                url: "http://www.scripting.com/mp3s/weatherReportSuite.mp3",
                length: 12_216_320,
                type: "audio/mpeg"
-             } = item.enclosure
+             } = entry.enclosure
     end
 
-    test "guid", %{items: [item | _]} do
-      assert item.guid == "http://inessential.com/2002/09/01.php#a2"
+    test "guid", %{entries: [entry | _]} do
+      assert entry.guid == "http://inessential.com/2002/09/01.php#a2"
     end
 
-    test "pub_date", %{items: [item | _]} do
-      assert item.pub_date == ~U[2002-05-19 15:21:36Z]
+    test "pub_date", %{entries: [entry | _]} do
+      assert entry.pub_date == ~U[2002-05-19 15:21:36Z]
     end
 
-    test "source", %{items: [item | _]} do
-      assert item.source == "Tomalak's Realm"
+    test "source", %{entries: [entry | _]} do
+      assert entry.source == "Tomalak's Realm"
     end
   end
 end

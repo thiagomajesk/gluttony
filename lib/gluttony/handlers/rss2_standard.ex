@@ -1,31 +1,31 @@
 defmodule Gluttony.Handlers.RSS2Standard do
   import Gluttony.Helpers
 
-  def handle_element({channel, items}, attrs, stack) do
+  def handle_element({feed, entries}, attrs, stack) do
     case stack do
       ["channel" | _] ->
-        {%{}, items}
+        {%{}, entries}
 
       ["image", "channel" | _] ->
-        {Map.put(channel, :image, %{}), items}
+        {Map.put(feed, :image, %{}), entries}
 
       ["category", "channel" | _] ->
-        {Map.put_new(channel, :categories, []), items}
+        {Map.put_new(feed, :categories, []), entries}
 
       ["textInput", "channel" | _] ->
-        {Map.put(channel, :text_input, %{}), items}
+        {Map.put(feed, :text_input, %{}), entries}
 
       ["skipDays", "channel" | _] ->
-        {Map.put_new(channel, :skip_days, []), items}
+        {Map.put_new(feed, :skip_days, []), entries}
 
       ["skipHours", "channel" | _] ->
-        {Map.put_new(channel, :skip_hours, []), items}
+        {Map.put_new(feed, :skip_hours, []), entries}
 
       ["cloud", "channel" | _] ->
         attrs = Map.new(attrs)
 
-        channel =
-          Map.put(channel, :cloud, %{
+        feed =
+          Map.put(feed, :cloud, %{
             domain: attrs["domain"],
             port: parse_integer(attrs["port"]),
             path: attrs["path"],
@@ -33,10 +33,10 @@ defmodule Gluttony.Handlers.RSS2Standard do
             protocol: attrs["protocol"]
           })
 
-        {channel, items}
+        {feed, entries}
 
       ["item", "channel" | _] ->
-        {channel, [%{} | items]}
+        {feed, [%{} | entries]}
 
       ["enclosure", "item" | _] ->
         attrs = Map.new(attrs)
@@ -47,69 +47,69 @@ defmodule Gluttony.Handlers.RSS2Standard do
           type: attrs["type"]
         }
 
-        {channel, put_new_for_current_item(items, :enclosure, enclosure)}
+        {feed, put_into_current_entry(entries, :enclosure, enclosure)}
 
       _ ->
-        {channel, items}
+        {feed, entries}
     end
   end
 
-  def handle_content({channel, items}, chars, stack) do
+  def handle_content({feed, entries}, chars, stack) do
     case stack do
       #
       # Required channel elements
       #
       ["title", "channel" | _] ->
-        {Map.put(channel, :title, chars), items}
+        {Map.put(feed, :title, chars), entries}
 
       ["link", "channel" | _] ->
-        {Map.put(channel, :link, chars), items}
+        {Map.put(feed, :link, chars), entries}
 
       ["description", "channel" | _] ->
-        {Map.put(channel, :description, chars), items}
+        {Map.put(feed, :description, chars), entries}
 
       #
       # Optional channel elements
       #
       ["language", "channel" | _] ->
-        {Map.put(channel, :language, chars), items}
+        {Map.put(feed, :language, chars), entries}
 
       ["copyright", "channel" | _] ->
-        {Map.put(channel, :copyright, chars), items}
+        {Map.put(feed, :copyright, chars), entries}
 
       ["managingEditor", "channel" | _] ->
-        {Map.put(channel, :managing_editor, chars), items}
+        {Map.put(feed, :managing_editor, chars), entries}
 
       ["webMaster", "channel" | _] ->
-        {Map.put(channel, :web_master, chars), items}
+        {Map.put(feed, :web_master, chars), entries}
 
       ["pubDate", "channel" | _] ->
         chars = parse_datetime(chars)
-        {Map.put(channel, :pub_date, chars), items}
+        {Map.put(feed, :pub_date, chars), entries}
 
       ["lastBuildDate", "channel" | _] ->
         chars = parse_datetime(chars)
-        {Map.put(channel, :last_build_date, chars), items}
+        {Map.put(feed, :last_build_date, chars), entries}
 
       ["category", "channel" | _] ->
-        {Map.update(channel, :categories, [], &[chars | &1]), items}
+        {Map.update(feed, :categories, [], &[chars | &1]), entries}
 
       ["generator", "channel" | _] ->
-        {Map.put(channel, :generator, chars), items}
+        {Map.put(feed, :generator, chars), entries}
 
       ["docs", "channel" | _] ->
-        {Map.put(channel, :docs, chars), items}
+        {Map.put(feed, :docs, chars), entries}
 
       ["ttl", "channel" | _] ->
         chars = parse_integer(chars)
-        {Map.put(channel, :ttl, chars), items}
+        {Map.put(feed, :ttl, chars), entries}
 
       ["rating", "channel" | _] ->
-        {Map.put(channel, :rating, chars), items}
+        {Map.put(feed, :rating, chars), entries}
 
       ["hour", "skipHours", "channel" | _] ->
         chars = parse_integer(chars)
-        {Map.update!(channel, :skip_hours, &[chars | &1]), items}
+        {Map.update!(feed, :skip_hours, &[chars | &1]), entries}
 
       ["day", "skipDays", "channel" | _] ->
         chars =
@@ -117,90 +117,90 @@ defmodule Gluttony.Handlers.RSS2Standard do
           |> String.downcase()
           |> String.to_existing_atom()
 
-        {Map.update!(channel, :skip_days, &[chars | &1]), items}
+        {Map.update!(feed, :skip_days, &[chars | &1]), entries}
 
       #
       # channel image elements
       #
       ["url", "image" | _] ->
-        {put_in(channel, [:image, :url], chars), items}
+        {put_in(feed, [:image, :url], chars), entries}
 
       ["title", "image" | _] ->
-        {put_in(channel, [:image, :title], chars), items}
+        {put_in(feed, [:image, :title], chars), entries}
 
       ["link", "image" | _] ->
-        {put_in(channel, [:image, :link], chars), items}
+        {put_in(feed, [:image, :link], chars), entries}
 
       ["width", "image" | _] ->
         chars = parse_integer(chars)
-        {put_in(channel, [:image, :width], chars), items}
+        {put_in(feed, [:image, :width], chars), entries}
 
       ["height", "image" | _] ->
         chars = parse_integer(chars)
-        {put_in(channel, [:image, :height], chars), items}
+        {put_in(feed, [:image, :height], chars), entries}
 
       ["description", "image" | _] ->
-        {put_in(channel, [:image, :description], chars), items}
+        {put_in(feed, [:image, :description], chars), entries}
 
       #
       # Channel textInput element
       #
       ["title", "textInput" | _] ->
-        {put_in(channel, [:text_input, :title], chars), items}
+        {put_in(feed, [:text_input, :title], chars), entries}
 
       ["description", "textInput" | _] ->
-        {put_in(channel, [:text_input, :description], chars), items}
+        {put_in(feed, [:text_input, :description], chars), entries}
 
       ["name", "textInput" | _] ->
-        {put_in(channel, [:text_input, :name], chars), items}
+        {put_in(feed, [:text_input, :name], chars), entries}
 
       ["link", "textInput" | _] ->
-        {put_in(channel, [:text_input, :link], chars), items}
+        {put_in(feed, [:text_input, :link], chars), entries}
 
       #
       # Item element
       #
       ["title", "item" | _] ->
-        {channel, put_new_for_current_item(items, :title, chars)}
+        {feed, put_into_current_entry(entries, :title, chars)}
 
       ["link", "item" | _] ->
-        {channel, put_new_for_current_item(items, :link, chars)}
+        {feed, put_into_current_entry(entries, :link, chars)}
 
       ["guid", "item" | _] ->
-        {channel, put_new_for_current_item(items, :guid, chars)}
+        {feed, put_into_current_entry(entries, :guid, chars)}
 
       ["pubDate", "item" | _] ->
         date = parse_datetime(chars)
-        {channel, put_new_for_current_item(items, :pub_date, date)}
+        {feed, put_into_current_entry(entries, :pub_date, date)}
 
       ["description", "item" | _] ->
         cdata = parse_cdata(chars)
-        {channel, put_new_for_current_item(items, :description, cdata)}
+        {feed, put_into_current_entry(entries, :description, cdata)}
 
       ["author", "item" | _] ->
-        {channel, put_new_for_current_item(items, :author, chars)}
+        {feed, put_into_current_entry(entries, :author, chars)}
 
       ["category", "item" | _] ->
-        {channel, append_new_for_current_item(items, :categories, chars)}
+        {feed, append_into_current_entry(entries, :categories, chars)}
 
       ["comments", "item" | _] ->
-        {channel, put_new_for_current_item(items, :comments, chars)}
+        {feed, put_into_current_entry(entries, :comments, chars)}
 
       ["source", "item" | _] ->
-        {channel, put_new_for_current_item(items, :source, chars)}
+        {feed, put_into_current_entry(entries, :source, chars)}
 
       _ ->
-        {channel, items}
+        {feed, entries}
     end
   end
 
-  # Appends a new value to the key for the current item (recently created).
-  defp append_new_for_current_item([item | items], key, value) do
-    [Map.update(item, key, [value], &[value | &1]) | items]
+  # Appends a new value to the key for the current entry (recently created).
+  defp append_into_current_entry([entry | entries], key, value) do
+    [Map.update(entry, key, [value], &[value | &1]) | entries]
   end
 
-  # Puts a new value to the key for the current item (recently created).
-  defp put_new_for_current_item([item | items], key, value) do
-    [Map.put(item, key, value) | items]
+  # Puts a new value to the key for the current entry (recently created).
+  defp put_into_current_entry([entry | entries], key, value) do
+    [Map.put(entry, key, value) | entries]
   end
 end

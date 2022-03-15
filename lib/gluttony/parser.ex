@@ -14,12 +14,12 @@ defmodule Gluttony.Parser do
 
   @doc false
   def handle_event(:start_document, _prolog, _opts) do
-    {:ok, %{channel: nil, items: [], handler: nil, stack: []}}
+    {:ok, %{feed: nil, entries: [], handler: nil, stack: []}}
   end
 
   @doc false
   def handle_event(:end_document, _data, state) do
-    {:ok, Map.take(state, [:channel, :items])}
+    {:ok, Map.take(state, [:feed, :entries])}
   end
 
   @doc false
@@ -49,17 +49,17 @@ defmodule Gluttony.Parser do
     # the stack to find the current scope we are processing.
     state = Map.update!(state, :stack, &push(name, &1))
 
-    %{channel: channel, items: items, handler: handler, stack: stack} = state
+    %{feed: feed, entries: entries, handler: handler, stack: stack} = state
 
     # TODO: Allow handlers to return a key/value pair so we have more flexibility to modify the current state.
-    # For instance: {:channel, modified_channel} or {:items, modified_items}.
-    args = [{channel, items}, attributes, stack]
-    {channel, items} = apply(handler, :handle_element, args)
+    # For instance: {:feed, modified_channel} or {:entries, modified_items}.
+    args = [{feed, entries}, attributes, stack]
+    {feed, entries} = apply(handler, :handle_element, args)
 
     state =
       state
-      |> Map.put(:channel, channel)
-      |> Map.put(:items, items)
+      |> Map.put(:feed, feed)
+      |> Map.put(:entries, entries)
 
     {:ok, state}
   end
@@ -71,15 +71,15 @@ defmodule Gluttony.Parser do
 
   @doc false
   def handle_event(:characters, chars, state) do
-    %{channel: channel, items: items, handler: handler, stack: stack} = state
+    %{feed: feed, entries: entries, handler: handler, stack: stack} = state
 
-    args = [{channel, items}, chars, stack]
-    {channel, items} = apply(handler, :handle_content, args)
+    args = [{feed, entries}, chars, stack]
+    {feed, entries} = apply(handler, :handle_content, args)
 
     state =
       state
-      |> Map.put(:channel, channel)
-      |> Map.put(:items, items)
+      |> Map.put(:feed, feed)
+      |> Map.put(:entries, entries)
 
     {:ok, state}
   end
