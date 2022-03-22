@@ -4,7 +4,7 @@ defmodule Gluttony.Handlers.Atom1StandardTest do
   @standard_atom1 File.read!("test/fixtures/atom1_standard.rss")
 
   setup_all do
-    Gluttony.Parser.parse_string(@standard_atom1)
+    Gluttony.parse_string(@standard_atom1)
   end
 
   describe "atom 1.0 feed elements" do

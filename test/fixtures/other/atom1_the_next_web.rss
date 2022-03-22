@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+>
+<channel>
+	<title>The Next Web</title>
+	<atom:link href="https://thenextweb.com/feed" rel="self" type="application/rss+xml" />
+	<link>https://thenextweb.com</link>
+	<description>Original and proudly opinionated perspectives for Generation T</description>
+	<lastBuildDate>Tue, 22 Mar 2022 20:11:23 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+    <generator>TNW-API</generator>
+<item>
+	<title>Zoom’s launch of animal avatars is a balm for video call fatigue</title>
+	<link>https://thenextweb.com/news/zoom-animal-avatar-meeting-metaverse-analysis</link>
+	<pubDate>Tue, 22 Mar 2022 16:00:08 +0000</pubDate>
+		<dc:creator><![CDATA[Ivan Mehta]]></dc:creator>
+			<category><![CDATA[Plugged]]></category>
+		<guid isPermaLink="false">TheNextWeb=1383014</guid>
+	<description><![CDATA[<img src="https://img-cdn.tnwcdn.com/image?fit=796%2C417&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F03%2FZoom-avatars.jpg&signature=33f8c5660814281b802cace08faf412f" width="796" height="417"><br />Last year, the story of a lawyer turning up to a hearing on a Zoom call with a cat filter went viral. It was hilarious and absurd. But the folks at Zoom seem to have liked it so much, they’re introducing animated animal-based avatars to sit in on your video calls. Think of this as animoji, but for conferencing. Let’s dig into this a bit more. Animal avatars? How will they work? When you turn on your avatar, your background will disappear, and your face will turn into an animal, like a cat or a dog. By following your face&#8230;<br /><br /><a href="https://thenextweb.com/news/zoom-animal-avatar-meeting-metaverse-analysis?utm_source=social&#038;utm_medium=feed&#038;utm_campaign=profeed">This story continues</a> at The Next Web]]></description>
+	<enclosure url="https://img-cdn.tnwcdn.com/image?fit=796%2C417&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F03%2FZoom-avatars.jpg&amp;signature=33f8c5660814281b802cace08faf412f" type="image/jpeg" length="0" />
+</item>
+<item>
+	<title>Russians are using crypto to evade sanctions — but it’s not just the elite</title>
+	<link>https://thenextweb.com/news/russians-using-crypto-evade-sanctions</link>
+	<pubDate>Tue, 22 Mar 2022 14:55:35 +0000</pubDate>
+		<dc:creator><![CDATA[The Conversation]]></dc:creator>
+			<category><![CDATA[Hard Fork]]></category>
+		<category><![CDATA[Next Featured]]></category>
+		<guid isPermaLink="false">TheNextWeb=1382978</guid>
+	<description><![CDATA[<img src="https://img-cdn.tnwcdn.com/image?fit=796%2C417&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F03%2Fhbjsskd.jpg&signature=af797589dc503d3995a3554f376ef6a5" width="796" height="417"><br />Fearing Russia’s elite will evade economic sanctions by converting their wealth to cryptocurrency, high-profile US Democratic senator Elizabeth Warren has introduced a bill into US Congress to stymie Russian crypto transactions. Warren warned a Senate committee hearing: So no one can argue that Russia can evade all sanctions by moving all its assets into crypto. But for Putin’s oligarchs who are trying to hide, you know, a billion or two of their wealth, crypto looks like a pretty good option. The bill does not seek to impose a blanket ban on all Russian cryptocurrency transactions. But it would give the&#8230;<br /><br /><a href="https://thenextweb.com/news/russians-using-crypto-evade-sanctions?utm_source=social&#038;utm_medium=feed&#038;utm_campaign=profeed">This story continues</a> at The Next Web]]></description>
+	<enclosure url="https://img-cdn.tnwcdn.com/image?fit=796%2C417&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F03%2Fhbjsskd.jpg&amp;signature=af797589dc503d3995a3554f376ef6a5" type="image/jpeg" length="0" />
+</item>
+<item>
+	<title>‘Ghostly sky circles’ that baffled astronomers might be explosions from distant galaxies</title>
+	<link>https://thenextweb.com/news/ghostly-sky-circles-baffled-astronomers-explosions-from-distant-galaxies</link>
+	<pubDate>Tue, 22 Mar 2022 13:48:30 +0000</pubDate>
+		<dc:creator><![CDATA[The Conversation]]></dc:creator>
+			<category><![CDATA[Space]]></category>
+		<guid isPermaLink="false">TheNextWeb=1382994</guid>
+	<description><![CDATA[<img src="https://img-cdn.tnwcdn.com/image?fit=796%2C417&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F03%2Forc-astronomy.png&signature=ff678ad024656036360ed2af23593afe" width="796" height="417"><br />In 2019, my colleagues and I discovered spooky glowing rings in the sky using CSIRO’s ASKAP radio telescope in Western Australia. The rings were unlike anything seen before, and we had no idea what they were. We dubbed them odd radio circles or ORCs. They continue to puzzle us, but new data from South Africa’s MeerKAT telescope are helping us solve the mystery. We can now see each ORC is centered on a galaxy too faint to be detected earlier. The circles are most likely enormous explosions of hot gas, about a million light-years across, emanating from the central galaxy.&#8230;<br /><br /><a href="https://thenextweb.com/news/ghostly-sky-circles-baffled-astronomers-explosions-from-distant-galaxies?utm_source=social&#038;utm_medium=feed&#038;utm_campaign=profeed">This story continues</a> at The Next Web]]></description>
+	<enclosure url="https://img-cdn.tnwcdn.com/image?fit=796%2C417&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F03%2Forc-astronomy.png&amp;signature=ff678ad024656036360ed2af23593afe" type="image/png" length="0" />
+</item>
+<item>
+	<title>I have a theory about why Apple won’t release another router</title>
+	<link>https://thenextweb.com/news/a-theory-about-why-apple-will-not-release-another-router</link>
+	<pubDate>Tue, 22 Mar 2022 13:27:00 +0000</pubDate>
+		<dc:creator><![CDATA[Callum Booth]]></dc:creator>
+			<category><![CDATA[Plugged]]></category>
+		<category><![CDATA[Apple]]></category>
+		<guid isPermaLink="false">TheNextWeb=1383000</guid>
+	<description><![CDATA[<img src="https://img-cdn.tnwcdn.com/image?fit=796%2C417&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F03%2Fheader-image-apple-routers.jpg&signature=240cf18be4f4489e1f06290ca6d58183" width="796" height="417"><br />I miss Apple’s AirPort range. Back when I was taking my first forays into home networking, these wireless routers and extenders were a vital part of my setup. Yet, as per usual, good things couldn’t last. Back in 2018, Apple bowed out of the networking game entirely and discontinued its AirPort and Time Capsule line-up. Besides me, one who hasn’t let this slide is Bloomberg’s Mark Gurman. In a piece published earlier this week, the renowned Apple analyst and leaker called for the company to reintroduce Wi-Fi routers as part of its product portfolio. And, honestly? The argument for this&#8230;<br /><br /><a href="https://thenextweb.com/news/a-theory-about-why-apple-will-not-release-another-router?utm_source=social&#038;utm_medium=feed&#038;utm_campaign=profeed">This story continues</a> at The Next Web<br /><br />Or just read more coverage about: <a href="https://thenextweb.com/company/apple">Apple</a>
+]]></description>
+	<enclosure url="https://img-cdn.tnwcdn.com/image?fit=796%2C417&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F03%2Fheader-image-apple-routers.jpg&amp;signature=240cf18be4f4489e1f06290ca6d58183" type="image/jpeg" length="0" />
+</item>
+<item>
+	<title>The iEV Z is the wildest shapeshifting minicar we&#8217;ve seen yet</title>
+	<link>https://thenextweb.com/news/iev-z-is-wildest-shapeshifting-minicar-yet</link>
+	<pubDate>Tue, 22 Mar 2022 12:58:19 +0000</pubDate>
+		<dc:creator><![CDATA[Ioanna Lykiardopoulou]]></dc:creator>
+			<category><![CDATA[Shift]]></category>
+		<guid isPermaLink="false">TheNextWeb=1382975</guid>
+	<description><![CDATA[<img src="https://img-cdn.tnwcdn.com/image?fit=796%2C417&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F03%2FfINAL-IEV-.jpg&signature=833c5f1061de06402c34102480a80469" width="796" height="417"><br />As electric microcars are gradually becoming a thing, there are a number of companies that want to introduce us to tiny EVs with an intriguing design twist: shapeshifting. Two of these interesting shapeshifters, scheduled for launch later this year, are the Triggo EV and the City Transformer. You can’t really expect Batmobile-like transformations, but both vehicles have variable chassis that enable them to change their size when space is at a premium. To fit into a tight parking spot or pass swiftly through traffic jams — that’s your call. The Triggo EV can extend or contract its front wheels horizontally,&#8230;<br /><br /><a href="https://thenextweb.com/news/iev-z-is-wildest-shapeshifting-minicar-yet?utm_source=social&#038;utm_medium=feed&#038;utm_campaign=profeed">This story continues</a> at The Next Web]]></description>
+	<enclosure url="https://img-cdn.tnwcdn.com/image?fit=796%2C417&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F03%2FfINAL-IEV-.jpg&amp;signature=833c5f1061de06402c34102480a80469" type="image/jpeg" length="0" />
+</item>
+<item>
+	<title>Remote work is key in preventing the next great developer resignation</title>
+	<link>https://thenextweb.com/news/remote-work-is-key-in-preventing-the-next-great-developer-resignation</link>
+	<pubDate>Tue, 22 Mar 2022 11:08:13 +0000</pubDate>
+		<dc:creator><![CDATA[Ben Hosking]]></dc:creator>
+			<category><![CDATA[House of Talent]]></category>
+		<guid isPermaLink="false">TheNextWeb=1382970</guid>
+	<description><![CDATA[<img src="https://img-cdn.tnwcdn.com/image?fit=796%2C417&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F03%2FRemote-WFH-Developer-hed.jpg&signature=e6618aac0674b23bcf9a2e3cf04c7781" width="796" height="417"><br />The software development world has changed over the last couple of years, and overall, developers have benefited. Software development has increased, demand for developers has gone up, and developers at large have sought out better jobs. What happens next? Will developers continue to move jobs at higher levels or will it settle down? Will companies change and put more effort and money into keeping developers, instead of focusing most of their efforts into hiring replacements? The stages of the great developer resignation Here’s how the great developer resignation will come about, in stages: Remote working — meeting overload, burnout. Increase in&#8230;<br /><br /><a href="https://thenextweb.com/news/remote-work-is-key-in-preventing-the-next-great-developer-resignation?utm_source=social&#038;utm_medium=feed&#038;utm_campaign=profeed">This story continues</a> at The Next Web]]></description>
+	<enclosure url="https://img-cdn.tnwcdn.com/image?fit=796%2C417&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F03%2FRemote-WFH-Developer-hed.jpg&amp;signature=e6618aac0674b23bcf9a2e3cf04c7781" type="image/jpeg" length="0" />
+</item>
+<item>
+	<title>Switching from developer to product owner? Consider these pros and cons first</title>
+	<link>https://thenextweb.com/news/developer-to-product-owner-pros-and-cons</link>
+	<pubDate>Tue, 22 Mar 2022 11:02:51 +0000</pubDate>
+		<dc:creator><![CDATA[Rebecca OKeeffe]]></dc:creator>
+			<category><![CDATA[Design &amp;amp; Dev]]></category>
+		<category><![CDATA[Jobbio]]></category>
+		<category><![CDATA[House of Talent]]></category>
+		<guid isPermaLink="false">TheNextWeb=1382947</guid>
+	<description><![CDATA[<img src="https://img-cdn.tnwcdn.com/image?fit=796%2C417&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F03%2FUntitled-design-1-9.jpg&signature=bf79e6304df773e9a36fb4f6e186496f" width="796" height="417"><br />Career progression is important. After all, it’s what motivates us, keeps us engaged, and ultimately helps us to move up the career ladder. For many developers, becoming a product owner is seen as the ultimate goal. But, it’s not for everyone. When working in agile teams, you can’t be a product owner and a developer i.e. a member of the team. This is because it goes against one of the key principles of scrum, commitment. So, at some stage in your career, you’ll probably have to make a choice. Would you like to make the switch to product owner or&#8230;<br /><br /><a href="https://thenextweb.com/news/developer-to-product-owner-pros-and-cons?utm_source=social&#038;utm_medium=feed&#038;utm_campaign=profeed">This story continues</a> at The Next Web]]></description>
+	<enclosure url="https://img-cdn.tnwcdn.com/image?fit=796%2C417&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F03%2FUntitled-design-1-9.jpg&amp;signature=bf79e6304df773e9a36fb4f6e186496f" type="image/jpeg" length="0" />
+</item>
+<item>
+	<title>Why is Apple’s Studio Display basically a giant iPad?</title>
+	<link>https://thenextweb.com/news/apple-studio-display-giant-ipad</link>
+	<pubDate>Tue, 22 Mar 2022 02:56:12 +0000</pubDate>
+		<dc:creator><![CDATA[Napier Lopez]]></dc:creator>
+			<category><![CDATA[Plugged]]></category>
+		<category><![CDATA[Apple]]></category>
+		<guid isPermaLink="false">TheNextWeb=1382959</guid>
+	<description><![CDATA[<img src="https://img-cdn.tnwcdn.com/image?fit=796%2C417&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F03%2FApple-Studio-Display-iPad.jpg&signature=f8f110be49575fce9cd4d7147c416f30" width="796" height="417"><br />Much like the tiny-but-beastly Mac Studio, the Apple Studio Display is the type of device only Apple could make. No, I’m not talking about the fancy metallic design, 5K resolution, nor its sextuple speaker system. Nor am I even making fun of the $1,600 price tag. Instead, I’m talking about the sheer flex of building a display that, for some reason, is basically as powerful as the company’s latest entry-level iPad. Apple would have probably helped many more users by making a really nice $500 monitor instead, but no, it just had to make an absurdly overpowered monitor instead. Apple&#8230;<br /><br /><a href="https://thenextweb.com/news/apple-studio-display-giant-ipad?utm_source=social&#038;utm_medium=feed&#038;utm_campaign=profeed">This story continues</a> at The Next Web<br /><br />Or just read more coverage about: <a href="https://thenextweb.com/company/apple">Apple</a>
+]]></description>
+	<enclosure url="https://img-cdn.tnwcdn.com/image?fit=796%2C417&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F03%2FApple-Studio-Display-iPad.jpg&amp;signature=f8f110be49575fce9cd4d7147c416f30" type="image/jpeg" length="0" />
+</item>
+<item>
+	<title>IBM&#8217;s new sustainability accelerator is a blueprint for corporate responsibility</title>
+	<link>https://thenextweb.com/news/ibms-new-sustainability-accelerator-blueprint-corporate-responsibility</link>
+	<pubDate>Mon, 21 Mar 2022 21:44:24 +0000</pubDate>
+		<dc:creator><![CDATA[Tristan Greene]]></dc:creator>
+			<category><![CDATA[Neural]]></category>
+		<guid isPermaLink="false">TheNextWeb=1382935</guid>
+	<description><![CDATA[<img src="https://img-cdn.tnwcdn.com/image?fit=796%2C417&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F03%2Fearthfire.jpg&signature=dcf9dde9286c6f04666f4cbc347e3a5a" width="796" height="417"><br />Nearly all of the world’s top tech companies are invested in solving the biggest problems facing the planet. But not all solutions are created equal. The issues concerning Silicon Valley, London, or Beijing are vastly different than those faced by smaller, less profitable communities around the globe. That’s why, in the modern era, the idea of corporate responsibility has to go beyond charitable donations and one-off events to raise awareness. The most vulnerable communities need more than just cash. They need sustainable solutions to long-term problems. Enter Big Blue IBM’s new “Sustainability Accelerator” is a program designed to give under-serviced&#8230;<br /><br /><a href="https://thenextweb.com/news/ibms-new-sustainability-accelerator-blueprint-corporate-responsibility?utm_source=social&#038;utm_medium=feed&#038;utm_campaign=profeed">This story continues</a> at The Next Web<br /><br />Or just read more coverage about: <a href="https://thenextweb.com/company/ibm">IBM</a>
+]]></description>
+	<enclosure url="https://img-cdn.tnwcdn.com/image?fit=796%2C417&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F03%2Fearthfire.jpg&amp;signature=dcf9dde9286c6f04666f4cbc347e3a5a" type="image/jpeg" length="0" />
+</item>
+<item>
+	<title>Whatever Elon says, Tesla&#8217;s not planning to dominate aviation</title>
+	<link>https://thenextweb.com/news/is-tesla-getting-into-new-aircraft-and-aviation</link>
+	<pubDate>Mon, 21 Mar 2022 16:23:52 +0000</pubDate>
+		<dc:creator><![CDATA[Cate Lawrence]]></dc:creator>
+			<category><![CDATA[Insider]]></category>
+		<category><![CDATA[Shift]]></category>
+		<guid isPermaLink="false">TheNextWeb=1382924</guid>
+	<description><![CDATA[<img src="https://img-cdn.tnwcdn.com/image?fit=796%2C417&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F03%2FUntitled-design-54.png&signature=c9bb8e08f24f9d10921737b484606a54" width="796" height="417"><br />This week, news resurfaced again of Tesla’s interest in aviation. Given how many stories turn out to be nothing more than rumors, I decided to look into the likelihood of a Tesla aircraft.  So what’s the latest?  Not as much as you might think. Working on Master Plan Part 3 — Elon Musk (@elonmusk) March 17, 2022 The billionaire entrepreneur shared a post on Twitter, saying he is “working on Master Plan Part 3,” without revealing more details. In response, Morgan Stanley’s key analyst on all things Tesla, Adam Jonas, asserted in a research note reported by MSN: In our view,&#8230;<br /><br /><a href="https://thenextweb.com/news/is-tesla-getting-into-new-aircraft-and-aviation?utm_source=social&#038;utm_medium=feed&#038;utm_campaign=profeed">This story continues</a> at The Next Web<br /><br />Or just read more coverage about: <a href="https://thenextweb.com/company/tesla-motors">Tesla</a>
+]]></description>
+	<enclosure url="https://img-cdn.tnwcdn.com/image?fit=796%2C417&amp;url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2022%2F03%2FUntitled-design-54.png&amp;signature=c9bb8e08f24f9d10921737b484606a54" type="image/png" length="0" />
+</item>
+</channel>
+</rss>

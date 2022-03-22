@@ -4,7 +4,7 @@ defmodule Gluttony.Handlers.RSS2StandardTest do
   @standard_rss2 File.read!("test/fixtures/rss2_standard.rss")
 
   setup_all do
-    Gluttony.Parser.parse_string(@standard_rss2)
+    Gluttony.parse_string(@standard_rss2)
   end
 
   describe "rss 2.0 feed elements" do

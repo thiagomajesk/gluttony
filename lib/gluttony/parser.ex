@@ -15,10 +15,6 @@ defmodule Gluttony.Parser do
   @feedburner_namespace "http://rssnamespace.org/feedburner/ext/1.0"
   @atom_namespace "http://www.w3.org/2005/Atom"
 
-  def parse_string(xml) do
-    Saxy.parse_string(xml, __MODULE__, [])
-  end
-
   @doc false
   def handle_event(:start_document, _prolog, opts) do
     {:ok, %{feed: %{}, entries: [], handler: nil, stack: [], raw: opts[:raw] || true}}

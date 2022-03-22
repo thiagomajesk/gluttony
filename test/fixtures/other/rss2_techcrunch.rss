@@ -1,0 +1,1004 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>TechCrunch</title>
+	<atom:link href="https://techcrunch.com/feed/" rel="self" type="application/rss+xml" />
+	<link>https://techcrunch.com</link>
+	<description>Startup and Technology News</description>
+	<lastBuildDate>Tue, 22 Mar 2022 20:03:28 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.9.2</generator>
+
+<image>
+	<url>https://techcrunch.com/wp-content/uploads/2015/02/cropped-cropped-favicon-gradient.png?w=32</url>
+	<title>TechCrunch</title>
+	<link>https://techcrunch.com</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+<site xmlns="com-wordpress:feed-additions:1">136296444</site>	<item>
+		<title>You can now make GIFs in Twitter&#8217;s iOS app</title>
+		<link>https://techcrunch.com/2022/03/22/twitter-gifs-ios-app-feature/</link>
+					<comments>https://techcrunch.com/2022/03/22/twitter-gifs-ios-app-feature/#respond</comments>
+		
+		<dc:creator><![CDATA[Amanda Silberling]]></dc:creator>
+		<pubDate>Tue, 22 Mar 2022 19:51:07 +0000</pubDate>
+				<category><![CDATA[Apps]]></category>
+		<category><![CDATA[computing]]></category>
+		<category><![CDATA[gif]]></category>
+		<category><![CDATA[Instagram]]></category>
+		<category><![CDATA[mobile software]]></category>
+		<category><![CDATA[operating systems]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[Twitter]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=2287999</guid>
+
+					<description><![CDATA[If you ever wanted to make a GIF from your iOS camera while using the Twitter app, today&#8217;s your lucky day. Twitter announced that now, we can do just that. When you compose a new tweet on iOS, click the camera button. Then, you have the option to choose between a photo, a video and [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p id="speakable-summary">If you ever wanted to make a GIF from your iOS camera while using the Twitter app, today&#8217;s your lucky day. Twitter <a href="https://twitter.com/TwitterSupport/status/1506346203310612490">announced</a> that now, we can do just that.</p>
+<p>When you compose a new tweet on iOS, click the camera button. Then, you have the option to choose between a photo, a video and an animated GIF. Your GIF recording can&#8217;t be very long &#8212; only a few seconds &#8212; but hey, it&#8217;ll probably come in handy once or twice?</p>
+<div class="embed breakout">
+<blockquote class="twitter-tweet" data-width="550" data-dnt="true">
+<p lang="en" dir="ltr">Ok GIFs aren’t new but what *is new* is the option to capture your own using the in-app camera on iOS. <a href="https://t.co/3Hl6q78e6s">pic.twitter.com/3Hl6q78e6s</a></p><div id="tc-target-mid-article-2287999" class="tc-target-mid-article ad-unit--size-auto"></div>
+<p>&mdash; Twitter Support (@TwitterSupport) <a href="https://twitter.com/TwitterSupport/status/1506346203310612490?ref_src=twsrc%5Etfw">March 22, 2022</a></p></blockquote>
+<p><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+<p>After you record your short GIF, you have the option to either play it front to back on loop, or you can make it play like an Instagram boomerang, playing forward, then reverse on loop. The world is your oyster, unless if you want to make a GIF that lasts longer than like two seconds.</p>
+<p>Once you make the GIF, it saves automatically to your camera roll as a GIF in your images folder &#8212; it&#8217;s not a video. Because it&#8217;s a GIF.</p>
+<p>Twitter releases so many new features these days that it&#8217;s hard to keep track. Some recent updates you may have missed include posting <a href="https://techcrunch.com/2022/03/18/twitter-clipping-spaces/">clips from Spaces</a>, a potential upcoming spin on Instagram&#8217;s <a href="https://techcrunch.com/2022/03/16/twitters-spin-on-the-close-friends-story-might-be-on-its-way-soon/">&#8220;close friends&#8221; list</a> and some <a href="https://techcrunch.com/2022/03/10/twitters-latest-update-makes-it-easier-to-escape-its-recommendation-algorithm/">timeline algorithm</a> snafus. Twitter hasn&#8217;t indicated when this GIF feature might roll out for Android, but Twitter usually <a href="https://techcrunch.com/2022/01/20/twitter-is-rolling-out-its-communities-feature-to-all-android-users/">adds in</a> new updates to Android users eventually. Soon, hopefully you too can post a GIF of your snake plant.</p><div class="piano-inline-promo"></div>
+<div class="embed breakout">
+<blockquote class="twitter-tweet" data-width="550" data-dnt="true">
+<p lang="en" dir="ltr">This is a test <a href="https://t.co/NfcFgNQLVn">pic.twitter.com/NfcFgNQLVn</a></p>
+<p>&mdash; amanda silberling (@asilbwrites) <a href="https://twitter.com/asilbwrites/status/1506351698725511176?ref_src=twsrc%5Etfw">March 22, 2022</a></p></blockquote>
+<p><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://techcrunch.com/2022/03/22/twitter-gifs-ios-app-feature/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2287999</post-id>	</item>
+		<item>
+		<title>Bored Apes NFT startup Yuga Labs raises seed round at monster $4B valuation</title>
+		<link>https://techcrunch.com/2022/03/22/bored-apes-nft-startup-yuga-labs-raises-at-monster-4-billion-valuation/</link>
+					<comments>https://techcrunch.com/2022/03/22/bored-apes-nft-startup-yuga-labs-raises-at-monster-4-billion-valuation/#respond</comments>
+		
+		<dc:creator><![CDATA[Lucas Matney]]></dc:creator>
+		<pubDate>Tue, 22 Mar 2022 19:18:10 +0000</pubDate>
+				<category><![CDATA[Blockchain]]></category>
+		<category><![CDATA[Cryptocurrency]]></category>
+		<category><![CDATA[Andreessen Horowitz]]></category>
+		<category><![CDATA[Blockchain art]]></category>
+		<category><![CDATA[blockchains]]></category>
+		<category><![CDATA[bored apes yacht club]]></category>
+		<category><![CDATA[CryptoPunks]]></category>
+		<category><![CDATA[digital art]]></category>
+		<category><![CDATA[ethereum]]></category>
+		<category><![CDATA[Yuga Labs]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=2287992</guid>
+
+					<description><![CDATA[Yuga Labs, maker of the multimillion monkey JPEGs that plenty of NFT skeptics love to hate, just raised a $450 million round from Andreessen Horowitz at a $4 billion valuation, the company announced Tuesday. The Miami-based NFT firm behind Bored Apes Yacht Club has not previously raised funding though the startup has long been courting [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p id="speakable-summary"><a href="http://yugalabs.io/">Yuga Labs</a>, maker of the multimillion monkey JPEGs that plenty of NFT skeptics love to hate, just raised a $450 million round from Andreessen Horowitz at a $4 billion valuation, the company announced Tuesday.</p>
+<p>The Miami-based NFT firm behind Bored Apes Yacht Club has not previously raised funding though the startup has long been courting attention from VCs eager to back a major player in the NFT craze. Other investors in the round include Animoca Brands, LionTree, Sound Ventures, Thrive Capital, FTX and MoonPay</p>
+<p>Yuga Labs is increasingly doubling down on its position. <span style="font-size: 1rem; letter-spacing: -0.1px;">Earlier this month, the startup announced it had acquired the assets of popular NFT projects CryptoPunks and Meebits from Larva Labs. The startup is also fresh off the launch of ApeCoin, which the startup&#8217;s founders and executives have a substantial stake in. The token gathered a multibillion dollar market cap on its first day of trading. </span>The startup is soon looking to build this momentum into its own version of the metaverse called &#8220;<a href="https://twitter.com/yugalabs/status/1505014986556551172?s=20&amp;t=gVnX2ufA0DEPI-BD3UCtKg">Otherside</a>,&#8221; which will also integrate avatars from a number of other NFT projects.</p><div id="tc-target-mid-article-2287992" class="tc-target-mid-article ad-unit--size-auto"></div>
+<div class="embed breakout">
+<blockquote class="wp-embedded-content" data-secret="NV04mv8Bse"><p><a href="https://techcrunch.com/2022/03/16/bored-apes-nft-project-gets-official-apecoin-token/">Bored Apes NFT project gets official &#8216;ApeCoin&#8217; token</a></p></blockquote>
+<p><iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted" title="&#8220;Bored Apes NFT project gets official &#8216;ApeCoin&#8217; token&#8221; &#8212; TechCrunch" src="https://techcrunch.com/2022/03/16/bored-apes-nft-project-gets-official-apecoin-token/embed/#?secret=8AXSCSXXVm#?secret=NV04mv8Bse" data-secret="NV04mv8Bse" width="800" height="450" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></div>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://techcrunch.com/2022/03/22/bored-apes-nft-startup-yuga-labs-raises-at-monster-4-billion-valuation/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2287992</post-id>	</item>
+		<item>
+		<title>US regulators say someone really needs to monitor Elon Musk&#8217;s tweets</title>
+		<link>https://techcrunch.com/2022/03/22/us-regulators-say-someone-really-needs-to-monitor-elon-musks-tweets/</link>
+					<comments>https://techcrunch.com/2022/03/22/us-regulators-say-someone-really-needs-to-monitor-elon-musks-tweets/#respond</comments>
+		
+		<dc:creator><![CDATA[Rebecca Bellan]]></dc:creator>
+		<pubDate>Tue, 22 Mar 2022 19:10:06 +0000</pubDate>
+				<category><![CDATA[Automotive]]></category>
+		<category><![CDATA[Drama]]></category>
+		<category><![CDATA[Lawsuit]]></category>
+		<category><![CDATA[TC]]></category>
+		<category><![CDATA[Transportation]]></category>
+		<category><![CDATA[Elon Musk]]></category>
+		<category><![CDATA[Tesla]]></category>
+		<category><![CDATA[transportation]]></category>
+		<category><![CDATA[Twitter]]></category>
+		<category><![CDATA[U.S. Securities and Exchange Commission]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=2287965</guid>
+
+					<description><![CDATA[U.S. securities regulators on Tuesday said they have authority to subpoena Tesla CEO Elon Musk about his tweets and urged a federal judge not to let the executive get away with tweeting with abandon. Musk has called the actions of the U.S. Securities and Exchange Commission, which in 2018 required Musk to get pre-approval for [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p id="speakable-summary">U.S. securities regulators on Tuesday said they have authority to subpoena Tesla CEO Elon Musk about his tweets and urged a federal judge not to let the executive get away with tweeting with abandon.</p>
+<p>Musk has called the actions of the U.S. Securities and Exchange Commission, which in 2018 required Musk to get pre-approval for certain Tesla-related public communications, i.e. wild tweets that could affect stock price and shareholder value, &#8220;harassment&#8221; and &#8220;<a href="https://techcrunch.com/2018/09/27/tesla-ceo-elon-musk-responds-to-sec-securities-fraud-charges/">unjustified action</a>.&#8221;</p>
+<p>Musk had agreed to settle with the SEC back then, but last year came under fire again when he asked his followers on Twitter if he should sell 10% of his stake in Tesla, resulting in Tesla&#8217;s shares decreasing sharply. Musk has since sold around $16 billion worth of stock. Shortly thereafter, in November, <a href="https://techcrunch.com/2022/02/08/sec-subpoenas-tesla-over-settlement-regarding-musks-tweets/">the SEC issued a subpoena</a> to determine if Musk was complying with the previous settlement.</p><div id="tc-target-mid-article-2287965" class="tc-target-mid-article ad-unit--size-auto"></div>
+<p>In response to the SEC&#8217;s probes, Musk has tried to terminate or modify the 2018 consent decree, as well as quash a subpoena requesting records concerning the November Twitter poll.</p>
+<p>&#8220;In 2018, to settle the SEC’s action against him, Musk agreed to comply with Tesla’s mandatory procedures requiring pre-approval of certain of his Tesla-related public communications,&#8221; wrote SEC regulator Melissa Armstrong in a filing in the federal court of Manhattan. &#8220;Musk cannot now cast off the Amended Final Judgment simply because he has found complying with Tesla’s procedures to be less convenient than he had hoped, or because he wishes the SEC would not investigate whether Tesla’s disclosure controls and procedures are actually being maintained and followed.&#8221;</p>
+<p>The dispute with the SEC stems from an August 2018 tweet from Musk that he had &#8220;funding secured&#8221; to take Tesla private, but in reality the buyout was not close. U.S. regulators claimed that Tesla&#8217;s claims constituted fraud because they were &#8220;false and misleading.&#8221;</p>
+<p>In the settlement, Tesla and Musk each paid a $20 million civil fine, and Musk stepped down as Tesla&#8217;s chairperson.</p><div class="piano-inline-promo"></div>
+<p>Musk has since accused the SEC of punishing him for criticizing the government and exercising his constitutional right to free speech under the First Amendment, complaining about the &#8220;sheer number of demands&#8221; by the SEC from 2018 to present.</p>
+<p>&#8220;But Musk’s own chronology of alleged demands is both underwhelming and reflects legitimate inquiries as to new potentially violative conduct by Tesla and Musk – including the conduct that gave rise to the SEC’s 2018 enforcement actions,&#8221; wrote Armstrong in the court filing.</p>
+<p>Doubling down, the regulator said that modifying the 2018 final judgement wouldn&#8217;t free Musk from scrutiny over his Tesla-related tweets because as an officer of the company, &#8220;Musk would still be subject to Tesla&#8217;s disclosure controls and procedures.&#8221;</p>
+<p>&#8220;So long as Musk and Tesla use Musk’s Twitter account to disclose information to investors, the SEC may legitimately investigate matters relating to Tesla’s disclosure controls and procedures, including Musk’s tweets about Tesla, as well as the accuracy of Tesla’s public statements about its controls and procedures,&#8221; said Armstrong.</p>
+<div class="embed breakout">
+<blockquote class="wp-embedded-content" data-secret="Lw52PtuoUE"><p><a href="https://techcrunch.com/2018/10/04/elon-musk-is-trolling-the-sec-on-twitter/">Elon Musk is trolling the SEC on Twitter</a></p></blockquote>
+<p><iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted" title="&#8220;Elon Musk is trolling the SEC on Twitter&#8221; &#8212; TechCrunch" src="https://techcrunch.com/2018/10/04/elon-musk-is-trolling-the-sec-on-twitter/embed/#?secret=SkTvADcp2F#?secret=Lw52PtuoUE" data-secret="Lw52PtuoUE" width="800" height="450" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></div>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://techcrunch.com/2022/03/22/us-regulators-say-someone-really-needs-to-monitor-elon-musks-tweets/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2287965</post-id>	</item>
+		<item>
+		<title>Kickstarter’s CEO stepping down in April</title>
+		<link>https://techcrunch.com/2022/03/22/kickstarters-ceo-stepping-down-in-april/</link>
+					<comments>https://techcrunch.com/2022/03/22/kickstarters-ceo-stepping-down-in-april/#respond</comments>
+		
+		<dc:creator><![CDATA[Brian Heater]]></dc:creator>
+		<pubDate>Tue, 22 Mar 2022 19:09:08 +0000</pubDate>
+				<category><![CDATA[Apps]]></category>
+		<category><![CDATA[Personnel]]></category>
+		<category><![CDATA[Aziz Hasan]]></category>
+		<category><![CDATA[Crowdfunding]]></category>
+		<category><![CDATA[Kickstarter]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=2287991</guid>
+
+					<description><![CDATA[In a blog post today titled &#8220;Moving Forward, With Gratitude,&#8221; Kickstarter CEO Aziz Hasan announced that he is stepping down from his leadership role at the crowdfunding platform. After three years, April 4 will be his final day as chief executive. In his stead, the company’s COO Sean Leow will fill the role as interim [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p id="speakable-summary">In a<a href="https://www.kickstarter.com/blog/moving-forward-with-gratitude"> blog post</a> today titled &#8220;Moving Forward, With Gratitude,&#8221; Kickstarter CEO Aziz Hasan announced that he is stepping down from his leadership role at the crowdfunding platform. After three years, April 4 will be his final day as chief executive. In his stead, the company’s COO Sean Leow will fill the role as interim CEO as the company’s board of directors searches for a more permanent replacement.</p>
+<p>“I am so proud of the work we’ve done together,” Hasan writes. “Leading such a passionate, skilled, and dedicated team through intense moments of change, milestone victories, and complex challenges has been a humbling and rewarding experience.”</p>
+<p>The executive<a href="https://www.fastcompany.com/90733608/kickstarters-ceo-is-stepping-down-citing-personal-reflection"> spoke with Fast Company</a> about the decision, citing “personal reflection” as a motivator, as well as a desire to spend more time with his young family. As Hasan notes, his tenure has seen strong growth for the service, though the last several years have also had their share of controversy.</p><div id="tc-target-mid-article-2287991" class="tc-target-mid-article ad-unit--size-auto"></div>
+<p>In 2020, <a href="https://techcrunch.com/2020/02/18/kickstarter-workers-vote-to-unionize/">Kickstarter staff voted to unionize</a>, a move Hasan had referred to as “inherently adversarial” in a letter to staff, adding,</p>
+<blockquote><p>That dynamic doesn’t reflect who we are as a company, how we interact, how we make decisions, or where we need to go. We believe that in many ways it would set us back, and that the us vs. them binary already has.</p></blockquote>
+<p>More recently, it courted backlash among creators with plans to move its services to the blockchain. Amid fierce criticism, Kickstarter <a href="https://www.kickstarter.com/articles/we-won-t-make-changes-to-kickstarter-without-you">promised to listen to user feedback</a> to “better address [ … ] concerns.”</p>
+<p>Leow highlighted Hasan’s accomplishments in a statement,</p>
+<blockquote><p>Aziz poured so much of his creative spirit and expertise into Kickstarter over the past 3 years as CEO. We deeply appreciate his contributions and look forward to building on them as we aim to grow the number of creative projects that come to life. As a die-hard believer in the power of creative projects, I am committed to keep Kickstarter moving in the right direction as we search for our next leader.</p></blockquote>
+<p>Co-founder and former CEO Perry Chen echoed the sentiment, noting,</p>
+<blockquote><p>Aziz Hasan took over leadership of Kickstarter at a critical moment for the company, providing a thoughtful and steady hand throughout his tenure, including historic funding milestones for creative projects and navigating the many challenges of a global pandemic. While we search for the future CEO of Kickstarter, we are very fortunate to have Sean Leow leading the company. Sean has consistently led many of the company&#8217;s most important initiatives throughout his long tenure at Kickstarter and brings a deep expertise and passion for helping creative projects come to life.</p></blockquote>
+<p>Before joining Kickstarter, Leow was employed by Facebook and co-founded social media art site, Neocha.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://techcrunch.com/2022/03/22/kickstarters-ceo-stepping-down-in-april/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2287991</post-id>	</item>
+		<item>
+		<title>Following a16z departure, Katie Haun debuts Haun Ventures with $1.5B in capital to back crypto startups</title>
+		<link>https://techcrunch.com/2022/03/22/following-a16z-departure-katie-haun-debuts-haun-ventures-with-1-5b-in-capital-to-back-crypto-startups/</link>
+					<comments>https://techcrunch.com/2022/03/22/following-a16z-departure-katie-haun-debuts-haun-ventures-with-1-5b-in-capital-to-back-crypto-startups/#respond</comments>
+		
+		<dc:creator><![CDATA[Lucas Matney]]></dc:creator>
+		<pubDate>Tue, 22 Mar 2022 19:00:12 +0000</pubDate>
+				<category><![CDATA[Blockchain]]></category>
+		<category><![CDATA[Cryptocurrency]]></category>
+		<category><![CDATA[TC]]></category>
+		<category><![CDATA[Venture Capital]]></category>
+		<category><![CDATA[Airbnb]]></category>
+		<category><![CDATA[Andreessen Horowitz]]></category>
+		<category><![CDATA[crypto startups]]></category>
+		<category><![CDATA[cryptocurrency]]></category>
+		<category><![CDATA[Decentralized Finance]]></category>
+		<category><![CDATA[doj]]></category>
+		<category><![CDATA[economy]]></category>
+		<category><![CDATA[finance]]></category>
+		<category><![CDATA[Katie Haun]]></category>
+		<category><![CDATA[money]]></category>
+		<category><![CDATA[Paradigm]]></category>
+		<category><![CDATA[Polychain Capital]]></category>
+		<category><![CDATA[rachael horwitz]]></category>
+		<category><![CDATA[venture capital]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=2287816</guid>
+
+					<description><![CDATA[Katie Haun, who co-led Andreessen Horowitz&#8217;s crypto arm before announcing her departure this past December, is ready to take the wraps off her new organization, which she&#8217;s calling Haun Ventures. The venture capital firm is devoted to backing crypto startups and is launching with $1.5 billion in capital across two funds &#8212; a $500 million [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p id="speakable-summary">Katie Haun, who co-led Andreessen Horowitz&#8217;s crypto arm before announcing her departure this past December, is ready to take the wraps off her new organization, which she&#8217;s calling <a href="https://www.haun.co/">Haun Ventures</a>. The venture capital firm is devoted to backing crypto startups and is launching with $1.5 billion in capital across two funds &#8212; a $500 million early-stage fund and a $1 billion &#8220;acceleration&#8221; fund.</p>
+<p>The firm&#8217;s launch is one of the more hyped debut funds in recent memory. Haun was one of Andreessen Horowitz&#8217;s most high-profile defectors in years, having served as the public face for its crypto efforts at a time when the firm&#8217;s founders were increasingly stepping back from the public light.</p>
+<p>&#8220;We believe the next generation of the internet deserves a new generation of investors,&#8221; Haun wrote in a blog post announcing the fund.</p><div id="tc-target-mid-article-2287816" class="tc-target-mid-article ad-unit--size-auto"></div>
+<p>The success of Haun Ventures may depend heavily on timing. The crypto bull run is already a couple years deep and many of the more active elements of the market appear to be deep into correction territory at the moment. Cryptocurrency prices are down, as are NFT sales and total value locked in DeFi protocols. Meanwhile, plenty of unicorn crypto startups have already filled their war chests to weather any market downturns.</p>
+<div class="embed breakout">
+<blockquote class="wp-embedded-content" data-secret="9oon6OonnY"><p><a href="https://techcrunch.com/2022/03/15/aptos-labs-a16z-multicoin-facebook-diem-blockchain/">Ex-Meta employees raise $200M from a16z, Tiger, Multicoin to realize Facebook&#8217;s crypto dreams</a></p></blockquote>
+<p><iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted" title="&#8220;Ex-Meta employees raise $200M from a16z, Tiger, Multicoin to realize Facebook&#8217;s crypto dreams&#8221; &#8212; TechCrunch" src="https://techcrunch.com/2022/03/15/aptos-labs-a16z-multicoin-facebook-diem-blockchain/embed/#?secret=kmBmkbMre2#?secret=9oon6OonnY" data-secret="9oon6OonnY" width="800" height="450" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></div>
+<p>Those macro factors have not seemed to halt the pace of crypto deals getting done, however, and Haun Ventures has already participated in a handful of them including Aptos, Autograph and OpenSea&#8217;s Series C. The $1.5 billion in capital puts Haun Ventures in the company of other crypto native funds like Paradigm and Electric Capital, which have debuted large funds in recent months.</p>
+<p>All of that new money is spread across just a handful of employees. The Haun Ventures team has just nine team members but has &#8220;plans to expand quickly.&#8221; Several of the team members are coming straight from a16z including marketing chief Rachael Horwitz, global policy head Tomicah Tillemann and comms lead Nicholas Pacilio. Sam Rosenblum is joining from Polychain Capital and Chris Lehane is coming aboard as chief strategy officer after a lengthy stint as Airbnb&#8217;s policy chief.</p><div class="piano-inline-promo"></div>
+<p>It certainly appears that Haun Ventures will aim to lean into regulatory expertise as one of the firm&#8217;s defining advantages, which isn&#8217;t entirely surprising given Haun&#8217;s background as a federal prosecutor with the DOJ. This framing will, however, directly put it up against Andreessen Horowitz, which has gone to great lengths to build up its own crypto policy arm. For now, the firms are clearly aiming to play nice, having already co-invested in a number of deals while a16z is a large investor in Haun Ventures as are a handful of the firm&#8217;s top partners.</p>
+<div class="embed breakout">
+<blockquote class="wp-embedded-content" data-secret="z0tsWaSRj6"><p><a href="https://techcrunch.com/2021/12/15/katie-haun-is-splitting-off-from-a16z-to-launch-her-own-crypto-fund/">Katie Haun is splitting off from a16z to launch her own crypto fund</a></p></blockquote>
+<p><iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted" title="&#8220;Katie Haun is splitting off from a16z to launch her own crypto fund&#8221; &#8212; TechCrunch" src="https://techcrunch.com/2021/12/15/katie-haun-is-splitting-off-from-a16z-to-launch-her-own-crypto-fund/embed/#?secret=z5OfBV5Cnk#?secret=z0tsWaSRj6" data-secret="z0tsWaSRj6" width="800" height="450" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></div>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://techcrunch.com/2022/03/22/following-a16z-departure-katie-haun-debuts-haun-ventures-with-1-5b-in-capital-to-back-crypto-startups/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2287816</post-id>	</item>
+		<item>
+		<title>TechCrunch+ roundup: Startup survival tips, content as a service, leading with transparency</title>
+		<link>https://techcrunch.com/2022/03/22/techcrunch-roundup-startup-survival-tips-content-as-a-service-leading-with-transparency/</link>
+					<comments>https://techcrunch.com/2022/03/22/techcrunch-roundup-startup-survival-tips-content-as-a-service-leading-with-transparency/#respond</comments>
+		
+		<dc:creator><![CDATA[Walter Thompson]]></dc:creator>
+		<pubDate>Tue, 22 Mar 2022 18:28:34 +0000</pubDate>
+				<category><![CDATA[Cloud]]></category>
+		<category><![CDATA[eCommerce]]></category>
+		<category><![CDATA[Fundings & Exits]]></category>
+		<category><![CDATA[M&A]]></category>
+		<category><![CDATA[Private Equity]]></category>
+		<category><![CDATA[SaaS]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[TC]]></category>
+		<category><![CDATA[Venture Capital]]></category>
+		<category><![CDATA[Anaplan]]></category>
+		<category><![CDATA[e-commerce]]></category>
+		<category><![CDATA[EC roundup]]></category>
+		<category><![CDATA[entrepreneurship]]></category>
+		<category><![CDATA[Jana Partners]]></category>
+		<category><![CDATA[Navin Chaddha]]></category>
+		<category><![CDATA[Shopify]]></category>
+		<category><![CDATA[thoma bravo]]></category>
+		<category><![CDATA[Zendesk]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=2287845</guid>
+
+					<description><![CDATA[Once investors started shaving value from high-flying stocks, it changed the game for early-stage valuations, says Navin Chaddha, managing partner at Mayfield.]]></description>
+										<content:encoded><![CDATA[<p id="speakable-summary">At the end of &#8220;Planet of the Apes&#8221; (1968), the human protagonist realizes that the alien world he crash-landed upon is actually post-apocalyptic Earth.</p>
+<p>For many first-time founders in fundraising mode, the current market correction for publicly-traded tech companies has been similarly jarring.</p>
+<p>Once investors started shaving value from high-flying stocks, <a href="https://techcrunch.com/2022/03/18/tips-for-startup-founders-who-are-living-through-their-first-market-correction/">it changed the game for early-stage valuations</a>, says Navin Chaddha, managing partner at Mayfield.</p><div id="tc-target-mid-article-2287845" class="tc-target-mid-article ad-unit--size-auto"></div>
+<hr />
+<p style="text-align: center;"><i>Full TechCrunch+ articles are only available to members<br />
+<a href="https://techcrunch.com/subscribe/">Use discount code <strong>TCPLUSROUNDUP</strong></a> to save 20% off a one- or two-year subscription</i></p>
+<hr />
+<p>Looking back at the burst of the first internet bubble in the early 2000s and the 2008 financial meltdown, Chaddha notes that we can expect roiling public markets and &#8220;geopolitical challenges&#8221; to inform the size of seed and Series A rounds.</p>
+<p>&#8220;If you are at the inception stage, we are primarily evaluating your team to make sure the product is a pain-killer and not a vitamin.&#8221;</p>
+<p>Conditions change, and so do investor expectations, which means founders should reframe their thinking about acceptable entry valuations and revisit their spending plans. If I were starting up today, setting aside cash for hiring bonuses would be a much higher priority than buying Herman Miller Aeron chairs.</p>
+<p>As Chaddha notes, &#8220;it is easier to go up than down.&#8221;</p>
+<p>Thanks very much for reading TechCrunch+, and have a great week.</p>
+<p>Walter Thompson<br />
+Senior Editor, TechCrunch+<br />
+<a href="https://www.twitter.com/yourprotagonist">@yourprotagonist</a></p>
+<div class="embed breakout">
+<blockquote class="wp-embedded-content" data-secret="7EReZju7Jw"><p><a href="https://techcrunch.com/2022/03/18/tips-for-startup-founders-who-are-living-through-their-first-market-correction/">Survival tips for startup founders living through their first market correction</a></p></blockquote>
+<p><iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted" title="&#8220;Survival tips for startup founders living through their first market correction&#8221; &#8212; TechCrunch" src="https://techcrunch.com/2022/03/18/tips-for-startup-founders-who-are-living-through-their-first-market-correction/embed/#?secret=GjL53qZYqG#?secret=7EReZju7Jw" data-secret="7EReZju7Jw" width="800" height="450" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></div>
+<h2>After Anaplan, which SaaS company will private equity target next?</h2>
+<p><div id="attachment_2287202" style="width: 1034px" class="wp-caption aligncenter"><img aria-describedby="caption-attachment-2287202" class="breakout size-full wp-image-2287202" src="https://techcrunch.com/wp-content/uploads/2022/03/GettyImages-1369863784.jpg" alt="Illustration of two men and two women putting together a target to symbolize a take over target." width="1024" height="756" srcset="https://techcrunch.com/wp-content/uploads/2022/03/GettyImages-1369863784.jpg 1817w, https://techcrunch.com/wp-content/uploads/2022/03/GettyImages-1369863784.jpg?resize=150,111 150w, https://techcrunch.com/wp-content/uploads/2022/03/GettyImages-1369863784.jpg?resize=300,222 300w, https://techcrunch.com/wp-content/uploads/2022/03/GettyImages-1369863784.jpg?resize=768,567 768w, https://techcrunch.com/wp-content/uploads/2022/03/GettyImages-1369863784.jpg?resize=680,502 680w, https://techcrunch.com/wp-content/uploads/2022/03/GettyImages-1369863784.jpg?resize=1536,1134 1536w, https://techcrunch.com/wp-content/uploads/2022/03/GettyImages-1369863784.jpg?resize=50,37 50w" sizes="(max-width: 1024px) 100vw, 1024px" /><p id="caption-attachment-2287202" class="wp-caption-text"><strong>Image Credits:</strong> sorbetto / Getty Images</p></div></p>
+<p>Over the last six months, the share price of planning software company Anaplan dropped more than 22%, which explains why private equity firm Thoma Bravo just announced plans to acquire it for $10.7 billion.</p>
+<p>Ron Miller and Alex Wilhelm studied the transaction to see &#8220;if Thoma Bravo is paying a premium for this company,&#8221; but they also looked at the larger question — is this &#8220;the beginning of a trend of private equity taking aim at vulnerable SaaS firms?&#8221;</p>
+<div class="embed breakout">
+<blockquote class="wp-embedded-content" data-secret="LjPtP302Oi"><p><a href="https://techcrunch.com/2022/03/21/after-anaplan-which-saas-company-will-private-equity-target-next/">After Anaplan, which SaaS company will private equity target next?</a></p></blockquote>
+<p><iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted" title="&#8220;After Anaplan, which SaaS company will private equity target next?&#8221; &#8212; TechCrunch" src="https://techcrunch.com/2022/03/21/after-anaplan-which-saas-company-will-private-equity-target-next/embed/#?secret=xJExFOFub4#?secret=LjPtP302Oi" data-secret="LjPtP302Oi" width="800" height="450" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></div>
+<h2>Why so many SaaS companies are launching their own media operations</h2>
+<p><div id="attachment_2287197" style="width: 1034px" class="wp-caption aligncenter"><img aria-describedby="caption-attachment-2287197" loading="lazy" class="breakout size-full wp-image-2287197" src="https://techcrunch.com/wp-content/uploads/2022/03/GettyImages-150799488.jpg" alt="Cloud computing in photography studio" width="1024" height="600" srcset="https://techcrunch.com/wp-content/uploads/2022/03/GettyImages-150799488.jpg 1400w, https://techcrunch.com/wp-content/uploads/2022/03/GettyImages-150799488.jpg?resize=150,88 150w, https://techcrunch.com/wp-content/uploads/2022/03/GettyImages-150799488.jpg?resize=300,176 300w, https://techcrunch.com/wp-content/uploads/2022/03/GettyImages-150799488.jpg?resize=768,450 768w, https://techcrunch.com/wp-content/uploads/2022/03/GettyImages-150799488.jpg?resize=680,398 680w, https://techcrunch.com/wp-content/uploads/2022/03/GettyImages-150799488.jpg?resize=50,29 50w" sizes="(max-width: 1024px) 100vw, 1024px" /><p id="caption-attachment-2287197" class="wp-caption-text"><strong>Image Credits:</strong> <a href="https://www.gettyimages.com/search/photographer?photographer=PeterDazeley" target="_blank" rel="noopener">Peter Dazeley <span class="screen-reader-text">(opens in a new window)</span></a> / Getty Images</p></div></p>
+<p>Content as a service?</p>
+<p>In the last few years, Salesforce, Hubspot, Shopify and other enterprise companies have begun scaling their own media operations.</p><div class="piano-inline-promo"></div>
+<p>Online audiences are accustomed to consuming well-produced videos, podcasts, infographics and other media. As a result, simple blog posts lost their luster years ago, found reporter Ron Miller.</p>
+<p>To see what startups can learn from SaaS’ new approach to content marketing, he interviewed several analysts and experts.</p>
+<p>“If I’m a CMO, I have to ask how I get access to these audiences,” said Robert Rose, founder and principal analyst at The Content Advisory.</p>
+<p>“I can either continue to rent it through the access that Facebook or Google gives me, which are increasingly walled gardens, or I can start to build it on my own or acquire it.”</p>
+<div class="embed breakout">
+<blockquote class="wp-embedded-content" data-secret="P7XJ58iBuG"><p><a href="https://techcrunch.com/2022/03/21/why-so-many-saas-companies-are-launching-their-own-media-operations/">Why so many SaaS companies are launching their own media operations</a></p></blockquote>
+<p><iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted" title="&#8220;Why so many SaaS companies are launching their own media operations&#8221; &#8212; TechCrunch" src="https://techcrunch.com/2022/03/21/why-so-many-saas-companies-are-launching-their-own-media-operations/embed/#?secret=JDerqMDtHA#?secret=P7XJ58iBuG" data-secret="P7XJ58iBuG" width="800" height="450" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></div>
+<h2>Be an entrepreneur who leads with transparency</h2>
+<p><div id="attachment_2287234" style="width: 1034px" class="wp-caption aligncenter"><img aria-describedby="caption-attachment-2287234" loading="lazy" class="breakout size-full wp-image-2287234" src="https://techcrunch.com/wp-content/uploads/2022/03/GettyImages-907860466.jpg" alt="Rubber squeegee cleans a soaped window and clears a stripe of blue sky with clouds" width="1024" height="684" srcset="https://techcrunch.com/wp-content/uploads/2022/03/GettyImages-907860466.jpg 2119w, https://techcrunch.com/wp-content/uploads/2022/03/GettyImages-907860466.jpg?resize=150,100 150w, https://techcrunch.com/wp-content/uploads/2022/03/GettyImages-907860466.jpg?resize=300,200 300w, https://techcrunch.com/wp-content/uploads/2022/03/GettyImages-907860466.jpg?resize=768,513 768w, https://techcrunch.com/wp-content/uploads/2022/03/GettyImages-907860466.jpg?resize=680,454 680w, https://techcrunch.com/wp-content/uploads/2022/03/GettyImages-907860466.jpg?resize=1536,1026 1536w, https://techcrunch.com/wp-content/uploads/2022/03/GettyImages-907860466.jpg?resize=2048,1368 2048w, https://techcrunch.com/wp-content/uploads/2022/03/GettyImages-907860466.jpg?resize=50,33 50w" sizes="(max-width: 1024px) 100vw, 1024px" /><p id="caption-attachment-2287234" class="wp-caption-text"><strong>Image Credits:</strong> <a href="https://www.gettyimages.in/search/photographer?photographer=fermate" target="_blank" rel="noopener">fermate <span class="screen-reader-text">(opens in a new window)</span></a> / Getty Images</p></div></p>
+<p>Founding a tech company isn&#8217;t like starting most small businesses: no one expects a plumber to show 3% month-over-month growth, for example.</p>
+<p>Tech entrepreneurs are under pressure to build a team, regularly ship new products, and quickly capture revenue so they can provide a return to their investors. So it&#8217;s not surprising that sometimes, they let ethics fall by the wayside.</p>
+<p>Entrepreneur and investor Marjorie Radlo-Zandi says the &#8220;fake it till you make it&#8221; mindset is a useful motivational tool, but it&#8217;s not a basis for a sustainable business strategy:</p>
+<blockquote><p>The founder of a company I invested in secretly kept two sets of books: one with correct historical financials, and another with numbers inflated more than 10 times actuals. Sales and product performance had fallen short. His solution was to present the inflated financials to investors.</p></blockquote>
+<div class="embed breakout">
+<blockquote class="wp-embedded-content" data-secret="Qf8guYmfGk"><p><a href="https://techcrunch.com/2022/03/21/be-an-entrepreneur-who-leads-with-transparency/">Be an entrepreneur who leads with transparency</a></p></blockquote>
+<p><iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted" title="&#8220;Be an entrepreneur who leads with transparency&#8221; &#8212; TechCrunch" src="https://techcrunch.com/2022/03/21/be-an-entrepreneur-who-leads-with-transparency/embed/#?secret=6EWgdzVMWp#?secret=Qf8guYmfGk" data-secret="Qf8guYmfGk" width="800" height="450" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></div>
+<h2>Zendesk’s latest problem is an activist investor</h2>
+<p><div id="attachment_2286739" style="width: 1034px" class="wp-caption aligncenter"><img aria-describedby="caption-attachment-2286739" loading="lazy" class="breakout size-full wp-image-2286739" src="https://techcrunch.com/wp-content/uploads/2022/03/GettyImages-1173386002.jpg" alt="Pedestrians walk past the entrance to Zendesk Inc. headquarters in San Francisco, California, U.S., on Wednesday, Oct. 2, 2019. Zendesk fell 5.6% yesterday as its sector declined. Trading in the company's put options was double the average. Photographer: David Paul Morris/Bloomberg via Getty Images" width="1024" height="683" srcset="https://techcrunch.com/wp-content/uploads/2022/03/GettyImages-1173386002.jpg 1024w, https://techcrunch.com/wp-content/uploads/2022/03/GettyImages-1173386002.jpg?resize=150,100 150w, https://techcrunch.com/wp-content/uploads/2022/03/GettyImages-1173386002.jpg?resize=300,200 300w, https://techcrunch.com/wp-content/uploads/2022/03/GettyImages-1173386002.jpg?resize=768,512 768w, https://techcrunch.com/wp-content/uploads/2022/03/GettyImages-1173386002.jpg?resize=680,454 680w, https://techcrunch.com/wp-content/uploads/2022/03/GettyImages-1173386002.jpg?resize=50,33 50w" sizes="(max-width: 1024px) 100vw, 1024px" /><p id="caption-attachment-2286739" class="wp-caption-text"><strong>Image Credits:</strong> Bloomberg / Getty Images</p></div></p>
+<p>After stockholders rejected Zendesk&#8217;s plan to acquire SurveyMonkey’s owner Momentive earlier this year, activist investor Jana Partners is now trying to shake up the company&#8217;s board, Ron Miller and Alex Wilhelm reported.</p>
+<p>“The tension between external and internal parties likely comes from precisely how much the company will be worth in the future, and whether or not there is a price that a larger company will pay that Jana and others like, and the company’s current leaders will accept,&#8221; wrote Ron and Alex.</p>
+<p>&#8220;The more optimistic the current Zendesk management is, the harder it will be to find that price.”</p>
+<div class="embed breakout">
+<blockquote class="wp-embedded-content" data-secret="YApC6hsPSF"><p><a href="https://techcrunch.com/2022/03/18/zendesks-latest-problem-is-an-activist-investor/">Zendesk’s latest problem is an activist investor</a></p></blockquote>
+<p><iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted" title="&#8220;Zendesk’s latest problem is an activist investor&#8221; &#8212; TechCrunch" src="https://techcrunch.com/2022/03/18/zendesks-latest-problem-is-an-activist-investor/embed/#?secret=GRdZzsWL16#?secret=YApC6hsPSF" data-secret="YApC6hsPSF" width="800" height="450" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></div>
+<h2>New data underscores a slowing e-commerce market</h2>
+<p><div id="attachment_1996009" style="width: 1034px" class="wp-caption aligncenter"><img aria-describedby="caption-attachment-1996009" loading="lazy" class="breakout size-full wp-image-1996009" src="https://techcrunch.com/wp-content/uploads/2020/05/NSussman_Techcrunch_Exchange_v3-GRN.jpg" alt="" width="1024" height="768" srcset="https://techcrunch.com/wp-content/uploads/2020/05/NSussman_Techcrunch_Exchange_v3-GRN.jpg 2880w, https://techcrunch.com/wp-content/uploads/2020/05/NSussman_Techcrunch_Exchange_v3-GRN.jpg?resize=150,113 150w, https://techcrunch.com/wp-content/uploads/2020/05/NSussman_Techcrunch_Exchange_v3-GRN.jpg?resize=300,225 300w, https://techcrunch.com/wp-content/uploads/2020/05/NSussman_Techcrunch_Exchange_v3-GRN.jpg?resize=768,576 768w, https://techcrunch.com/wp-content/uploads/2020/05/NSussman_Techcrunch_Exchange_v3-GRN.jpg?resize=680,510 680w, https://techcrunch.com/wp-content/uploads/2020/05/NSussman_Techcrunch_Exchange_v3-GRN.jpg?resize=1536,1152 1536w, https://techcrunch.com/wp-content/uploads/2020/05/NSussman_Techcrunch_Exchange_v3-GRN.jpg?resize=2048,1536 2048w, https://techcrunch.com/wp-content/uploads/2020/05/NSussman_Techcrunch_Exchange_v3-GRN.jpg?resize=50,38 50w" sizes="(max-width: 1024px) 100vw, 1024px" /><p id="caption-attachment-1996009" class="wp-caption-text"><strong>Image Credits:</strong> <a href="https://www.nigelsussman.com/" target="_blank" rel="noopener">Nigel Sussman <span class="screen-reader-text">(opens in a new window)</span></a></p></div></p>
+<p>E-commerce boomed after middle-class consumers turned to online shopping and grocery delivery during the pandemic.</p>
+<p>But two years on, that growth is slowing as the world recovers, which indicates that “future e-commerce activity was pulled forward, instead of the larger digital commerce pie growing thanks to long-term changes to the economy,” wrote Alex Wilhelm in The Exchange.</p>
+<p>Analyzing data from e-commerce giants like Shopify, Pinduoduo, Alibaba and Amazon, Alex shares his insight into the slowing state of e-commerce in 2022.</p>
+<div class="embed breakout">
+<blockquote class="wp-embedded-content" data-secret="xp52xSXflX"><p><a href="https://techcrunch.com/2022/03/21/new-data-underscores-a-slowing-e-commerce-market/">New data underscores a slowing e-commerce market</a></p></blockquote>
+<p><iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted" title="&#8220;New data underscores a slowing e-commerce market&#8221; &#8212; TechCrunch" src="https://techcrunch.com/2022/03/21/new-data-underscores-a-slowing-e-commerce-market/embed/#?secret=RMOrZp2mOR#?secret=xp52xSXflX" data-secret="xp52xSXflX" width="800" height="450" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></div>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://techcrunch.com/2022/03/22/techcrunch-roundup-startup-survival-tips-content-as-a-service-leading-with-transparency/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2287845</post-id>	</item>
+		<item>
+		<title>Twitter leads call for EU lawmakers to &#8216;think beyond big tech&#8217;</title>
+		<link>https://techcrunch.com/2022/03/22/open-internet-alliance/</link>
+					<comments>https://techcrunch.com/2022/03/22/open-internet-alliance/#respond</comments>
+		
+		<dc:creator><![CDATA[Natasha Lomas]]></dc:creator>
+		<pubDate>Tue, 22 Mar 2022 18:19:27 +0000</pubDate>
+				<category><![CDATA[Europe]]></category>
+		<category><![CDATA[Policy]]></category>
+		<category><![CDATA[Social]]></category>
+		<category><![CDATA[Australia]]></category>
+		<category><![CDATA[Automattic]]></category>
+		<category><![CDATA[big tech]]></category>
+		<category><![CDATA[Brussels]]></category>
+		<category><![CDATA[Digital Markets Act]]></category>
+		<category><![CDATA[Digital Services Act]]></category>
+		<category><![CDATA[digital single market]]></category>
+		<category><![CDATA[EU digital policy]]></category>
+		<category><![CDATA[european union]]></category>
+		<category><![CDATA[Facebook]]></category>
+		<category><![CDATA[Germany]]></category>
+		<category><![CDATA[Huawei]]></category>
+		<category><![CDATA[IBM]]></category>
+		<category><![CDATA[lobbying]]></category>
+		<category><![CDATA[meta]]></category>
+		<category><![CDATA[net neutrality]]></category>
+		<category><![CDATA[online disinformation]]></category>
+		<category><![CDATA[open Internet]]></category>
+		<category><![CDATA[Qualcomm]]></category>
+		<category><![CDATA[search engine]]></category>
+		<category><![CDATA[social media]]></category>
+		<category><![CDATA[social network]]></category>
+		<category><![CDATA[transparency]]></category>
+		<category><![CDATA[tumblr]]></category>
+		<category><![CDATA[Twitter]]></category>
+		<category><![CDATA[Twitter Spaces]]></category>
+		<category><![CDATA[United Kingdom]]></category>
+		<category><![CDATA[Vimeo]]></category>
+		<category><![CDATA[vodafone]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=2287604</guid>
+
+					<description><![CDATA[In a formalization of an earlier Twitter-led push to try to exert influence over fast-forming European digital regulations, the social media firm has used its Twitter Spaces platform to host the official kick off of a policy advocacy lobby group that&#8217;s being branded the Open Internet Alliance (OIA). Alongside Twitter, video streaming platform Vimeo; Automattic, [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p id="speakable-summary">In a formalization of an <a href="https://techcrunch.com/2020/12/09/automattic-mozilla-twitter-and-vimeo-urge-eu-to-beef-up-user-controls-to-help-tackle-legal-but-harmful-content/">earlier</a> Twitter-led push to try to exert influence over fast-forming European digital regulations, the social media firm has used its Twitter Spaces platform to host the official kick off of a policy advocacy lobby group that&#8217;s being branded the <a href="https://openinternetalliance.net" target="_blank" rel="noopener">Open Internet Alliance</a> (OIA).</p>
+<p>Alongside Twitter, video streaming platform Vimeo; Automattic, the company behind WordPress.com, WooCommerce and Tumblr; the Czech and Slovak focused search engine company, Seznam; and Jodel, a Berlin-based (profile-less) social network, are named as founding members.</p>
+<p>Twitter said the establishment of this formal lobbying alliance has been some two years in the making.</p><div id="tc-target-mid-article-2287604" class="tc-target-mid-article ad-unit--size-auto"></div>
+<p>Notably Mozilla &#8212; which had joined Twitter, Auttomatic and Vimeo in <a href="https://techcrunch.com/2020/12/09/automattic-mozilla-twitter-and-vimeo-urge-eu-to-beef-up-user-controls-to-help-tackle-legal-but-harmful-content/">a earlier call</a> for incoming EU digital regulations to support better user controls to tackle bad speech rather than hone in on content censorship &#8212; is not being named as a founding member so appears to be sitting this one out. At the time of writing it&#8217;s unclear why Mozilla is missing (we&#8217;ve asked). But the Alliance is putting out a wider call for other &#8220;middle-layer&#8221; Internet companies to join the initiative &#8212; so the grouping may grow in size.</p>
+<p>Albeit &#8212; very clearly &#8212; big tech need not apply.</p>
+<div class="embed breakout">
+<blockquote class="wp-embedded-content" data-secret="vZDIvUQ55x"><p><a href="https://techcrunch.com/2020/12/30/understanding-europes-big-push-to-rewrite-the-digital-rulebook/">Understanding Europe&#8217;s big push to rewrite the digital rulebook</a></p></blockquote>
+<p><iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted" title="&#8220;Understanding Europe&#8217;s big push to rewrite the digital rulebook&#8221; &#8212; TechCrunch" src="https://techcrunch.com/2020/12/30/understanding-europes-big-push-to-rewrite-the-digital-rulebook/embed/#?secret=svq1Vd0fFS#?secret=vZDIvUQ55x" data-secret="vZDIvUQ55x" width="800" height="450" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></div>
+<p>Speaking during a Twitter Spaces event today to discuss the formation of the alliance, Sinéad McSweeney, Twitter&#8217;s global policy VP, said the group is making a plea to lawmakers to think about the wider web ecosystem &#8212; rather than see the Internet as &#8220;a monolith&#8221; comprised of just a handful of tech giants.</p><div class="piano-inline-promo"></div>
+<p>&#8220;Our plea in aid of the open Internet is that [lawmakers] not view the Internet as a monolith, nor indeed view it as fixing the Internet solving all of societies problems,&#8221; she said, urging policymakers to: &#8220;Take a wider focus when they&#8217;re looking at solutions &#8212; not look at the Internet just through the lens of a handful of companies. And really think about the entire ecosystem &#8212; and get away from this sense &#8216;oh big tech is the problem&#8217;.&#8221;</p>
+<p>&#8220;Because &#8212; in actual fact, in their efforts to tackle so called &#8216;big tech &#8212; that is all we may end up with,&#8221; she warned.</p>
+<p>In remarks ahead of the Spaces event, a Twitter spokesperson also told TechCrunch the aim of the initiative is to kick off an &#8220;open conversation&#8221; and press for regulation that fosters &#8220;diversity and innovation on the Internet&#8221;, as the company put it.</p>
+<p>Per Twitter, OIA members support &#8220;an Open Internet where digital rights are preserved, where the internet is not dominated by a handful of companies and internet users and consumers can have real and meaningful choice and their privacy protected&#8221;.</p>
+<p>&#8220;At a time where the global internet is at a crossroads, potentially ill-considered regulations risk us heading for a future where the biggest internet companies become the only companies able to operate stifling innovation, and risking freedom of expression as a pillar of democracy becoming more and more compromised,&#8221; Twitter also said ahead of today&#8217;s event.</p>
+<p>The alliance&#8217;s Eurocentric focus is clear given two of the five founding members are (smaller) European tech firms.</p>
+<p>This isn&#8217;t surprising, given how advanced the EU is on digital policy making &#8212; with a whole swathe of ambitious policy proposals being presented in recent years which are set to impact scores of digital businesses.</p>
+<p>Some major EU digital proposals have already been adopted (e.g. the <a href="https://techcrunch.com/2021/12/01/data-governance-act-provisional-agreement/">Data Governance Act</a>), others &#8212; like the Digital Services Act (DSA), and gatekeeper-focused Digital Markets Act (DMA) &#8212; are speeding towards adoption. Still more are wending through the EU&#8217;s co-legislative process, while other incoming puzzle-pieces of the bloc&#8217;s expansive digital policy agenda are in the process of being drafted.</p>
+<p>All these incoming EU regulations will have broad application once they are transposed into nation law, applying across the bloc&#8217;s 27 Member States (which has some 440M+ citizens). So European digital policymaking is both cutting edge and big enough in scope to make any global tech business sit up and take notice. (And when the goal is, first and foremost, to lobby EU lawmakers, having local membership in your alliance will surely help<span style="font-size: 1rem; letter-spacing: -0.1px;"> increase local impact vs a purely US tech firm grouping whose talking points could be all-too-easily dismissed as a non-European view of digital rule-making.)</span></p>
+<p>Big tech&#8217;s lobbying of the flotilla of EU digital regulations being shaped in Brussels, meanwhile, has been hard to miss in recent years as the sums of euros involved are so eye-watering &#8212; and, seemingly, keep inflating.</p>
+<p>Lobbying transparency group, Corporate Europe Observatory (COE), points out that the top five big tech lobbyists all updated their entries in the EU&#8217;s lobby register last week to disclose beefed up spending. (Apple, for example, went from spending €3.5 million to a whopping €6.5 million+.)</p>
+<p><a href="https://techcrunch.com/2021/08/31/us-giants-top-tech-industrys-100m-a-year-lobbying-blitz-in-eu/">Last summer</a> a report by COE and another local lobbying transparency group, LobbyControl, found that just 10 tech giants dominate EU lobbying &#8212; namely: Google, Facebook, Microsoft, Apple, Huawei, Amazon, IBM, Intel, Qualcomm and Vodafone — who it said were collectively spending more than €32 million a year (at that point) to try to influence EU tech policy (a third of the €97 million annual spend by hundreds of companies, groups and business associations the NGOs were able to track). But those figures are already out of date as big tech lobby budgets keep swelling.</p>
+<p>In any case, the bald sums transparency organizations have been able to attribute to tech giants is likely the tip of the iceberg where big tech&#8217;s public policy spending is concerned &#8212; especially U.S. giants Facebook, Google, Microsoft and (to a lesser extent) Apple &#8212; as these companies also plough support into a network of third party industry associations, which they help fund or otherwise influence, who can then act as indirect mouthpieces for their talking points.</p>
+<p>This networked structure enables the largest tech firms to launder regional lobbying that&#8217;s directly aligned with their corporate interests under the guise of grassroots industry concern (see, for example, p. 38 of <a href="https://corporateeurope.org/sites/default/files/2021-08/The%20lobby%20network%20-%20Big%20Tech%27s%20web%20of%20influence%20in%20the%20EU.pdf" target="_blank" rel="noopener">the report</a> on the digital industry&#8217;s funding of a sprawling network of think tanks and NGOs).</p>
+<p>How, then, can the SME layer of the Internet &#8212; which includes plenty of platforms offering directly competing services to big tech &#8212; hope to get their voices heard by lawmakers? Twitter et al&#8217;s answer is by banding together to push a narrative around the notion of Internet openness, it seems.</p>
+<p>(Somewhat unfortunately, we&#8217;ve seen a similar &#8220;open internet&#8221; claim being deployed as a lobbying device elsewhere recently, <a href="https://techcrunch.com/2021/09/28/uk-marketing-led-group-takes-antitrust-complaint-against-googles-privacy-sandbox-to-the-eu/">in the adtech space</a> &#8212; in that case to push against privacy-minded reform of ad tracking technologies; but there&#8217;s no suggestion of any formal link between the two separate lobby groupings.)</p>
+<p>In simple spending terms, the OIA is of course hopelessly outgunned by big tech&#8217;s EU lobbying blitz &#8212; as the entries for <a href="https://ec.europa.eu/transparencyregister/public/consultation/displaylobbyist.do?id=394491614001-72" target="_blank" rel="noopener">Twitter</a>, <a href="https://ec.europa.eu/transparencyregister/public/consultation/displaylobbyist.do?id=955378043651-32" target="_blank" rel="noopener">Vimeo</a>, <a href="https://ec.europa.eu/transparencyregister/public/consultation/displaylobbyist.do?id=513729920039-18" target="_blank" rel="noopener">Automattic</a> and <a href="https://ec.europa.eu/transparencyregister/public/consultation/displaylobbyist.do?id=202560512850-84" target="_blank" rel="noopener">Seznam</a> in the EU&#8217;s lobbying register illustrate. These disclosures indicate that Twitter leads the grouping with a spend of between €300,000-€399,999 in 2021; followed by Seznam (€100,000-€199,900). While Vimeo (€10,000-€24,999 spent between 2020 and 2021) and Automattic (€10,000 in 2021) are mobilizing considerably less. (Jodel is not a registered EU lobbyist).</p>
+<p>&#8220;The combined lobbying of these companies is at at least €420,000 per year,&#8221; confirms COE researcher, Margarida Silva, when asked about the discrepancy in lobbying fire power between the OIA&#8217;s four EU lobby registered founding members and big tech. &#8220;This pales in comparison with Big Tech firms which together spend more than €27M a year lobbying. This is line with the overall massive gap between the lobbying budgets of the top companies with the vast majority of other players.&#8221;</p>
+<p>As it stands, the resources the OIA can marshal to try to influence EU digital policy are a far cry from the multi-millions being annually pumped into Brussels by big tech &#8212; at least, unless they manage to recruit <em>thousands</em> more long tail Internet companies to their cause. So grouping together under an &#8220;open internet&#8221; banner &#8212; which may also be able to attract wider support from progressive NGOs and civil society organizations &#8212; looks savvy.</p>
+<p>What exactly is the alliance lobbying for then?</p>
+<p>The OIA has condensed its objectives into <a href="https://openinternetalliance.net" target="_blank" rel="noopener">eight core principles</a> &#8212; some of which look ambitious, to say the least, given how much digital policymaking is now going on around the world, as multiple countries seek to put their own stamp on &#8216;acceptable&#8217; online activity. (See, for example, the UK&#8217;s <a href="https://techcrunch.com/2022/03/16/online-safety-bill-parliament/">safety-focused content regulation push</a> which looks set to rip up the EU principle of no general monitoring obligation for platforms; or growing Russian censorship mandates which are being extended to blocking entire foreign web services that don&#8217;t toe the Kremlin&#8217;s line; or Australia&#8217;s <a href="https://techcrunch.com/2018/12/10/silicon-valley-denounce-australia-encryption-law/">hardball approach to end-to-end encryption</a> and to <a href="https://techcrunch.com/2021/02/25/after-facebooks-news-flex-australia-passes-bargaining-code-for-platforms-and-publishers/">forcing adtech giants to cough up local licensing fees for news reuse</a>, to name a few recent policy developments which risk further and even fatally splintering the notion of a single &#8216;global Internet&#8217;).</p>
+<div class="embed breakout">
+<blockquote class="wp-embedded-content" data-secret="ySnyq479R5"><p><a href="https://techcrunch.com/2022/03/16/online-safety-bill-parliament/">Tech CEOs to face faster criminal liability under UK online safety law</a></p></blockquote>
+<p><iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted" title="&#8220;Tech CEOs to face faster criminal liability under UK online safety law&#8221; &#8212; TechCrunch" src="https://techcrunch.com/2022/03/16/online-safety-bill-parliament/embed/#?secret=Omudlqd61J#?secret=ySnyq479R5" data-secret="ySnyq479R5" width="800" height="450" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></div>
+<p>Regardless, among the eight OIA &#8220;principles&#8221; is a push for &#8220;Regional &amp; global regulatory alignment&#8221;, aka advocacy for a single set of rules for the global Internet (or, at least, less regional variation); as well as what&#8217;s being billed as &#8220;non-binary content regulation&#8221;, which suggests the group favors rules that focus on tackling problem content with less absolutist measures (i.e. reduced discovery and/or reach/amplification vs hard takedown/leave-up mandates that they argue &#8220;only benefits the largest companies&#8221;); along with a push for intermediary liability protections for platforms, net neutrality, decentralization (i.e. through use of open APIs and protocols) and interoperability, among other goals.</p>
+<p>Interoperability is likely to be a key component of the EU&#8217;s ex ante competition reform (the DMA) &#8212; but the extent to which the incoming regulation will force the most powerful tech platforms to make their services play nice with rivals is still being debated.</p>
+<p>An EU diplomat with knowledge of trilogue discussions on this file told TechCrunch that discussions are ongoing over whether or not interoperability provisions should apply to messaging platforms &#8212; and, if so, whether group messages should be excluded from a requirement to interoperate (which would leave only one-to-one messaging cross-platform interoperability on the table).</p>
+<p>The latter outcome would limit how far the EU&#8217;s flagship ex ante competition regulation could reverse messaging platforms&#8217; network effects and dominance of the social messaging sphere &#8212; so the stakes remain extremely high for smaller and mid tier messaging firms which stand to benefit (by gaining users) if they are able to plug their competing services into major messaging networks.</p>
+<p>On the flip side, if EU lawmakers lose their nerve over the extent of the DMA&#8217;s interoperability obligations, tech giants like Meta stand to gain a major victory by closing down the possibility of smaller, nippier, friendly rivals and startups having a legally certain route (mandatory interoperability) through which they might have a fighting chance of challenging Meta&#8217;s grip on consumers&#8217; attention through their service innovation.</p>
+<p>As regards the DSA &#8212; which is set to apply more broadly to digital services (i.e. not only operationally to the most powerful Internet gatekeepers) &#8212; Twitter told us that the OIA&#8217;s focus will be<span id="m_-4387727746038364249gmail-docs-internal-guid-cb317769-7fff-7bdd-7a4d-e24ec79a9a42"><span style="font-family: arial, sans-serif;"> on proportionality. And on not limiting the options for implementation to a specific service or technology. </span></span></p>
+<p><span id="m_-4387727746038364249gmail-docs-internal-guid-cb317769-7fff-7bdd-7a4d-e24ec79a9a42"><span style="font-family: arial, sans-serif;">The company also pointed to its earlier policy position statements on the DSA, </span></span><span id="m_-4387727746038364249gmail-docs-internal-guid-cb317769-7fff-7bdd-7a4d-e24ec79a9a42"><span style="font-family: arial, sans-serif;"><a href="https://blog.twitter.com/en_us/topics/company/2020/crossroads-for-the-open-internet" target="_blank" rel="noopener" data-saferedirecturl="https://www.google.com/url?q=https://blog.twitter.com/en_us/topics/company/2020/crossroads-for-the-open-internet&amp;source=gmail&amp;ust=1648044181270000&amp;usg=AOvVaw0QuY3JBVDnwlC0pQZCnjSI">Crossroads for the Open Internet;</a> <a href="https://blog.twitter.com/en_us/topics/company/2021/the-digital-services-act--defending-the-digital-single-market" target="_blank" rel="noopener" data-saferedirecturl="https://www.google.com/url?q=https://blog.twitter.com/en_us/topics/company/2021/the-digital-services-act--defending-the-digital-single-market&amp;source=gmail&amp;ust=1648044181270000&amp;usg=AOvVaw1OKFfhVhJa3L10RCTyMzLa">Digital Services Act: Defending the Open Internet</a>, in fleshing out where the collective lobbying efforts will focus.</span></span></p>
+<p>Twitter said the group is especially concerned about the risk of incoming EU rules like the DSA increasing fragmentation.</p>
+<p>On this front it suggested the DSA&#8217;s focus on illegal content could further empower Member States to create their own rule variations, rather than harmonizing approaches across the bloc &#8212; arguing that could result in geoblocking within the EU, if platforms are required to comply with a patchwork of national laws. (Indeed, as has already been the case after<span id="m_-4387727746038364249gmail-docs-internal-guid-cb317769-7fff-7bdd-7a4d-e24ec79a9a42"><span style="font-family: arial, sans-serif;"><a href="https://techcrunch.com/2017/10/02/germanys-social-media-hate-speech-law-is-now-in-effect/"> Germany&#8217;s NetzDG social media hate speech law</a>.)</span></span></p>
+<p>The alliance argues that such fragmentation is easier for the largest companies to comply with &#8212; meaning regulations that don&#8217;t limit regional variation could end up helping the tech giants and penalizing the longer tail of digital businesses which have nowhere near as much resource to throw at compliance and lawyers as the giants.</p>
+<p>During today&#8217;s Spaces event, Twitter&#8217;s McSweeney spoke to this concern, saying: &#8220;Our concern within the alliance is the voices of mid and smaller sized companies are just not being heard in talks on these pieces of legislation. And that if we don&#8217;t speak up there is a risk that while the DMA seeks to open the gates to competition that the DSA will actually slam them shut by mandating content moderation rules that will fracture the digital single market into 27 different markets with 27 different sets of rules. And the inevitable consequence of that kind of fragmentation is only the very largest tech companies will be able to comply.&#8221;</p>
+<p>&#8220;Our industry is more than the largest companies and our laws need to reflect that reality. And sometimes it&#8217;s important to highlight how large the gap is between the top companies and the rest of the Internet,&#8221; she added, reiterating that the Alliance is: &#8220;A plea to policymakers, particularly in the EU, that they would create a regulatory environment that promotes fair competition, consumer choice &#8212; but fundamentally one that acknowledges the internet is more than just four companies.&#8221;</p>
+<p>Per McSweeney, the industry group is the culmination of two years of &#8220;talking and letter writing&#8221;, as lesser sized Internet companies have watched regulatory proposals brewing.</p>
+<p>She said the goal now is &#8220;to forge dialogue with policymakers and define the future of the open internet in the EU&#8221;.</p>
+<p>&#8220;It&#8217;s timely because as we know the EU is now looking to finalize two significant laws &#8212; the DSA and the DMA &#8212; that will set rules in Europe itself for at least a generation. While also setting a <span style="font-size: 1rem; letter-spacing: -0.1px;">global precedent that others around the world will seek to follow,&#8221; she added. </span></p>
+<p>McSweeney also said that Twitter shares policymakers&#8217; concerns about online disinformation and illegal and/or harmful content &#8212; which the DSA is intended to address by setting out governance rules for how platforms handle such content &#8212; but she urged lawmakers to work towards &#8220;solutions and regulations which are forward thinking and which are broader in their application&#8221;.</p>
+<p>&#8220;As an Alliance our aim is to foster an Internet as it was intended to be: Open, diverse, fair innovative and I think we would welcome harmonized and proportionate regulation &#8212; that would give us clear parameters in which to operate,&#8221; she added.</p>
+<p>Representatives from the other founding member companies of the OIA also spoke during the Twitter Spaces event.</p>
+<p><span class="css-901oao css-16my406 r-poiln3 r-b88u0q r-bcqeeo r-qvutc0">Michal</span> <span class="css-901oao css-16my406 r-poiln3 r-b88u0q r-bcqeeo r-qvutc0">Feix</span><span class="css-901oao css-16my406 r-poiln3 r-bcqeeo r-qvutc0">, general counsel for Seznam, talked up the discrepancy in lobbying firepower between tech giants and other digital businesses &#8212; despite incoming regulations, in many cases, also being set to affect the broad Internet ecosystem. </span></p>
+<p>&#8220;The budgets are obviously incomparable to what large giants can spend on public affairs and PR through tens of different Brussels-based associations and lobby groups. So I see this as an opportunity for those smaller, like-minded internet companies to voice their views and concerns on what&#8217;s going on around Brussels while shaping the legislation in Europe,&#8221; said <span class="css-901oao css-16my406 r-poiln3 r-b88u0q r-bcqeeo r-qvutc0">Feix.</span></p>
+<p>&#8220;There&#8217;s lot of important legislation growing right now in Brussels,&#8221; he added. &#8220;And this is going to shape the face of Europe for the next several years &#8212; I think it is important to show off what we believe&#8230; It&#8217;s not just a bunch of those usual suspects. But it is a large ecosystem of companies that actually helps keep Internet open and full of choices. And these companies simply should be heard.&#8221;</p>
+<p>The Alliance&#8217;s smallest founding member, Berlin-based Jodel, chipped in to speak up in favor of &#8220;good&#8221; regulation &#8212; while also emphasizing the disproportionately greater burden that less well crafted regulations can impose on smaller tech firms.</p>
+<p>&#8220;I think regulation is good, regulation is needed but it also obviously needs to be good regulation and in order to preserve innovation, to preserve the innovation we&#8217;ve been experiencing over the last 20 years with the internet. We want to keep that so let&#8217;s make sure that the regulation goes in the right direction,&#8221; said Tim Schmitz, COO and co-founder of Jodel.</p>
+<p>&#8220;The more complex the regulation, the more local regulation &#8212; sometimes within a country it&#8217;s different from state to state &#8212; it creates a lot of&#8230; unnecessary friction. The time would better be invested into making sure you have a safe environment on the platform,&#8221; he added. &#8220;Lawyers are expensive and we are a small company and we would rather invest that money into building a better product.&#8221;</p>
+<p>Setting aside the (gentle) irony of a call for a more open internet being hosted on Twitter&#8217;s (proprietary) Spaces platform &#8212; which doesn&#8217;t exactly make it easy to join without signing into (or up for) Twitter first (or at least knowing someone else who is and has and is willing to send you a link to one of these ephemeral, walled garden audio events) &#8212; the not-as-giant-as-some social media firm said it&#8217;s leading the lobbying initiative because it sees it as its mission to serve the &#8220;public conversation&#8221;; a mission Twitter further suggested must extend to fostering dialogue about the future of the internet.</p>
+<div class="embed breakout">
+<blockquote class="wp-embedded-content" data-secret="m2TVfeXeDB"><p><a href="https://techcrunch.com/2020/12/09/automattic-mozilla-twitter-and-vimeo-urge-eu-to-beef-up-user-controls-to-help-tackle-legal-but-harmful-content/">Automattic, Mozilla, Twitter and Vimeo urge EU to beef up user controls to help tackle &#8216;legal-but-harmful&#8217; content</a></p></blockquote>
+<p><iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted" title="&#8220;Automattic, Mozilla, Twitter and Vimeo urge EU to beef up user controls to help tackle &#8216;legal-but-harmful&#8217; content&#8221; &#8212; TechCrunch" src="https://techcrunch.com/2020/12/09/automattic-mozilla-twitter-and-vimeo-urge-eu-to-beef-up-user-controls-to-help-tackle-legal-but-harmful-content/embed/#?secret=VWkYVURgdq#?secret=m2TVfeXeDB" data-secret="m2TVfeXeDB" width="800" height="450" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></div>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://techcrunch.com/2022/03/22/open-internet-alliance/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2287604</post-id>	</item>
+		<item>
+		<title>Eko expands algorithmic heart problem detection and lands $30M Series C extension</title>
+		<link>https://techcrunch.com/2022/03/22/eko-expands-algorithmic-heart-problem-detection-and-lands-30m-series-c-extension/</link>
+					<comments>https://techcrunch.com/2022/03/22/eko-expands-algorithmic-heart-problem-detection-and-lands-30m-series-c-extension/#respond</comments>
+		
+		<dc:creator><![CDATA[Emma Betuel]]></dc:creator>
+		<pubDate>Tue, 22 Mar 2022 18:14:22 +0000</pubDate>
+				<category><![CDATA[Biotech]]></category>
+		<category><![CDATA[Health]]></category>
+		<category><![CDATA[Recent Funding]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[TC]]></category>
+		<category><![CDATA[Highland Capital Partners]]></category>
+		<category><![CDATA[Questa Capital]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=2274833</guid>
+
+					<description><![CDATA[The stethoscope has come a long way from its humble beginnings in the 19th century. The regular acoustic type is still used every day, but it’s been joined by a panoply of digital options that can amplify or convert heart sounds into electrical signals. Eko, a company founded in 2013, has focused on bringing applied [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p id="speakable-summary">The stethoscope has come a long way from its humble beginnings in the 19th century. The regular acoustic type is still used every day, but it’s been joined by a panoply of digital options that can amplify or convert heart sounds into electrical signals. Eko, a company founded in 2013, has focused on bringing applied AI into the stethoscope space. Now there’s real-world data to suggest that the company has made progress, and it has secured a $30 million extension to its earlier C round to continue its work.</p>
+<p>Eko’s hardware consists of digital stethoscopes that boast a few basic bells and whistles, like noise-canceling technology or the ability to record and visualize heartbeats. But the company has also been tweaking some FDA-approved clinical support algorithms.</p>
+<p>In 2020, <a href="https://www.accessdata.fda.gov/cdrh_docs/pdf19/K192004.pdf" target="_blank" rel="noopener">the FDA granted 510(k)</a> clearance to a suite of Eko algorithms that help detect heart murmurs and atrial fibrillation, or AFib. (A company earns this when it demonstrates that its tech is similar to what is already out there). <span style="font-size: 1rem; letter-spacing: -0.1px;">That approval was backed up by more clinical results </span><a style="background-color: #ffffff; font-size: 1rem; letter-spacing: -0.1px;" href="https://www.ahajournals.org/doi/10.1161/JAHA.120.019905" target="_blank" rel="noopener">published</a><span style="font-size: 1rem; letter-spacing: -0.1px;"> in </span>The Journal of the American Heart Association<span style="font-size: 1rem; letter-spacing: -0.1px;"> in 2021. On Tuesday, Eko announced that this algorithm will form the backbone of new software called Eko App. This integration will move Eko more firmly into the applied AI space, said Connor Landgraf, CEO and co-founder of Eko.</span></p><div id="tc-target-mid-article-2274833" class="tc-target-mid-article ad-unit--size-auto"></div>
+<p>Eko has been working toward developing machine learning-based analysis capability. But so far, the company has focused on devices and clinical tools. This software launch will be the company&#8217;s first true foray into more complex AI applications.</p>
+<p>What does the new software mean for doctors? It’s not exactly a “machine learning brain” yet. Basically, a doctor could listen to heart sounds and conduct ECG like before, while the new software captures that data in the background. Then it provides an analysis, or interpretation, of that ECG rhythm that could help alert a doctor to the presence of AFib or heart murmur.</p>
+<p>“The physician gets basically an analysis report or a summary view of the patient&#8217;s heart sounds, lung sounds and ECG data immediately, there in the exam room with the patient,” he said.</p>
+<p><div id="attachment_2274834" style="width: 1034px" class="wp-caption alignnone"><img aria-describedby="caption-attachment-2274834" loading="lazy" class="size-full wp-image-2274834" src="https://techcrunch.com/wp-content/uploads/2022/02/2021_07_EKO_House_2_1736.jpg" alt="" width="1024" height="683" srcset="https://techcrunch.com/wp-content/uploads/2022/02/2021_07_EKO_House_2_1736.jpg 2400w, https://techcrunch.com/wp-content/uploads/2022/02/2021_07_EKO_House_2_1736.jpg?resize=150,100 150w, https://techcrunch.com/wp-content/uploads/2022/02/2021_07_EKO_House_2_1736.jpg?resize=300,200 300w, https://techcrunch.com/wp-content/uploads/2022/02/2021_07_EKO_House_2_1736.jpg?resize=768,512 768w, https://techcrunch.com/wp-content/uploads/2022/02/2021_07_EKO_House_2_1736.jpg?resize=680,454 680w, https://techcrunch.com/wp-content/uploads/2022/02/2021_07_EKO_House_2_1736.jpg?resize=1536,1025 1536w, https://techcrunch.com/wp-content/uploads/2022/02/2021_07_EKO_House_2_1736.jpg?resize=2048,1366 2048w, https://techcrunch.com/wp-content/uploads/2022/02/2021_07_EKO_House_2_1736.jpg?resize=50,33 50w" sizes="(max-width: 1024px) 100vw, 1024px" /><p id="caption-attachment-2274834" class="wp-caption-text">The Eko CORE stethoscope. <strong>Image Credits:</strong> Eko</p></div></p><div class="piano-inline-promo"></div>
+<p>On the surface, this might remind you of something like an Apple Watch &#8212; another device that has an FDA-cleared <a href="https://www.accessdata.fda.gov/cdrh_docs/pdf20/K201525.pdf" target="_blank" rel="noopener">AFib detection software</a>. Eko sits solidly on the practitioner side of things, rather than the consumer side. Instead, think of this new software as a clinical decision support system (CDS). These systems, which are popping up everywhere, from <a href="https://techcrunch.com/2022/02/18/sirona-medical-acquires-nines-ais-algorithms-to-rebuild-radiologys-it-from-the-ground-up/">radiology</a> to <a href="https://techcrunch.com/2022/02/09/scopio-aims-to-turn-hematology-into-remote-work-with-50m-c-round/">hematology</a>, don&#8217;t actually make diagnoses, but are designed to help doctors interpret medical data.</p>
+<p>Such systems aren’t new, but they are becoming more widespread, and many U.S. hospitals use them regularly. However, there are signs that CDS systems have been <a href="https://www.google.com/url?q=https://www.ajmc.com/view/trends-in-the-use-of-clinical-decision-support-by-health-system-affiliated-ambulatory-clinics-in-the-united-states-20142016&amp;sa=D&amp;source=docs&amp;ust=1645459133620597&amp;usg=AOvVaw0c7gPyPMxXGF28F52XW_fr" target="_blank" rel="noopener">slower to penetrate</a> ambulatory clinics or smaller non-hospital-affiliated healthcare systems. Eko, says Landgraf, endeavors to reach those smaller clinics with its devices and algorithms.</p>
+<p>“The goal is to be able to extend the capability of a specialist. To put that [cardiology expertise] in the hands of a rural primary care physician or an urgent care physician or a minute clinic nurse practitioner,” he said.</p>
+<p>Still, detecting AFib and heart murmur isn’t the company’s ultimate goal. As COO Jason Bellet told TechCrunch after the closing of Eko’s series A round <a href="https://techcrunch.com/2019/09/25/with-a-new-20-million-in-funding-electronic-stethoscope-startup-eko-wants-to-research-your-beating-heart/">in 2019</a>, the company was really going after “screening for structural heart diseases and heart failure.”</p>
+<p>Heart failure affects about 7 million people in the U.S., and is expected to reach <a href="https://www.google.com/url?q=https://www.ajmc.com/view/the-clinical-and-economic-burden-of-worsening-heart-failure&amp;sa=D&amp;source=docs&amp;ust=1645459481969886&amp;usg=AOvVaw3_qjN3TnGzvbD25w-xc03B" target="_blank" rel="noopener">8 million by 2030</a>. It represents <a href="https://bmccardiovascdisord.biomedcentral.com/articles/10.1186/s12872-018-0815-3" target="_blank" rel="noopener">1 to 2</a>% of U.S. healthcare budget spending, per an estimate reported in BMC Medicine.</p>
+<p><div id="attachment_2274835" style="width: 1034px" class="wp-caption alignnone"><img aria-describedby="caption-attachment-2274835" loading="lazy" class="size-full wp-image-2274835" src="https://techcrunch.com/wp-content/uploads/2022/02/3m-littmann-core-kv-07.png" alt="" width="1024" height="640" srcset="https://techcrunch.com/wp-content/uploads/2022/02/3m-littmann-core-kv-07.png 2400w, https://techcrunch.com/wp-content/uploads/2022/02/3m-littmann-core-kv-07.png?resize=150,94 150w, https://techcrunch.com/wp-content/uploads/2022/02/3m-littmann-core-kv-07.png?resize=300,187 300w, https://techcrunch.com/wp-content/uploads/2022/02/3m-littmann-core-kv-07.png?resize=768,480 768w, https://techcrunch.com/wp-content/uploads/2022/02/3m-littmann-core-kv-07.png?resize=680,425 680w, https://techcrunch.com/wp-content/uploads/2022/02/3m-littmann-core-kv-07.png?resize=1536,959 1536w, https://techcrunch.com/wp-content/uploads/2022/02/3m-littmann-core-kv-07.png?resize=2048,1279 2048w, https://techcrunch.com/wp-content/uploads/2022/02/3m-littmann-core-kv-07.png?resize=50,31 50w" sizes="(max-width: 1024px) 100vw, 1024px" /><p id="caption-attachment-2274835" class="wp-caption-text">EKO&#8217;s collaboration with 3M Littmann: a digital and acoustic stethoscope. <strong>Image Credits:</strong> Eko</p></div></p>
+<p>The company has made progress on that front, but has not yet received FDA clearance to use the algorithm clinically. In January, <a href="https://www.thelancet.com/journals/landig/article/PIIS2589-7500(21)00256-9/fulltext#seccestitle70" target="_blank" rel="noopener">an independent trial</a> run by the U.K.’s national health system suggested that another algorithm developed in conjunction with Mayo Clinic could flag signs of a weakened heart. In a study of 1,050 patients, the Eko device was capable of detecting when a left ventricle ejection fraction (LVEF) was operating at 40% &#8212; the threshold at which heart failure could be occurring &#8212; after 15 seconds of listening.</p>
+<p>Currently about 80% of heart failure cases in the U.K. are diagnosed in hospitals, but 40% of those patients show signs of the disease that <em>should </em>be picked up earlier, <a href="https://www.thelancet.com/journals/landig/article/PIIS2589-7500(21)00256-9/fulltext#seccestitle70" target="_blank" rel="noopener">the NHS study</a> notes. To add to that, confirming a heart failure diagnosis isn&#8217;t always straightforward. It usually involves some <a href="https://www.mayoclinic.org/diseases-conditions/heart-failure/diagnosis-treatment/drc-20373148#:~:text=To%20diagnose%20heart%20failure,%20your,coronary%20artery%20disease%20or%20diabetes." target="_blank" rel="noopener">constellation</a> of blood tests, exercise stress tests, biopsies, ECGs, echocardiograms or chest scans. <a href="https://www.uptodate.com/contents/heart-failure-clinical-manifestations-and-diagnosis-in-adults#:~:text=While%20most%20patients%20with%20suspected,patient%20with%20symptoms%20of%20HF." target="_blank" rel="noopener">There’s no single</a>, gold standard, non-invasive diagnostic test for heart failure.</p>
+<p>The goal is to use this program to turn a regular checkup into a way to screen for heart failure, said Landgraf. He imagines something like a mammogram or a colonoscopy for heart failure delivered with non-invasive tech at a primary care office.</p>
+<p>“[Heart failure] is a massive cost driver, and yet we don&#8217;t do a good job of detecting this disease early,” he said. “We detect it, you know, years after it&#8217;s been in that patient. We lose that opportunity to treat that patient earlier. And that&#8217;s something we really, really want to change with this technology.”</p>
+<p>Eko has also closed a 30 million extension to their previous <a href="https://www.ekohealth.com/newsroom/eko-raises-65-million-in-series-c-funding" target="_blank" rel="noopener">Series C round</a>. This brings the company’s total funding to $125 million. That extension will allow the company to support further commercialization efforts and develop new products, said Landgraf.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://techcrunch.com/2022/03/22/eko-expands-algorithmic-heart-problem-detection-and-lands-30m-series-c-extension/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2274833</post-id>	</item>
+		<item>
+		<title>New Twitch appeals portal lets users monitor and object to account bans</title>
+		<link>https://techcrunch.com/2022/03/22/twitch-appeal-ban-portal/</link>
+					<comments>https://techcrunch.com/2022/03/22/twitch-appeal-ban-portal/#respond</comments>
+		
+		<dc:creator><![CDATA[Taylor Hatmaker]]></dc:creator>
+		<pubDate>Tue, 22 Mar 2022 18:00:06 +0000</pubDate>
+				<category><![CDATA[Social]]></category>
+		<category><![CDATA[TC]]></category>
+		<category><![CDATA[content moderation]]></category>
+		<category><![CDATA[creator economy]]></category>
+		<category><![CDATA[digital media]]></category>
+		<category><![CDATA[Livestreaming]]></category>
+		<category><![CDATA[mass media]]></category>
+		<category><![CDATA[Twitch]]></category>
+		<category><![CDATA[video hosting]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=2287847</guid>
+
+					<description><![CDATA[Twitch is updating its appeals and reporting processes, following through on product updates the company promised late last year. The biggest change is the introduction of a new portal where users facing account suspensions can appeal those rulings and monitor the progress of their requests. While Twitch deals with its fair share of users with [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p id="speakable-summary">Twitch is updating its appeals and reporting processes, following through on product updates the company promised late last year. The biggest change is the introduction of a new portal where users facing account suspensions can appeal those rulings and monitor the progress of their requests.</p>
+<p>While Twitch deals with its fair share of<a href="https://techcrunch.com/2021/09/01/streamers-are-boycotting-twitch-today-to-protest-the-platforms-lack-of-action-on-hate-raids/"> users with bad intentions</a>, the company wants to provide more clarity and consistency for users who accidentally break the rules in the process of livestreaming.</p>
+<p>The new appeals hub allows users to view enforcement actions eligible for appeal starting today at<a href="https://appeals.twitch.tv/" target="_blank" rel="noopener"> appeals.twitch.tv</a>. The portal will usually be limited to bans enforced within the last 60 days, but the company says that anyone facing an indefinite suspension that went into effect before that interval will also be able to request to have an eligible case reviewed there. The new appeals tool will also appear in the profile menu under the &#8220;safety&#8221; section, where it will remain available even for users who are currently suspended.</p><div id="tc-target-mid-article-2287847" class="tc-target-mid-article ad-unit--size-auto"></div>
+<p>Users appealing Twitch&#8217;s moderation decisions will still receive an update over email when an appeal is accepted or rejected. The company notes that those decisions will now be accompanied by more detail on its thinking, though that still won&#8217;t include how many &#8220;strikes&#8221; an account has because enforcement decisions consider context and severity — not just the quantity of violations. Twitch also said that it still plans to attach relevant video clips to its emailed enforcement notices, but that particular feature is still in the works.</p>
+<p>“Sometimes we get it wrong, which is why the appeals process is so important,” Twitch wrote in the announcement. “We’ve heard that our current system is slow, and that it doesn’t provide enough insight about how your current appeal is going or how past appeals have gone. <span style="font-weight: 400;">This is particularly important for creators, who earn income from streaming for their communities.&#8221;</span></p>
+<p><div id="attachment_2287861" style="width: 1034px" class="wp-caption aligncenter"><img aria-describedby="caption-attachment-2287861" loading="lazy" class="size-full wp-image-2287861" src="https://techcrunch.com/wp-content/uploads/2022/03/Reporting-Tool-high-quality-1.gif" alt="" width="1024" height="576" /><p id="caption-attachment-2287861" class="wp-caption-text"><strong>Image Credits:</strong> Twitch</p></div></p>
+<p>Twitch is also making updates to its reporting system, inviting users to search for the reason they are flagging content and offering customized menus depending on if reported content appears in a livestream, VOD or a clip. The changes will appear first on the web version of Twitch, rolling out to mobile afterward, with a global rollout complete within the “next few months,” according to the company.</p><div class="piano-inline-promo"></div>
+<p>While all major social platforms continue to grapple with the complexity of content moderation at scale, the fact that most content on Twitch is streamed live adds an additional layer of challenge. Twitch relies less heavily on automated content moderation systems than some of its peers, leaning instead on human review teams that prioritize speed due to the real-time nature of the vast majority of its content.</p>
+<p>Twitch VP of Global Trust and Safety Angela Hession <a href="https://safety.twitch.tv/s/safety-news/detail?language=en_US&amp;post=An-Open-Letter-from-Our-Head-of-Trust-and-Safety" target="_blank" rel="noopener">previewed today&#8217;s updates late last year</a> in a blog post that reviewed the platform’s content moderation policies and safety tools. Twitch viewership <a href="https://www.engadget.com/streamlabs-twitch-viewership-doubled-in-one-year-150003530.html" target="_blank" rel="noopener">exploded during the pandemic</a> and the company has been scaling up its content moderation efforts accordingly.</p>
+<p>Though it declined to provide specific numbers to TechCrunch, Twitch says it has &#8220;quadrupled&#8221; the number of moderators reviewing user reports over the last two years. The company notes that it responds to more than 80% of reports within 10 minutes.</p>
+<p>&#8220;As our community has grown and become more global over the past few years, we’ve continued to scale and streamline our operations accordingly, while still prioritizing keeping a human in the loop in all aspects of moderation,&#8221; Twitch VP of Global Safety Operations Rob Lewington said.</p>
+<p>Beyond its everyday enforcement decisions, the company attracts a lot of attention for enacting temporary suspensions against some of its most popular streamers. In December, political streamer HasanAbi was <a href="https://www.rollingstone.com/culture/culture-news/hasan-piker-twitch-cracker-white-supremacist-1274957/" target="_blank" rel="noopener">hit with a seven day ban</a> after using the word “cracker,” which Twitch apparently considers to be a legitimate anti-white slur. Other star streamers have been banned for everything from <a href="https://techcrunch.com/2021/06/21/twitch-asmr-meta-amouranth-indiefoxx/">sexy yoga poses</a> to <a href="https://www.polygon.com/22873041/pokimane-twitch-ban-tv-meta-avatar-last-airbender-dmca" target="_blank" rel="noopener">streaming Avatar: The Last Airbender</a>.</p>
+<p>Meanwhile, Twitch <a href="https://dotesports.com/streaming/news/hate-raids-return-to-twitch-another-wave-of-attacks-target-lgbtqia-streamers" target="_blank" rel="noopener">continues</a> to <a href="https://techcrunch.com/2021/09/01/streamers-are-boycotting-twitch-today-to-protest-the-platforms-lack-of-action-on-hate-raids/">wrestle with hate raids</a>, the practice of flooding a streamer’s channel with harassment en masse. Those attacks often target marginalized Twitch streamers, further driving those voices off a platform where Black, LGBTQ and female streamers already <a href="https://dotesports.com/streaming/news/pokimane-speaks-out-on-twitch-payout-leaks-and-lack-of-diversity" target="_blank" rel="noopener">struggle to gain a foothold</a>.</p>
+<p>In November, Twitch <a href="https://techcrunch.com/2021/11/30/twitch-flag-banned-users-from-channel/">introduced a new automated tool</a> that detects accounts trying to get around channel-level bans. Channel bans are one of the main ways that Twitch streamers and moderators can control who can interact within a community, but ban evaders render that otherwise powerful option ineffectual.</p>
+<p>Late last year, Twitch took the extraordinary step of <a href="https://techcrunch.com/2021/09/13/twitch-hate-raids-lawsuits/">suing two “highly motivated” users</a> for organizing thousands of bot accounts into hate raids, though the company did not have their real identities at the time. “This Complaint is by no means the only action we’ve taken to address targeted attacks, nor will it be the last,” Twitch wrote in the suit.</p>
+<div class="embed breakout">
+<blockquote class="wp-embedded-content" data-secret="KwS3INvjdw"><p><a href="https://techcrunch.com/2021/09/01/streamers-are-boycotting-twitch-today-to-protest-the-platforms-lack-of-action-on-hate-raids/">Streamers are boycotting Twitch today to protest the platform&#8217;s lack of action on &#8216;hate raids&#8217;</a></p></blockquote>
+<p><iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted" title="&#8220;Streamers are boycotting Twitch today to protest the platform&#8217;s lack of action on &#8216;hate raids&#8217;&#8221; &#8212; TechCrunch" src="https://techcrunch.com/2021/09/01/streamers-are-boycotting-twitch-today-to-protest-the-platforms-lack-of-action-on-hate-raids/embed/#?secret=MljiqgEOTQ#?secret=KwS3INvjdw" data-secret="KwS3INvjdw" width="800" height="450" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></div>
+<div class="embed breakout">
+<blockquote class="wp-embedded-content" data-secret="X7PDqMe3hr"><p><a href="https://techcrunch.com/2021/09/13/twitch-hate-raids-lawsuits/">Twitch sues two users for harassing streamers with hate raids</a></p></blockquote>
+<p><iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted" title="&#8220;Twitch sues two users for harassing streamers with hate raids&#8221; &#8212; TechCrunch" src="https://techcrunch.com/2021/09/13/twitch-hate-raids-lawsuits/embed/#?secret=QhE12aS8Ow#?secret=X7PDqMe3hr" data-secret="X7PDqMe3hr" width="800" height="450" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></div>
+<div class="embed breakout">
+<blockquote class="wp-embedded-content" data-secret="4Y9GBiZgb2"><p><a href="https://techcrunch.com/2021/11/30/twitch-flag-banned-users-from-channel/">Twitch&#8217;s newest moderation tool spots accounts trying to get around channel bans</a></p></blockquote>
+<p><iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted" title="&#8220;Twitch&#8217;s newest moderation tool spots accounts trying to get around channel bans&#8221; &#8212; TechCrunch" src="https://techcrunch.com/2021/11/30/twitch-flag-banned-users-from-channel/embed/#?secret=gR160zpPTN#?secret=4Y9GBiZgb2" data-secret="4Y9GBiZgb2" width="800" height="450" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></div>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://techcrunch.com/2022/03/22/twitch-appeal-ban-portal/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2287847</post-id>	</item>
+		<item>
+		<title>Cloud providers’ default retention policies are not enough: You better back your SaaS up</title>
+		<link>https://techcrunch.com/2022/03/22/cloud-providers-default-retention-policies-are-not-enough-you-better-back-your-saas-up/</link>
+					<comments>https://techcrunch.com/2022/03/22/cloud-providers-default-retention-policies-are-not-enough-you-better-back-your-saas-up/#respond</comments>
+		
+		<dc:creator><![CDATA[Ram Iyer]]></dc:creator>
+		<pubDate>Tue, 22 Mar 2022 17:46:06 +0000</pubDate>
+				<category><![CDATA[Cloud]]></category>
+		<category><![CDATA[Column]]></category>
+		<category><![CDATA[SaaS]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[TC]]></category>
+		<category><![CDATA[as-a-service]]></category>
+		<category><![CDATA[business models]]></category>
+		<category><![CDATA[cloud computing]]></category>
+		<category><![CDATA[cloud infrastructure]]></category>
+		<category><![CDATA[computing]]></category>
+		<category><![CDATA[data management]]></category>
+		<category><![CDATA[EC Cloud and Enterprise Infrastructure]]></category>
+		<category><![CDATA[EC Column]]></category>
+		<category><![CDATA[EC Cybersecurity]]></category>
+		<category><![CDATA[Google]]></category>
+		<category><![CDATA[Microsoft]]></category>
+		<category><![CDATA[Microsoft 365]]></category>
+		<category><![CDATA[ransomware]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[software as a service]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=2287268</guid>
+
+					<description><![CDATA[Despite the rapid growth and countless benefits of SaaS, there are significant challenges associated with managing and protecting SaaS data.]]></description>
+										<content:encoded><![CDATA[<div class="article__contributor-byline-wrapper">
+<div class="article__contributor-byline">
+	<div class="contributor-byline__contributor">
+		<div class="byline__author">
+							<span class="byline__author-name">Brian Spanswick</span>
+						<span class="byline__author-title" style="display: block;">Contributor</span>
+		</div>
+
+				<div class="contributor__twitter">
+			<a target="_blank" href="https://twitter.com/Cohesity">
+					<svg class="icon icon--twitter icon--white" viewBox="0 0 20 20" version="1.1" aria-labelledby="title">
+		<title>Share on Twitter</title>
+		<path d="M20,4c-0.7,0.3-1.5,0.6-2.4,0.7c0.9-0.5,1.5-1.4,1.8-2.3c-0.8,0.5-1.7,0.8-2.6,1C16.1,2.5,15,2,13.8,2c-2.3,0-4.1,1.9-4.1,4.2c0,0.3,0,0.7,0.1,1C6.4,7,3.4,5.4,1.4,2.9C1,3.5,0.8,4.1,0.8,4.9c0,1.4,0.7,2.7,1.8,3.5C2,8.4,1.4,8.2,0.8,7.9v0.1c0,2,1.4,3.7,3.3,4.1c-0.4,0.1-0.7,0.2-1.1,0.2c-0.3,0-0.5,0-0.8-0.1c0.5,1.7,2,2.9,3.8,2.9c-1.4,1.1-3.2,2-5.1,2c-0.3,0-0.7,0-1-0.1c1.8,1.2,4,1.7,6.3,1.7c7.5,0,11.7-6.4,11.7-12V6.1C18.8,5.6,19.4,4.8,20,4z"/>	</svg>
+				</a>
+		</div>
+			</div>
+
+		<div class="contributor-byline__bio">
+		Brian Spanswick is the chief information security officer (CISO) and head of IT at <a href="http://www.cohesity.com/">Cohesity</a>.	</div>
+	
+	</div>
+</div><p id="speakable-summary">If there’s one thing that recent earnings reports from Microsoft, Google and Amazon made clear, it’s that their cloud businesses are booming.</p>
+<p>While the shift to the cloud is well underway, many companies aren&#8217;t paying attention to a critical aspect of this growth: the dramatic increase in data generated by SaaS that is not adequately protected. This exposure can put companies at greater risk for ransomware attacks, breaches, compliance woes and much more.</p>
+<p>The growth of enterprise SaaS is rapid and inevitable. <a href="https://www.gartner.com/en/newsroom/press-releases/2021-08-02-gartner-says-four-trends-are-shaping-the-future-of-public-cloud">Gartner expects</a> end-user spending on SaaS to rise over 18% to $171.9 billion in 2022 from $145.5 billion in 2021 — and it’s easy to see why.</p>
+<p>The SaaS model offers significant value to both service providers and customers, ranging from reduced costs to simplified management and maintenance. The benefits of SaaS are many: It eliminates the need to install and configure software; it gives the customer greater financial flexibility by moving from licensing fees to subscriptions; there is no need to purchase and maintain hardware; and new releases and upgrades are automatically deployed.</p>
+<p>	<div class="article-block block--pullout block--right">
+		<blockquote>
+			Without the right policies in place, organizations often have little visibility into what SaaS data they actually have; whether that data is in compliance, protected or compromised.					</blockquote>
+	</div>
+	</p>
+<p>But despite its rapid growth and countless benefits, there are significant challenges associated with managing and protecting SaaS data. That’s a problem that can only get worse, as for many organizations, SaaS is the fastest-growing segment of their data.</p>
+<h2>Cloud providers’ default retention policies are not enough</h2>
+<p>Each cloud service provider (CSP) and SaaS provider has its own data retention policy, and once that policy expires, the customer is responsible for backing up, protecting, and, if needed, restoring the data in the event of a cyber attack.</p>
+<p>Not only is the customer responsible, but data retention policies can differ based on the provider and the type of SaaS data. In the current world of rampant ransomware attacks and stringent privacy and compliance regulations, leaving data unmanaged and unprotected is a risk few organizations can take.</p>
+<p>Let’s look at Microsoft 365 as an example. Microsoft 365 adoption has been phenomenal, with <a href="https://www.fool.com/earnings/call-transcripts/2021/04/28/microsoft-msft-q3-2021-earnings-call-transcript/">nearly 300 million users and over 50% subscriber growth</a> over the past two years. It is one of the most popular enterprise SaaS applications, and yet backup options are limited in terms of data stored on Azure.</p>
+<p><div class="extra-crunch-offer-container"></div>]]></content:encoded>
+					
+					<wfw:commentRss>https://techcrunch.com/2022/03/22/cloud-providers-default-retention-policies-are-not-enough-you-better-back-your-saas-up/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2287268</post-id>	</item>
+		<item>
+		<title>Glass rethinks the smartphone camera through an old-school cinema lens</title>
+		<link>https://techcrunch.com/2022/03/22/glass-rethinks-the-smartphone-camera-through-an-old-school-cinema-lens/</link>
+					<comments>https://techcrunch.com/2022/03/22/glass-rethinks-the-smartphone-camera-through-an-old-school-cinema-lens/#respond</comments>
+		
+		<dc:creator><![CDATA[Devin Coldewey]]></dc:creator>
+		<pubDate>Tue, 22 Mar 2022 17:40:31 +0000</pubDate>
+				<category><![CDATA[Funding]]></category>
+		<category><![CDATA[Fundings & Exits]]></category>
+		<category><![CDATA[Gadgets]]></category>
+		<category><![CDATA[Hardware]]></category>
+		<category><![CDATA[Recent Funding]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[TC]]></category>
+		<category><![CDATA[glass]]></category>
+		<category><![CDATA[LDV Capital]]></category>
+		<category><![CDATA[smartphone cameras]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=2286181</guid>
+
+					<description><![CDATA[Smartphone cameras have gotten quite good, but it&#8217;s getting harder and harder to improve them because we&#8217;ve pretty much reached the limit of what&#8217;s possible in the space of a cubic centimeter. Glass is a startup looking to fundamentally change how the camera works, using a much bigger sensor and an optical trick from the [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p id="speakable-summary">Smartphone cameras have gotten quite good, but it&#8217;s getting harder and harder to improve them because we&#8217;ve pretty much reached the limit of what&#8217;s possible in the space of a cubic centimeter. Glass is a startup looking to fundamentally change how the camera works, using a much bigger sensor and an optical trick from the depths of filmmaking: anamorphic lenses.</p>
+<p>It may not be obvious that cameras won&#8217;t get better, since we&#8217;ve seen such advances in recent generations of phones. But we&#8217;ve used up all the slack left in this line, as it were.</p>
+<p>To improve the image, you need a bigger sensor, better lens or some kind of computational wizardry. Unfortunately, sensors can&#8217;t get much bigger because they&#8217;d need bigger lenses to match. And lenses can&#8217;t get bigger because there&#8217;s just no room for them in the phone body, even when you &#8220;fold&#8221; the camera. Meanwhile, computational photography is great, but there&#8217;s only so much it can do — stacking a few images to get better dynamic range or depth information is good, but you reach a point of diminishing returns pretty quickly.</p><div id="tc-target-mid-article-2286181" class="tc-target-mid-article ad-unit--size-auto"></div>
+<p>&#8220;The limitations used to be about price, but now it&#8217;s size,&#8221; explained Glass co-founder and CEO Ziv Attar, who has worked in mobile imaging for over a decade, including at Apple. The other co-founder, Tom Bishop, also worked at Apple, the two of them working on creating Portrait Mode and likely chafing at the limitations of traditional camera design.</p>
+<p>&#8220;Up to 5 years ago they just made the lens wider, then they started making the sensor bigger,&#8221; Attar said. &#8220;Then you throw algorithms at it to reduce noise, but even that is reaching its limits; pretty soon it will be pure hallucination [i.e. AI-generated imagery]. Night mode takes exposure stacking to extremes — it deals very nicely with the lack of photons, but if you zoom in it starts to look very weird and fake.&#8221;</p>
+<p>&#8220;The phone screen kind of deceives us,&#8221; he continued. &#8220;If you let a regular person compare an iPhone 12 and 13, they won&#8217;t see the difference — but compared to a pro camera, anyone can tell. And if you can see the difference, there&#8217;s a lot of work to do.&#8221;</p>
+<p>So what is that work, exactly? Attar has decided that of these various conundrums, the only one that makes sense to change is the lens. True, it can&#8217;t get any bigger — but only if you&#8217;re using a normal, symmetrical lens assembly. But why should we? They gave up on that constraint a century ago in cinema.</p>
+<h2>Anamorphic evolution</h2>
+<p><div id="attachment_2287464" style="width: 2570px" class="wp-caption aligncenter"><a href="https://techcrunch.com/wp-content/uploads/2022/03/glass-anamorphic.png"><img aria-describedby="caption-attachment-2287464" loading="lazy" class="breakout wp-image-2287464 size-full" src="https://techcrunch.com/wp-content/uploads/2022/03/glass-anamorphic.png" alt="A CG image showing examples of anamorphic (top) and traditional symmetric lenses and the resulting internal image size.." width="2560" height="1476" srcset="https://techcrunch.com/wp-content/uploads/2022/03/glass-anamorphic.png 2560w, https://techcrunch.com/wp-content/uploads/2022/03/glass-anamorphic.png?resize=150,86 150w, https://techcrunch.com/wp-content/uploads/2022/03/glass-anamorphic.png?resize=300,173 300w, https://techcrunch.com/wp-content/uploads/2022/03/glass-anamorphic.png?resize=768,443 768w, https://techcrunch.com/wp-content/uploads/2022/03/glass-anamorphic.png?resize=680,392 680w, https://techcrunch.com/wp-content/uploads/2022/03/glass-anamorphic.png?resize=1536,886 1536w, https://techcrunch.com/wp-content/uploads/2022/03/glass-anamorphic.png?resize=2048,1181 2048w, https://techcrunch.com/wp-content/uploads/2022/03/glass-anamorphic.png?resize=50,29 50w" sizes="(max-width: 2560px) 100vw, 2560px" /></a><p id="caption-attachment-2287464" class="wp-caption-text">A CG image showing examples of anamorphic (top) and traditional symmetric lenses and the resulting internal image size. <strong>Image Credits:</strong> Glass</p></div></p>
+<p>Films weren&#8217;t always widescreen. Originally they were more likely to be approximately the shape of a 35mm film frame, for obvious reasons. If you matted out the top and bottom, you could project a widescreen image, which people liked — but you were basically just zooming in on a part of the film, which you paid for in detail. But a technique first tested in the &#8217;20s soon solved the problem.</p>
+<p>Anamorphic lenses squeeze a wide field of view from the sides so it fits in the film frame, and when projected using an anamorphic projector, the process was reversed — the image is stretched back out to the desired aspect ratio. There are a few interesting optical effects introduced but&#8230; if I describe them you&#8217;ll never be able to un-see them in content, so I&#8217;ll forbear.</p>
+<p>The lens system proposed by Glass isn&#8217;t quite the same, but it uses similar principles and unusually shaped lenses. It started from the fundamental idea of how to add a larger sensor. Simply making a larger square would necessitate a larger lens, which we can&#8217;t do — but what if you made the sensor <em>longer, </em>as in a rectangle? Well, you&#8217;d need a longer, rectangular lens too. The anamorphic technique means you can capture and project a larger but distorted image, then convert it to the right aspect ratio in the image processor. (The process isn&#8217;t exactly analogous to the film technique but it uses the same principles.)</p>
+<p>How much larger an image are you able to capture? Well, an iPhone 13&#8217;s main camera has a sensor about 7&#215;5 millimeters, so 35 square mm total. Glass&#8217;s prototype uses a sensor that&#8217;s about 24&#215;8 mm: about 192 square mm, 5-6 times larger, with a commensurate increase to megapixels. Here&#8217;s a little chart for casual reference:</p>
+<p><div id="attachment_2287484" style="width: 690px" class="wp-caption aligncenter"><a href="https://techcrunch.com/wp-content/uploads/2022/03/sensor-sizes.png"><img aria-describedby="caption-attachment-2287484" loading="lazy" class="wp-image-2287484 size-large" src="https://techcrunch.com/wp-content/uploads/2022/03/sensor-sizes.png?w=680" alt="" width="680" height="458" srcset="https://techcrunch.com/wp-content/uploads/2022/03/sensor-sizes.png 784w, https://techcrunch.com/wp-content/uploads/2022/03/sensor-sizes.png?resize=150,101 150w, https://techcrunch.com/wp-content/uploads/2022/03/sensor-sizes.png?resize=300,202 300w, https://techcrunch.com/wp-content/uploads/2022/03/sensor-sizes.png?resize=768,517 768w, https://techcrunch.com/wp-content/uploads/2022/03/sensor-sizes.png?resize=680,458 680w, https://techcrunch.com/wp-content/uploads/2022/03/sensor-sizes.png?resize=50,34 50w" sizes="(max-width: 680px) 100vw, 680px" /></a><p id="caption-attachment-2287484" class="wp-caption-text"><strong>Image Credits:</strong> Devin Coldewey / TechCrunch</p></div></p>
+<p>Considering the fanfare that generally accompanies increasing a phone&#8217;s sensor size by 15 or 20 <em>percent</em>, that&#8217;s an enormous leap.</p>
+<p>But Attar explained that the way they measure it, it&#8217;s even more. If you were to expand the image to the correct aspect ratio, it would actually be twice as tall: 24x16mm, just shy of the APS-C standard in DSLRs but well above the Micro Four Thirds and 1&#8243; sensors also common (and highly performant) in mirrorless cameras. That leads to the company&#8217;s claim of having 11 times the &#8220;imaging area&#8221; of an iPhone. The evaluation of these metrics is a non-trivial process I&#8217;m not equipped to do, but truthfully either one would be a game-changing upgrade for a phone.</p>
+<h2>Bigger, brighter and a bit weirder</h2>
+<p>There are benefits and drawbacks to this process. The most important one is an immense increase in light gathering and resolving power. More light means better exposures in general and better shots in challenging conditions — no need for a fancy machine learning powered multi-exposure night mode if you can just&#8230; see things. And there is far, far more detail in images compared with those from ordinary smartphones.</p>
+<p><div id="attachment_2287470" style="width: 1034px" class="wp-caption aligncenter"><a href="https://techcrunch.com/wp-content/uploads/2022/03/glass-face-1.jpg"><img aria-describedby="caption-attachment-2287470" loading="lazy" class="breakout size-full wp-image-2287470" src="https://techcrunch.com/wp-content/uploads/2022/03/glass-face-1.jpg" alt="" width="1024" height="512" srcset="https://techcrunch.com/wp-content/uploads/2022/03/glass-face-1.jpg 1201w, https://techcrunch.com/wp-content/uploads/2022/03/glass-face-1.jpg?resize=150,75 150w, https://techcrunch.com/wp-content/uploads/2022/03/glass-face-1.jpg?resize=300,150 300w, https://techcrunch.com/wp-content/uploads/2022/03/glass-face-1.jpg?resize=768,384 768w, https://techcrunch.com/wp-content/uploads/2022/03/glass-face-1.jpg?resize=680,340 680w, https://techcrunch.com/wp-content/uploads/2022/03/glass-face-1.jpg?resize=50,25 50w" sizes="(max-width: 1024px) 100vw, 1024px" /></a><p id="caption-attachment-2287470" class="wp-caption-text">Images from an iPhone 12 Max (left) and Glass prototype. <strong>Image Credits:</strong> Glass</p></div></p>
+<p>Note that the limited example above is just that — it&#8217;s hard to do apples-to-apples comparisons when the focal lengths, image processing and output resolution are so different (not to mention my cropping and re-encoding), but at the very least you can see that a great deal of detail is added even in this non-optimal presentation. The full-size original images are available here: <a href="https://techcrunch.com/wp-content/uploads/2022/03/glass-iphone-12-full.jpg">iPhone</a>, <a href="https://techcrunch.com/wp-content/uploads/2022/03/glass-proto-full.jpg">Glass</a>.</p>
+<p><div id="attachment_2287472" style="width: 1034px" class="wp-caption aligncenter"><a href="https://techcrunch.com/wp-content/uploads/2022/03/glass-low-light.jpg"><img aria-describedby="caption-attachment-2287472" loading="lazy" class="breakout size-full wp-image-2287472" src="https://techcrunch.com/wp-content/uploads/2022/03/glass-low-light.jpg" alt="" width="1024" height="418" srcset="https://techcrunch.com/wp-content/uploads/2022/03/glass-low-light.jpg 1818w, https://techcrunch.com/wp-content/uploads/2022/03/glass-low-light.jpg?resize=150,61 150w, https://techcrunch.com/wp-content/uploads/2022/03/glass-low-light.jpg?resize=300,122 300w, https://techcrunch.com/wp-content/uploads/2022/03/glass-low-light.jpg?resize=768,313 768w, https://techcrunch.com/wp-content/uploads/2022/03/glass-low-light.jpg?resize=680,278 680w, https://techcrunch.com/wp-content/uploads/2022/03/glass-low-light.jpg?resize=1536,627 1536w, https://techcrunch.com/wp-content/uploads/2022/03/glass-low-light.jpg?resize=50,20 50w" sizes="(max-width: 1024px) 100vw, 1024px" /></a><p id="caption-attachment-2287472" class="wp-caption-text">An example of a very low-light exposure — iPhone left, Glass right. <strong>Image Credits:</strong> Glass</p></div></p>
+<p>Because of the larger sensor and the nature of the glass, you also get natural bokeh, or background blur. Portrait mode is of course a favorite among smartphone users, but even the best methods of simulating bokeh are far from perfect. The same effect Apple painstakingly simulated lenses to achieve occurs naturally on the Glass prototype, just as it would on a larger digital camera. And there&#8217;s no chance of the kind of weird mistake you see in the AI-segmented images, which often clip out hair and other details, or fail to achieve the depth effect in subtler ways.</p>
+<p><div id="attachment_2287481" style="width: 1034px" class="wp-caption aligncenter"><a href="https://techcrunch.com/wp-content/uploads/2022/03/glass-portrait-mode.jpg"><img aria-describedby="caption-attachment-2287481" loading="lazy" class="breakout size-full wp-image-2287481" src="https://techcrunch.com/wp-content/uploads/2022/03/glass-portrait-mode.jpg" alt="" width="1024" height="586" srcset="https://techcrunch.com/wp-content/uploads/2022/03/glass-portrait-mode.jpg 3247w, https://techcrunch.com/wp-content/uploads/2022/03/glass-portrait-mode.jpg?resize=150,86 150w, https://techcrunch.com/wp-content/uploads/2022/03/glass-portrait-mode.jpg?resize=300,172 300w, https://techcrunch.com/wp-content/uploads/2022/03/glass-portrait-mode.jpg?resize=768,439 768w, https://techcrunch.com/wp-content/uploads/2022/03/glass-portrait-mode.jpg?resize=680,389 680w, https://techcrunch.com/wp-content/uploads/2022/03/glass-portrait-mode.jpg?resize=1536,878 1536w, https://techcrunch.com/wp-content/uploads/2022/03/glass-portrait-mode.jpg?resize=2048,1171 2048w, https://techcrunch.com/wp-content/uploads/2022/03/glass-portrait-mode.jpg?resize=50,29 50w" sizes="(max-width: 1024px) 100vw, 1024px" /></a><p id="caption-attachment-2287481" class="wp-caption-text">Example image showing portrait mode on an iPhone (left) and the unprocessed Glass shot, which lacks the smoothing and artifacts of the manipulated one. <strong>Image Credits:</strong> Glass</p></div></p>
+<p>While there would be no optical zoom, Attar pointed out that zooming in by cropping (i.e. digital zoom) on a Glass system would let you zoom in more than most optical zooms out there, and you&#8217;d still have more light and pixels than the competition. I&#8217;m not normally one to let &#8220;digital zoom is fine&#8221; claims live, but in this case the sheer size of the lens and sensor more than make up for it.</p>
+<p>These benefits, though briefly stated, are more than considerable. The improvement to light and detail puts it way out in front of the best cameras out there. (And while the smallest details may escape your notice on a small screen, a bad exposure is noticeable at any size.)</p>
+<p>Drawbacks are mainly to do with the complexities of operating a camera that&#8217;s totally optically different from a traditional one. The mechanisms for autofocus are different (anamorphic focus is notoriously complex) and there are plenty of distortions and aberrations that need to be corrected for — symmetrical lenses at this size also have distortion and degradation, but of a different type.</p>
+<p>&#8220;[Distortions] are all constrained during design such that we know in advance that we can correct for them,&#8221; said Attar. &#8220;It&#8217;s an iterative process but we did kick start development of a custom dedicated software tool to co-optimize lens parameters and neural network variables.&#8221; In other words they didn&#8217;t design anything they couldn&#8217;t correct for.</p>
+<p>One effect I find disorientating but perhaps others will decide is trivial is the shape of the bokeh. Normally out of focus highlights blur out into little translucent discs, but in the Glass system they resolve into a gradient of ovals and chubby crescents.</p>
+<p><div id="attachment_2287467" style="width: 2510px" class="wp-caption aligncenter"><a href="https://techcrunch.com/wp-content/uploads/2022/03/glass-bokeh.jpg"><img aria-describedby="caption-attachment-2287467" loading="lazy" class="breakout wp-image-2287467 size-full" src="https://techcrunch.com/wp-content/uploads/2022/03/glass-bokeh.jpg" alt="Example image showing background blur behind a plant stem." width="2500" height="1667" srcset="https://techcrunch.com/wp-content/uploads/2022/03/glass-bokeh.jpg 2500w, https://techcrunch.com/wp-content/uploads/2022/03/glass-bokeh.jpg?resize=150,100 150w, https://techcrunch.com/wp-content/uploads/2022/03/glass-bokeh.jpg?resize=300,200 300w, https://techcrunch.com/wp-content/uploads/2022/03/glass-bokeh.jpg?resize=768,512 768w, https://techcrunch.com/wp-content/uploads/2022/03/glass-bokeh.jpg?resize=680,453 680w, https://techcrunch.com/wp-content/uploads/2022/03/glass-bokeh.jpg?resize=1536,1024 1536w, https://techcrunch.com/wp-content/uploads/2022/03/glass-bokeh.jpg?resize=2048,1366 2048w, https://techcrunch.com/wp-content/uploads/2022/03/glass-bokeh.jpg?resize=50,33 50w" sizes="(max-width: 2500px) 100vw, 2500px" /></a><p id="caption-attachment-2287467" class="wp-caption-text"><strong>Image Credits:</strong> Glass</p></div></p>
+<p>To my neurotic eye that just isn&#8217;t right. It&#8217;s&#8230; unnatural. But I also can&#8217;t not notice vignetted bokeh due to french flags in film and TV (don&#8217;t look it it up — this too is everywhere and you can&#8217;t unsee it). And anyway films shot in anamorphic show similar bokeh distortion, so it&#8217;s actually quite common, just not in still images and smartphone shots.</p>
+<p>I assumed there would be drawbacks due to the need to stretch the image digitally — that sort of thing if done poorly can lead to moiré and other unwanted artifacts. But Attar said it&#8217;s remarkably straightforward to train a model to do it so that no one can tell the difference except pixel peepers: &#8220;We trained networks to apply 1-D super-resolution based on information from the other axes. After we apply our algorithm it looks like it came from a full APS-C sensor, in field of view and resolution.&#8221;</p>
+<p>That will all have to be verified by reviewers and camera experts when there&#8217;s a production version, but the theory seems sound and the early results are more than promising.</p>
+<p>Right now the company has moved on from standalone prototypes to a third-generation phone factor device that shows how the tech will fit into pretty much any chassis on the market. There&#8217;s nothing exotic about it other than the optical qualities, Attar said, so although it won&#8217;t be as cheap to manufacture as today&#8217;s off-the-shelf camera and image processing units, it can be made just as easily. As he noted, price is hardly an option any more, and if one company can make a huge leap in camera quality they can capture a large chunk of the market.</p>
+<p>&#8220;We have to convince a phone maker to basically ditch the old technology,&#8221; said Attar. &#8220;We&#8217;re seeing nice feedback. The only challenge is doing it in a reasonable time. I&#8217;m not saying there&#8217;s no risk. But a lot of us had good jobs at big companies — we didn&#8217;t leave our fancy salaries at Apple to work on some BS thing. We had a plan from the beginning.&#8221;</p>
+<p>Even if an agreement was struck now with a big mobile manufacturer, it would take a year and half or two years to get to market. &#8220;But we have to start somewhere,&#8221; he concluded.</p>
+<p>Glass has raised $2.2 million in seed funding, led by LDV Capital and a collection of angel investors. Of course that&#8217;s not meant to cover the cost of manufacturing, but now that the company is leaving the lab it will need operating cash to commercialize even should a major manufacturer make a commitment. Greg Gilley, formerly Apple&#8217;s VP of cameras and photos, and MIT Media lab&#8217;s Ramesh Raskar joined as advisors, rounding out a team investors are likely to have a lot of confidence in.</p>
+<p>If the Glass approach catches on, expect to hear about other companies claiming to have invented it in a little less than two years.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://techcrunch.com/2022/03/22/glass-rethinks-the-smartphone-camera-through-an-old-school-cinema-lens/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2286181</post-id>	</item>
+		<item>
+		<title>Fresh off dramatic majority shareholder exit, Firefly could be headed for a SPAC</title>
+		<link>https://techcrunch.com/2022/03/22/firefly-aerospace-spac-merger-fcc-filing/</link>
+					<comments>https://techcrunch.com/2022/03/22/firefly-aerospace-spac-merger-fcc-filing/#respond</comments>
+		
+		<dc:creator><![CDATA[Kirsten Korosec]]></dc:creator>
+		<pubDate>Tue, 22 Mar 2022 17:28:09 +0000</pubDate>
+				<category><![CDATA[Space]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[AE Industrial Partners]]></category>
+		<category><![CDATA[CFIUS]]></category>
+		<category><![CDATA[firefly]]></category>
+		<category><![CDATA[Firefly Aerospace]]></category>
+		<category><![CDATA[SPAC]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=2287723</guid>
+
+					<description><![CDATA[Firefly Aerospace&#8217;s roller coaster ride could soon send the rocket startup to the public market via a merger with a special purpose acquisition company, a recent filing with the FCC suggests. Aerospace private equity firm AE Industrial Partners (AEI) announced last month that it had reached an agreement to acquire a &#8220;significant stake&#8221; in Firefly [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p id="speakable-summary">Firefly Aerospace&#8217;s roller coaster ride could soon send the rocket startup to the public market via a merger with a special purpose acquisition company, a recent <a href="https://apps.fcc.gov/els/GetAtt.html?id=293666&amp;x=." target="_blank" rel="noopener">filing with the FCC</a> suggests.</p>
+<p>Aerospace private equity firm AE Industrial Partners (AEI) announced last month that it had reached an agreement to acquire a &#8220;significant stake&#8221; in Firefly after its largest shareholder, Ukrainian Max Polyakov, was <a href="https://www.bloomberg.com/news/articles/2021-12-29/firefly-owner-max-polyakov-to-sell-stake-in-rocket-startup" target="_blank" rel="noopener">forced to sell his shares</a> over national security concerns. A recent FCC filing provides new details of the deal, including that it involves a special purpose acquisition vehicle.</p>
+<p>The <a href="https://apps.fcc.gov/els/GetAtt.html?id=293666&amp;x=." target="_blank" rel="noopener">new FCC filing</a>, which relates to a proposed launch of Firefly&#8217;s second Alpha rocket from Vandenberg Air Force Base in California this spring, adds that the acquisition involved &#8220;the majority of Firefly Aerospace&#8217;s equity&#8221; and was by &#8220;special purpose acquisition vehicles controlled by AE Industrial Partners.&#8221;</p><div id="tc-target-mid-article-2287723" class="tc-target-mid-article ad-unit--size-auto"></div>
+<p>The move would not be unprecedented for AEI. In 2020, the private equity firm that specializes in aerospace, defense and power generation bought Deep Space Systems and then combined it will a previously acquired company Adcole Space to form the space infrastructure company called Redwire. AEI took Redwire public last September via a SPAC merger.</p>
+<p>AEI declined to comment on the filing to TechCrunch. Firefly CEO Tom Markusic has publicly talked about taking the company public in the past. <a href="https://www.cnbc.com/2021/11/20/look-inside-firefly-space-as-rocket-builder-prepares-for-second-launch.html" target="_blank" rel="noopener">Markusic told CNBC</a> last November that there could be a public offering as early as 2022. Neither Firefly, Noosphere nor Polyakov immediately responded to requests for comment.</p>
+<p>Firefly has experienced many challenges since Markusic, a SpaceX, Blue Origin and Virgin Galactic alum, founded it in 2014. In its original incarnation, Firefly began to develop the Alpha rocket for use as an air-launched rocket with Paul Allen&#8217;s Stratolaunch system. But a trade secrets lawsuit from Virgin Galactic, mounting costs and the withdrawal of a major investor saw the company run out of money in 2016, before launching anything.</p>
+<p>A series of maneuvers followed, including a lightning asset sale and a brief Chapter 7 bankruptcy that are still the subject of litigation by the company&#8217;s early investors. The upshot was that, in 2017, Polyakov gained control of a new version of Firefly, including its intellectual property and many of its engineers, through his investment company Noosphere Venture Partners.</p><div class="piano-inline-promo"></div>
+<p>The company then enjoyed substantial commercial success, including multiple satellite launch orders and a $93 million contract from NASA for a <a href="https://techcrunch.com/2021/05/20/firefly-aerospaces-lunar-lander-will-fly-to-the-moon-on-a-spacex-falcon-9-in-2023/">proposed lunar lander</a> called Blue Ghost. Firefly raised $75 million in a Series A round in May 2021. At the same time, Noosphere sold about $100 million of its Firefly holdings to Series A participants, which reportedly reduced its overall stake to less than 50%. Noosphere&#8217;s remaining equity would be valued at around $500 million.</p>
+<p>In September, Alpha&#8217;s maiden launch failed to reach orbit when one of the rocket&#8217;s engines shut down two and a half minutes into flight. It was in the process of negotiating a launch license for its second attempt when <a href="https://www.bloomberg.com/news/articles/2021-12-29/firefly-owner-max-polyakov-to-sell-stake-in-rocket-startup" target="_blank" rel="noopener">Bloomberg reported</a> that Polyakov had agreed to sell Noosphere&#8217;s stake in Firefly. His move was reportedly prompted by the Committee on Foreign Investment in the U.S., or CFIUS, expressing concerns about the possibility of Firefly&#8217;s technology making its way to Ukraine, Russia or other nations.</p>
+<p>In February, Polyakov <a href="https://www.facebook.com/100045957976357/posts/518120453063216/" target="_blank" rel="noopener">took to Facebook</a> to accuse CFIUS, the U.S. Air Force and other U.S. agencies of betraying him, and saying that he was &#8220;giving up&#8221; his stake in Firefly to Markusic for $1. In fact, the transaction, announced late last month, was ultimately with AE Industrial Partners. And it was worth at least $101 million, as it triggered a regulatory review that kicks in at that amount.</p>
+<p>The recent FCC filing gives more detail on the transaction. As well as purchasing the entirety of Noosphere&#8217;s stake, AEI made a $75 million direct equity investment in Firefly Aerospace through a Series B preferred equity round. The combination, noted AEI, means that it &#8220;will own over 50% of Firefly Aerospace&#8217;s equity and voting interest percentage and will have the right to appoint a majority of Firefly Aerospace&#8217;s Board of Directors.&#8221;</p>
+<p>Space SPACs were market darlings in 2020 and 2021, with companies like Virgin Galactic and Rocket Lab seeing their stock soar. But of the dozen space startups that used SPACs to go public, only AST Space Mobile (working on a space-based cellular network) is trading above their typical launch price of $10, and only by pennies. AEI&#8217;s Redwire is currently trading below half its 52-week high.</p>
+<p>The timing of Firefly&#8217;s SPAC could depend on when it can prove its ability to reach orbit &#8212; and that is still very much up in the air. While Firefly&#8217;s application to transfer the communications authorization for its second Alpha flight was approved overnight by the FCC last week, the FAA has yet to issue the company with an actual launch license.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://techcrunch.com/2022/03/22/firefly-aerospace-spac-merger-fcc-filing/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2287723</post-id>	</item>
+		<item>
+		<title>Nvidia launched a mapping product for the autonomous vehicle industry</title>
+		<link>https://techcrunch.com/2022/03/22/nvidia-launched-a-mapping-product-for-the-autonomous-vehicle-industry/</link>
+					<comments>https://techcrunch.com/2022/03/22/nvidia-launched-a-mapping-product-for-the-autonomous-vehicle-industry/#respond</comments>
+		
+		<dc:creator><![CDATA[Rebecca Bellan]]></dc:creator>
+		<pubDate>Tue, 22 Mar 2022 17:00:50 +0000</pubDate>
+				<category><![CDATA[Artificial Intelligence]]></category>
+		<category><![CDATA[Automotive]]></category>
+		<category><![CDATA[Transportation]]></category>
+		<category><![CDATA[Virtual Reality]]></category>
+		<category><![CDATA[autonomous vehicles]]></category>
+		<category><![CDATA[deepmap]]></category>
+		<category><![CDATA[nvidia]]></category>
+		<category><![CDATA[nvidia drive hyperion]]></category>
+		<category><![CDATA[transportation]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=2287565</guid>
+
+					<description><![CDATA[Nvidia has launched a new mapping platform that will provide the autonomous vehicle industry with ground truth mapping coverage of over 300,000 miles of roadway in North America, Europe and Asia by 2024, founder and CEO Jensen Huang said at the company&#8217;s GTC event on Tuesday. The platform, dubbed Drive Map, is geared toward enabling [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p id="speakable-summary">Nvidia has launched a new mapping platform that will provide the autonomous vehicle industry with ground truth mapping coverage of over 300,000 miles of roadway in North America, Europe and Asia by 2024, <span style="font-weight: 400;">founder and CEO </span><span style="font-weight: 400;">Jensen </span><span style="font-weight: 400;">Huang said at the company&#8217;s GTC event on Tuesday.</span></p>
+<p>The platform, dubbed Drive Map, is geared toward enabling high levels of autonomous driving. Drive Map isn&#8217;t only open to existing Nvidia customers, but it does augment the company&#8217;s existing solutions for the AV industry.</p>
+<p>At the same event, <a href="https://techcrunch.com/2022/03/22/byd-lucid-are-latest-ev-makers-to-adopt-nvidias-self-driving-toolkit/">the company announced its next generation of Drive Hyperion</a>, Nvidia&#8217;s sensor and compute self-driving toolkit which is used by the likes of Mercedes, Volvo, JiDu and, as of Tuesday, BYD and Lucid Motors, to provide a variety of smart driving and advanced driving assistance features.</p><div id="tc-target-mid-article-2287565" class="tc-target-mid-article ad-unit--size-auto"></div>
+<p>AV companies like TuSimple, WeRide, Zoox and DeepRoute.ai are also Hyperion customers.</p>
+<p>Drive Map represents the fruits of <a href="https://techcrunch.com/2021/06/10/nvidia-acquires-hi-def-mapping-startup-deepmap-to-bolster-av-technology/">Nvidia&#8217;s acquisition last year of DeepMap</a>, a high-definition mapping startup. The tool provides centimeter-level accuracy by combining DeepMap&#8217;s accurate survey mapping with anonymous mapping data that&#8217;s been crowdsourced from all the vehicles that use Nvidia&#8217;s Hyperion architecture. The mapping tool features three localization layers — camera, lidar and radar — to provide the redundancy needed for autonomy.</p>
+<p>All of the data pulled from Nvidia customers is being constantly uploaded to the cloud as vehicles drive. It&#8217;s then aggregated and loaded onto Nvidia&#8217;s Omniverse, the company&#8217;s open platform built for virtual collaboration and real-time physically accurate simulation, and used to update the map so vehicles can achieve proper localization. In the process, Nvidia is able to more quickly scale its mapping footprint.</p>
+<p>In addition, Omniverse uses automated content generation tools to build a detailed map, which is then converted into a drivable simulation environment that can be used with <a href="https://www.nvidia.com/en-us/self-driving-cars/simulation/" target="_blank" rel="noopener">Nvidia Drive Sim</a>, an end-to-end simulation platform for autonomous vehicles.</p><div class="piano-inline-promo"></div>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://techcrunch.com/2022/03/22/nvidia-launched-a-mapping-product-for-the-autonomous-vehicle-industry/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2287565</post-id>	</item>
+		<item>
+		<title>BYD, Lucid are latest EV makers to adopt Nvidia’s self-driving toolkit</title>
+		<link>https://techcrunch.com/2022/03/22/byd-lucid-are-latest-ev-makers-to-adopt-nvidias-self-driving-toolkit/</link>
+					<comments>https://techcrunch.com/2022/03/22/byd-lucid-are-latest-ev-makers-to-adopt-nvidias-self-driving-toolkit/#respond</comments>
+		
+		<dc:creator><![CDATA[Rebecca Bellan]]></dc:creator>
+		<pubDate>Tue, 22 Mar 2022 17:00:48 +0000</pubDate>
+				<category><![CDATA[Artificial Intelligence]]></category>
+		<category><![CDATA[Automotive]]></category>
+		<category><![CDATA[Developer]]></category>
+		<category><![CDATA[Transportation]]></category>
+		<category><![CDATA[automated driving]]></category>
+		<category><![CDATA[autonomous driving]]></category>
+		<category><![CDATA[autonomous vehicles]]></category>
+		<category><![CDATA[BYD]]></category>
+		<category><![CDATA[electric vehicles]]></category>
+		<category><![CDATA[Lucid Motors]]></category>
+		<category><![CDATA[nvidia]]></category>
+		<category><![CDATA[NVIDIA DRIVE Orin]]></category>
+		<category><![CDATA[transportation]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=2287549</guid>
+
+					<description><![CDATA[Nvidia has added two electric vehicle makers to its portfolio of automotive companies adopting its Drive Hyperion platform, a compute and sensor toolkit that powers automated driving capabilities in everything from private passenger vehicles to robotaxis to autonomous trucks.  Chinese automaker BYD and American automaker Lucid Motors, two companies that offer software-defined features like intelligent [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p id="speakable-summary"><span style="font-weight: 400;">Nvidia has added two electric vehicle makers to its portfolio of automotive companies adopting its Drive Hyperion platform, a compute and sensor toolkit that powers automated driving capabilities in everything from private passenger vehicles to robotaxis to autonomous trucks. </span></p>
+<p><span style="font-weight: 400;">Chinese automaker BYD and American automaker Lucid Motors, two companies that offer software-defined features like intelligent parking and advanced driver assistance systems (ADAS), announced on Tuesday at Nvidia&#8217;s GTC AI developer conference that they have joined the ranks of other OEMs that rely on Nvidia’s hardware, software and compute solutions &#8212; companies like JiDU, Polestar, Li Auto, Nio, Xpeng, Volvo, Mercedes, Jaguar Land Rover and more. </span></p>
+<p><span style="font-weight: 400;">Automakers are vying for the attention of would-be customers by </span><a href="https://techcrunch.com/2022/01/07/ces-2022-best-weirdest-car-tech/"><span style="font-weight: 400;">promising features that make driving less of an action and more of a spectator sport</span></a><span style="font-weight: 400;">. The problem is, while many OEMs tout themselves as having a “software-defined” approach, many of them don’t actually have the resources to pull off even low levels of autonomy. </span></p><div id="tc-target-mid-article-2287549" class="tc-target-mid-article ad-unit--size-auto"></div>
+<p><span style="font-weight: 400;">That’s because the process of embedding a car with autonomous driving features requires millions of miles of data to train machine learning algorithms, highly advanced software that can take in sensor data and make decisions in real time and the compute capacity necessary to power it all. These capabilities fall well outside the wheelhouse of the average automaker, so OEMs are increasingly turning to companies like Intel, Qualcomm and Nvidia to develop and integrate the tools needed to keep up in today’s automotive market. </span></p>
+<p><span style="font-weight: 400;">The result, at least for Nvidia, is an automotive pipeline that exceeds $11 billion in the next six years, up from $8 billion just a year ago, according to Danny Shapiro, Nvidia’s VP of Automotive. AV startups like </span><a href="https://techcrunch.com/2021/12/07/deeproute-l4-10000-usd/"><span style="font-weight: 400;">DeepRoute.ai</span></a><span style="font-weight: 400;"> and </span><a href="https://techcrunch.com/2021/06/22/weride-310-million-series-c/"><span style="font-weight: 400;">WeRide</span></a><span style="font-weight: 400;"> also joined Nvidia’s Drive Hyperion ecosystem this week, adding to Nvidia’s reach. </span></p>
+<div class="embed breakout">
+<blockquote class="wp-embedded-content" data-secret="gUavqjH9xU"><p><a href="https://techcrunch.com/2022/01/04/tusimple-integrates-nvidias-newest-auto-grade-chip-to-scale-autonomous-trucking/">TuSimple integrates Nvidia&#8217;s newest auto-grade chip to scale autonomous trucking</a></p></blockquote>
+<p><iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted" title="&#8220;TuSimple integrates Nvidia&#8217;s newest auto-grade chip to scale autonomous trucking&#8221; &#8212; TechCrunch" src="https://techcrunch.com/2022/01/04/tusimple-integrates-nvidias-newest-auto-grade-chip-to-scale-autonomous-trucking/embed/#?secret=HJ6E8JCdcd#?secret=gUavqjH9xU" data-secret="gUavqjH9xU" width="800" height="450" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></div>
+<p><span style="font-weight: 400;">BYD will build its next generation of “new energy vehicles” on Hyperion 8 architecture, which is currently in production, starting in early 2023, the company said at Nvidia’s conference on Tuesday. The company said it will just use the Drive Orin system-on-a-chip (SoC) as the central compute and AI engine for automated driving and intelligent cockpit features. Orin achieves up to 254 trillions of operations per second and is designed to handle the large number of applications and deep neural networks that run simultaneously in autonomous vehicles. BYD has not yet disclosed any further details such as whether it will use the software or sensor configurations offered by Hyperion. </span></p><div class="piano-inline-promo"></div>
+<p><span style="font-weight: 400;">At the same conference, <a href="https://techcrunch.com/2022/02/28/lucid-rolls-back-production-goals-even-as-demand-for-luxury-ev-rises/">Lucid</a> revealed that its DreamDrive Pro ADAS is built on the Nvidia Drive platform. Every <a href="https://techcrunch.com/2021/09/30/first-drive-of-the-lucid-air-reveals-power-and-panache/">Lucid Air sedan</a> that&#8217;s on the road today features an Nvidia SoC integrated into Lucid&#8217;s ADAS, but the automaker is still using its in-house software stack, which relies on a suite of 14 cameras, one lidar, five radars and 12 ultrasonic sensors for automated driving and intelligent cockpit features. Lucid plans to further collaborate with Nvidia on future products, but is not disclosing more details at this time. </span></p>
+<p><span style="font-weight: 400;">By building with Nvidia’s hardware and architecture, these companies are able to grow their feature capacity as Nvidia scales to new generations through over-the-air software updates, according to the company.</span></p>
+<p><span style="font-weight: 400;">“By starting with a programmable, high-performance compute architecture in the Lucid Air, the automaker can take advantage of the scalability of Nvidia Drive and always incorporate the latest AI technology as it expands with more models,” Nvidia said in a statement.</span></p>
+<h2><b>The next generation of Nvidia Drive: Hyperion 9</b></h2>
+<p><span style="font-weight: 400;">Last November, at Nvidia’s fall GTC event, founder and CEO </span><a href="https://techcrunch.com/2021/11/09/nvidias-next-generation-self-driving-toolkit-is-available-for-2024-vehicle-models/"><span style="font-weight: 400;">Jensen Huang announced the Hyperion 8 was available to buy for 2024 vehicle models</span></a><span style="font-weight: 400;">. On Tuesday, Huang announced the Hyperion 9 architecture for vehicles that will start to ship in 2026. </span></p>
+<p><span style="font-weight: 400;">The Hyperion 9 will feature 14 cameras, nine radars, three lidars and 20 ultrasonic sensors as part of its sensor suite, up from 12 cameras, nine radars, one lidar and 12 ultrasonic sensors. </span></p>
+<p><span style="font-weight: 400;">“We get a really diverse and redundant perspective of everything going on around the car,” Shapiro told TechCrunch in an interview. “This will also be powered by Atlan. Our roadmap calls for something after Orin, so this will be a higher performing SoC to handle all the additional sensor data coming in.”</span></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://techcrunch.com/2022/03/22/byd-lucid-are-latest-ev-makers-to-adopt-nvidias-self-driving-toolkit/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2287549</post-id>	</item>
+		<item>
+		<title>Microsoft improves its AI translations with Z-Code</title>
+		<link>https://techcrunch.com/2022/03/22/microsoft-improves-its-ai-translations-with-z-code/</link>
+					<comments>https://techcrunch.com/2022/03/22/microsoft-improves-its-ai-translations-with-z-code/#respond</comments>
+		
+		<dc:creator><![CDATA[Frederic Lardinois]]></dc:creator>
+		<pubDate>Tue, 22 Mar 2022 17:00:45 +0000</pubDate>
+				<category><![CDATA[Artificial Intelligence]]></category>
+		<category><![CDATA[TC]]></category>
+		<category><![CDATA[articles]]></category>
+		<category><![CDATA[artificial intelligence]]></category>
+		<category><![CDATA[chief technology officer]]></category>
+		<category><![CDATA[computing]]></category>
+		<category><![CDATA[cybernetics]]></category>
+		<category><![CDATA[machine learning]]></category>
+		<category><![CDATA[Microsoft]]></category>
+		<category><![CDATA[microsoft-azure]]></category>
+		<category><![CDATA[natural language processing]]></category>
+		<category><![CDATA[Translator]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=2287815</guid>
+
+					<description><![CDATA[Microsoft today announced an update to its translation services that, thanks to new machine learning techniques, promises significantly improved translations between a large number of language pairs. Based on its Project Z-Code, which uses a &#8220;spare Mixture of Experts&#8221; approach, these new models now often score between 3% and 15% better than the company&#8217;s previous [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p id="speakable-summary">Microsoft today <a href="https://www.microsoft.com/en-us/research/blog/microsoft-translator-enhanced-with-z-code-mixture-of-experts-models/" target="_blank" rel="noopener">announced</a> an update to its translation services that, thanks to new machine learning techniques, promises significantly improved translations between a large number of language pairs. Based on its <a href="https://www.microsoft.com/en-us/research/project/project-zcode/" target="_blank" rel="noopener">Project Z-Code</a>, which uses a &#8220;spare Mixture of Experts&#8221; approach, these new models now often score between 3% and 15% better than the company&#8217;s previous models during blind evaluations. Z-Code is part of Microsoft&#8217;s wider XYZ-Code initiative that looks at combining models for text, vision and audio across multiple languages to create more powerful and helpful AI systems.</p>
+<p>&#8220;Mixture of Experts&#8221; isn&#8217;t a completely new technique, but it&#8217;s especially useful in the context of translation. At its core, the system basically breaks down tasks into multiple subtasks and then delegates them to smaller, more specialized models called &#8220;experts.&#8221; The model then decides which task to delegate to which expert, based on its own predictions. Greatly simplified, you can think of it as a model that includes multiple more specialized models.</p>
+<p><div id="attachment_2287822" style="width: 1034px" class="wp-caption aligncenter"><a href="https://techcrunch.com/wp-content/uploads/2022/03/Microsoft-Translator-Z-code-1.jpg"><img aria-describedby="caption-attachment-2287822" class="size-full wp-image-2287822" src="https://techcrunch.com/wp-content/uploads/2022/03/Microsoft-Translator-Z-code-1.jpg" alt="graph of results of a new class of Z-code Mixture of Experts models" width="1024" /></a><p id="caption-attachment-2287822" class="wp-caption-text">A new class of Z-Code Mixture of Experts models are powering performance improvements in Translator, a Microsoft Azure Cognitive Service. <strong>Image Credits:</strong> Microsoft</p></div></p><div id="tc-target-mid-article-2287815" class="tc-target-mid-article ad-unit--size-auto"></div>
+<p>“With Z-Code we are really making amazing progress because we are leveraging both transfer learning and multitask learning from monolingual and multilingual data to create a state-of-the-art language model that we believe has the best combination of quality, performance and efficiency that we can provide to our customers,” said Xuedong Huang, Microsoft technical fellow and Azure AI chief technology officer.</p>
+<p>The result of this is a new system that can now, for example, directly translate between 10 languages, which eliminates the need for multiple systems. Microsoft also recently started using Z-Code models to improve other features of its AI systems, including for entity recognition, text summarization, custom text classification and keyphrase extraction. This is the first time it has used this approach for a translation service, though.</p>
+<p>Traditionally, translation models are extremely large, making it hard to bring them into a production environment. The Microsoft team has opted for a &#8220;sparse&#8221; approach, though, which only activates a small number of model paramters per task instead of the whole system. &#8220;That makes them much more cost-efficient to run, in the same way that it’s cheaper and more efficient to only heat your house in winter during the times of day that you need it and in the spaces that you regularly use, rather than keeping a furnace running full blast all the time,&#8221; the team explains in today&#8217;s announcement.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://techcrunch.com/2022/03/22/microsoft-improves-its-ai-translations-with-z-code/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2287815</post-id>	</item>
+		<item>
+		<title>China&#8217;s AR company Rokid closes $160M Series C to expand globally</title>
+		<link>https://techcrunch.com/2022/03/22/chinas-ar-company-rokid-closes-110m-series-c-to-expand-globally/</link>
+					<comments>https://techcrunch.com/2022/03/22/chinas-ar-company-rokid-closes-110m-series-c-to-expand-globally/#respond</comments>
+		
+		<dc:creator><![CDATA[Rita Liao]]></dc:creator>
+		<pubDate>Tue, 22 Mar 2022 16:24:54 +0000</pubDate>
+				<category><![CDATA[Asia]]></category>
+		<category><![CDATA[Augmented Reality]]></category>
+		<category><![CDATA[Funding]]></category>
+		<category><![CDATA[TC]]></category>
+		<category><![CDATA[China]]></category>
+		<category><![CDATA[mixed reality]]></category>
+		<category><![CDATA[oil and gas]]></category>
+		<category><![CDATA[rokid]]></category>
+		<category><![CDATA[smartglasses]]></category>
+		<category><![CDATA[Speaker]]></category>
+		<category><![CDATA[temasek]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=2287601</guid>
+
+					<description><![CDATA[Chinese startup Rokid has been through a few stages of transformation over its eight years of existence, and it&#8217;s recently raised some new funding to stay afloat. The Temasek-backed company started out as a smart speaker maker when the vertical was all the rage in China in mid-2015s, but it has in recent years put [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p id="speakable-summary">Chinese startup Rokid has been through a few stages of transformation over its eight years of existence, and it&#8217;s recently raised some new funding to stay afloat. The Temasek-backed company started out as a smart speaker maker when the vertical was all the rage in China in mid-2015s, but it has in recent years put more focus on augmented reality.</p>
+<p>This week, Rokid said it has secured a $160 million Series C round, lifting its total capital raised to $378 million. Between its last financial injection of $100 million in 2018 and this recent round, we haven&#8217;t heard much from Rokid &#8212; at least from the consumer side.</p>
+<p>While new players like Qualcomm-backed <a href="https://techcrunch.com/2020/09/04/nreal-raises-40-million/" target="_blank" rel="noopener">Nreal</a> have emerged to attract early adopters with <a href="https://techcrunch.com/2019/01/08/chinas-nreal-raises-15m-to-shrink-augmented-headsets-to-size-of-sunglasses/" target="_blank" rel="noopener">stylish, lightweight glasses</a>, Rokid appears to have kept itself busy by exploring enterprise use cases, like enabling remote communication for field workers in the auto, oil and gas, and other traditional industries. Its <a href="https://www.rokid.ai/products/rokid-x-craft/" target="_blank" rel="noopener">X-Craft headset</a>, for instance, is resistant to explosions, water and dust and comes with 5G and GPS capabilities. <span style="font-size: 1rem; letter-spacing: -0.1px;">And like many hardware startups that rushed to offer contactless solutions when the COVID-19 pandemic broke out, Rokid</span><a style="background-color: #ffffff; font-size: 1rem; letter-spacing: -0.1px;" href="https://techcrunch.com/2020/04/16/chinese-startup-rokid-pitches-covid-19-detection-glasses-in-u-s/" target="_blank" rel="noopener"> touted smart glasses that could detect temperatures</a><span style="font-size: 1rem; letter-spacing: -0.1px;"> of up to 200 people within two minutes.</span></p><div id="tc-target-mid-article-2287601" class="tc-target-mid-article ad-unit--size-auto"></div>
+<p>With a team of about 380 employees, Rokid said it will spend the new proceeds on research and development as well as global expansion, so developed markets could be expecting more of Rokid&#8217;s B2B offerings. Indeed, the firm just <a href="https://twitter.com/RokidInc/status/1504880455602085898" target="_blank" rel="noopener">hired</a> an energy industry veteran to head its sales in the APAC region.</p>
+<p>The company declined to name the investors from this round, only saying they are &#8220;related ecosystem players,&#8221; which could very well mean clients and supply chain partners. It declined to reveal its post-money valuation.</p>
+<p><em>The article has been updated to clarify that Rokid raised a total of $160 million from two tranches of Series C fundraising. </em></p>
+<div class="embed breakout">
+<blockquote class="wp-embedded-content" data-secret="xQ33kRSU7D"><p><a href="https://techcrunch.com/2020/04/16/chinese-startup-rokid-pitches-covid-19-detection-glasses-in-u-s/">Chinese startup Rokid pitches COVID-19 detection glasses in US</a></p></blockquote><div class="piano-inline-promo"></div>
+<p><iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted" title="&#8220;Chinese startup Rokid pitches COVID-19 detection glasses in US&#8221; &#8212; TechCrunch" src="https://techcrunch.com/2020/04/16/chinese-startup-rokid-pitches-covid-19-detection-glasses-in-u-s/embed/#?secret=IsC6paFLRD#?secret=xQ33kRSU7D" data-secret="xQ33kRSU7D" width="800" height="450" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></div>
+<div class="embed breakout">
+<blockquote class="wp-embedded-content" data-secret="Vl2fcAqjh2"><p><a href="https://techcrunch.com/2019/01/08/chinas-nreal-raises-15m-to-shrink-augmented-headsets-to-size-of-sunglasses/">China&#8217;s Nreal raises $15M to shrink augmented headsets to size of sunglasses</a></p></blockquote>
+<p><iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted" title="&#8220;China&#8217;s Nreal raises $15M to shrink augmented headsets to size of sunglasses&#8221; &#8212; TechCrunch" src="https://techcrunch.com/2019/01/08/chinas-nreal-raises-15m-to-shrink-augmented-headsets-to-size-of-sunglasses/embed/#?secret=jmIX27dajR#?secret=Vl2fcAqjh2" data-secret="Vl2fcAqjh2" width="800" height="450" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></div>
+<p><audio style="display: none;" controls="controls"></audio></p>
+<p><audio style="display: none;" controls="controls"></audio></p>
+<p><audio style="display: none;" controls="controls"></audio></p>
+<p><audio style="display: none;" controls="controls"></audio></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://techcrunch.com/2022/03/22/chinas-ar-company-rokid-closes-110m-series-c-to-expand-globally/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2287601</post-id>	</item>
+		<item>
+		<title>Harness moves into chaos engineering with ChaosNative acquisition</title>
+		<link>https://techcrunch.com/2022/03/22/harness-moves-into-chaos-engineering-with-chaosnative-acquisition/</link>
+					<comments>https://techcrunch.com/2022/03/22/harness-moves-into-chaos-engineering-with-chaosnative-acquisition/#respond</comments>
+		
+		<dc:creator><![CDATA[Ron Miller]]></dc:creator>
+		<pubDate>Tue, 22 Mar 2022 16:22:27 +0000</pubDate>
+				<category><![CDATA[Cloud]]></category>
+		<category><![CDATA[Developer]]></category>
+		<category><![CDATA[Exit]]></category>
+		<category><![CDATA[Fundings & Exits]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[chaos engineering]]></category>
+		<category><![CDATA[cloud native]]></category>
+		<category><![CDATA[developer tools]]></category>
+		<category><![CDATA[Harness]]></category>
+		<category><![CDATA[jyoti bansal]]></category>
+		<category><![CDATA[open source]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=2287753</guid>
+
+					<description><![CDATA[Harness, the developer-focused startup from Jyoti Bansal, has been working hard to build a more complete modern tooling platform for developers while taking a distinct shift into open source more recently. That started with the acquisition of Drone.io in 2020. Today, the company took another open source step with the acquisition of ChaosNative, best known [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p id="speakable-summary"><a href="http://harness.io" target="_blank" rel="noopener">Harness</a>, the developer-focused startup from <a href="https://techcrunch.com/tag/jyoti-bansal/">Jyoti Bansal</a>, has been working hard to build a more complete modern tooling platform for developers while taking a distinct <a href="https://techcrunch.com/2022/01/19/harness-releases-open-version-of-continuous-delivery-product-with-access-to-source-code/">shift into open source</a> more recently. That started with the<a href="https://techcrunch.com/2020/08/05/harness-makes-first-acquisition-snagging-open-source-ci-company-drone-io/"> acquisition of Drone.io</a> in 2020.</p>
+<p>Today, the company took another open source step with the acquisition of <a href="https://www.chaosnative.com/" target="_blank" rel="noopener">ChaosNative</a>, best known for the open source chaos engineering product <a href="https://litmuschaos.io/" target="_blank" rel="noopener">LitmusChaos</a>, which has been nurtured by the Cloud Native Computing Foundation (CNCF).</p>
+<p>While ChaosNative CEO and co-founder Uma Mukkara, writing <a href="https://harness.io/blog/news/chaosnative-is-joining-harness/" target="_blank" rel="noopener">in a company blog post</a> announcing the deal, said the project was originally geared to Cloud Native projects built on Kubernetes, it has grown into a broader set of chaos engineering tools over time.</p><div id="tc-target-mid-article-2287753" class="tc-target-mid-article ad-unit--size-auto"></div>
+<p>&#8220;What started out as an effort to provide out-of-the-box chaos experiments for Kubernetes-based microservices, eventually grew into an end-to-end framework to carry out chaos engineering on a wide variety of application and infrastructure targets, with support for multi-tenancy, SLO validation, and custom workflows, amongst other features,&#8221; Mukkara wrote in the post.</p>
+<p>With ChaosNative, Harness adds another piece to its developer toolkit, one that allows it to pressure-test its projects against worst-case scenarios. The idea is to try and create a set of conditions that could take down your application in order to understand that and prevent it from happening.</p>
+<p>Bansal said that it also enhances the set of testing and reliability tools already on the platform.</p>
+<p>&#8220;With the acquisition of ChaosNative and the addition of Harness SRM (service reliability management) and Harness STO (security testing orchestration), the Harness platform bridges the chasm of velocity, resiliency, reliability and security, empowering developers to rapidly and reliably deliver on business objectives while providing an unmatched developer experience,” he said in a statement.</p>
+<p>As with the Drone purchase a couple of years ago, Mukkara said that as part of Harness, it will continue to nurture the open source project while integrating it into the Harness platform and offering commercial versions of the ChaosNative products.</p>
+<p>&#8220;As part of Harness, we will continue to help maintain the community-first values of Litmus, while delivering on important roadmap items around integrations, newer fault injections/experiments, and an improved chaos dashboard,&#8221; Murkkara wrote.</p>
+<p>The companies did not discuss a purchase price, but customers will begin to see ChaosNative&#8217;s capabilities later this quarter, according to the company.</p>
+<div class="embed breakout">
+<blockquote class="wp-embedded-content" data-secret="kweQmA0fur"><p><a href="https://techcrunch.com/2021/11/10/whether-to-sell-your-company-is-always-going-to-be-a-huge-decision-for-founders/">Whether to sell your company is always going to be a huge decision for founders</a></p></blockquote>
+<p><iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted" title="&#8220;Whether to sell your company is always going to be a huge decision for founders&#8221; &#8212; TechCrunch" src="https://techcrunch.com/2021/11/10/whether-to-sell-your-company-is-always-going-to-be-a-huge-decision-for-founders/embed/#?secret=zj1dKMUuch#?secret=kweQmA0fur" data-secret="kweQmA0fur" width="800" height="450" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></div>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://techcrunch.com/2022/03/22/harness-moves-into-chaos-engineering-with-chaosnative-acquisition/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2287753</post-id>	</item>
+		<item>
+		<title>Cityblock Health names co-founder Toyin Ajayi as new CEO</title>
+		<link>https://techcrunch.com/2022/03/22/cityblock-health-names-co-founder-toyin-ajayi-as-new-ceo/</link>
+					<comments>https://techcrunch.com/2022/03/22/cityblock-health-names-co-founder-toyin-ajayi-as-new-ceo/#respond</comments>
+		
+		<dc:creator><![CDATA[Darrell Etherington]]></dc:creator>
+		<pubDate>Tue, 22 Mar 2022 16:19:46 +0000</pubDate>
+				<category><![CDATA[Health]]></category>
+		<category><![CDATA[Personnel]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[TC]]></category>
+		<category><![CDATA[Cityblock Health]]></category>
+		<category><![CDATA[Found]]></category>
+		<category><![CDATA[Toyin Ajayi]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=2287804</guid>
+
+					<description><![CDATA[Primary healthcare provider Cityblock Health has named co-founder Toyin Ajayi as its new CEO. The company, which has raised nearly $900 million and has a valuation just shy of $6 billion, focuses on delivering comprehensive, quality care to the underserved population relying on Medicare and Medicaid in the U.S. Having previously served as the company&#8217;s [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p id="speakable-summary">Primary healthcare provider Cityblock Health has named co-founder Toyin Ajayi as its new CEO. The company, which has raised nearly $900 million and has a valuation just shy of $6 billion, focuses on delivering comprehensive, quality care to the underserved population relying on Medicare and Medicaid in the U.S.</p>
+<p>Having previously served as the company&#8217;s president, Ajayi takes over from co-founder Iyah Romm, who took a temporary leave late in 2021 to focus on his own experience with &#8220;depression and the long-term effects of trauma.&#8221; Romm&#8217;s departure is now permanent, and Ajayi steps into the permanent chief executive role after having served in an interim office of the CEO led by current Cityblock Health board chair Andy Slavitt.</p>
+<p>Ajayi, herself a former practicing physician, recently joined our podcast <a href="https://pod.link/found" target="_blank" rel="noopener">Found</a> to talk about her experience working in the communities that Cityblock serves, and how it led to her founding the company.</p><div id="tc-target-mid-article-2287804" class="tc-target-mid-article ad-unit--size-auto"></div>
+<p><iframe src="https://player.simplecast.com/f4201a78-bd32-4d0f-8965-a97f893a2c8f?dark=false" width="100%" height="200px" frameborder="no" scrolling="no" seamless=""></iframe></p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://techcrunch.com/2022/03/22/cityblock-health-names-co-founder-toyin-ajayi-as-new-ceo/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2287804</post-id>	</item>
+		<item>
+		<title>Steam (officially) comes to Chrome OS</title>
+		<link>https://techcrunch.com/2022/03/22/steam-officially-comes-to-chrome-os/</link>
+					<comments>https://techcrunch.com/2022/03/22/steam-officially-comes-to-chrome-os/#respond</comments>
+		
+		<dc:creator><![CDATA[Frederic Lardinois]]></dc:creator>
+		<pubDate>Tue, 22 Mar 2022 16:02:05 +0000</pubDate>
+				<category><![CDATA[Gaming]]></category>
+		<category><![CDATA[chrome os]]></category>
+		<category><![CDATA[freeware]]></category>
+		<category><![CDATA[Google]]></category>
+		<category><![CDATA[google search]]></category>
+		<category><![CDATA[google-chrome]]></category>
+		<category><![CDATA[operating systems]]></category>
+		<category><![CDATA[Software]]></category>
+		<category><![CDATA[Steam]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=2287759</guid>
+
+					<description><![CDATA[This may feel like déjà vu because Google itself mistakenly leaked this announcement a few days ago, but the company today officially announced the launch of Steam OS on Chrome OS. Before you run off to install it, there are a few caveats: This is still an alpha release and only available on the more [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p id="speakable-summary">This may feel like déjà vu because Google itself mistakenly leaked this announcement a few days ago, but the company today officially <a href="https://support.google.com/chromebook/thread/156452389?hl=en" target="_blank" rel="noopener">announced</a> the launch of <a href="http://g.co/SteamonChromeOS" target="_blank" rel="noopener">Steam OS on Chrome OS</a>.</p>
+<p>Before you run off to install it, there are a few caveats: This is still an alpha release and only available on the more experimental and unstable Chrome OS Dev channel. The number of supported devices is also still limited since it&#8217;ll need at least 8GB of memory, an 11th-generation Intel Core i5 or i7 processor and Intel Iris Xe Graphics. That&#8217;s a relatively high-end configuration for what are generally meant to be highly affordable devices and somewhat ironically means that you can now play games on Chrome OS devices that are mostly meant for business users.</p>
+<p>The list of supported games is also still limited but includes the likes of Portal 2, Skyrim, The Witcher 3: Wild Hunt, Half-Life 2, Stardew Valley, Factorio, Stellaris, Civilization V, Fallout 4, Dico Elysium and Untitled Goose Game. You can find a complete list <a href="https://www.chromium.org/chromium-os/steam-on-chromeos/" target="_blank" rel="noopener">here</a>.</p><div id="tc-target-mid-article-2287759" class="tc-target-mid-article ad-unit--size-auto"></div>
+<p>Sometimes you&#8217;ll have to set your graphics to medium or lower to make these games work, but I didn&#8217;t think we&#8217;d see the day when people were playing The Witcher on Chrome OS. But given that Steam has greatly improved Linux support in recent years and Chrome OS has landed on more powerful devices, it was probably only a matter of time anyway. I don&#8217;t think people will buy Chrome OS devices just to game &#8212; and the list of supported games is too small for that &#8212; but it&#8217;s nice to know you will soon be able to kick back with an hour (or 10) of Factorio after work on a business trip or during a boring class.</p>
+<div class="embed breakout">
+<blockquote class="wp-embedded-content" data-secret="nNFcfdtBXi"><p><a href="https://techcrunch.com/2022/02/23/elden-ring-wonder-and-terror-abound-in-2022s-most-anticipated-game/">&#8216;Elden Ring&#8217;: Wonder and terror abound in 2022&#8217;s most-anticipated game</a></p></blockquote>
+<p><iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted" title="&#8220;&#8216;Elden Ring&#8217;: Wonder and terror abound in 2022&#8217;s most-anticipated game&#8221; &#8212; TechCrunch" src="https://techcrunch.com/2022/02/23/elden-ring-wonder-and-terror-abound-in-2022s-most-anticipated-game/embed/#?secret=iVQkjaaGpA#?secret=nNFcfdtBXi" data-secret="nNFcfdtBXi" width="800" height="450" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></div>
+<div class="embed breakout">
+<blockquote class="wp-embedded-content" data-secret="5WhlztGV2k"><p><a href="https://techcrunch.com/2022/01/26/valves-steam-deck-will-go-on-sale-february-25/">Valve&#8217;s Steam Deck will go on sale February 25</a></p></blockquote>
+<p><iframe class="wp-embedded-content" sandbox="allow-scripts" security="restricted" title="&#8220;Valve&#8217;s Steam Deck will go on sale February 25&#8221; &#8212; TechCrunch" src="https://techcrunch.com/2022/01/26/valves-steam-deck-will-go-on-sale-february-25/embed/#?secret=H6fmf9Y6ek#?secret=5WhlztGV2k" data-secret="5WhlztGV2k" width="800" height="450" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe></div>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://techcrunch.com/2022/03/22/steam-officially-comes-to-chrome-os/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2287759</post-id>	</item>
+		<item>
+		<title>Google Photos update adds a handy import option alongside other organizational changes</title>
+		<link>https://techcrunch.com/2022/03/22/google-photos-update-adds-a-handy-import-option-alongside-other-organizational-changes/</link>
+					<comments>https://techcrunch.com/2022/03/22/google-photos-update-adds-a-handy-import-option-alongside-other-organizational-changes/#respond</comments>
+		
+		<dc:creator><![CDATA[Sarah Perez]]></dc:creator>
+		<pubDate>Tue, 22 Mar 2022 16:00:37 +0000</pubDate>
+				<category><![CDATA[Apps]]></category>
+		<category><![CDATA[TC]]></category>
+		<category><![CDATA[Android]]></category>
+		<category><![CDATA[Apple Photos]]></category>
+		<category><![CDATA[Facebook]]></category>
+		<category><![CDATA[Google]]></category>
+		<category><![CDATA[Google Photos]]></category>
+		<category><![CDATA[iCloud]]></category>
+		<category><![CDATA[iOS]]></category>
+		<category><![CDATA[iPhone]]></category>
+		<category><![CDATA[mobile devices]]></category>
+		<category><![CDATA[photo gallery]]></category>
+		<category><![CDATA[photos]]></category>
+		<category><![CDATA[services]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=2287722</guid>
+
+					<description><![CDATA[Google today announced a number of changes ahead for its popular Google Photos app for mobile devices. With the update, the company plans to make it easier to organize, import and sort through your albums, as well as access shared content and screenshots, the company says. Some of the new features are designed to make [&#8230;]]]></description>
+										<content:encoded><![CDATA[<p id="speakable-summary">Google today <a href="https://blog.google/products/photos/get-organized-google-photos-spring-cleaning/">announced</a> a number of changes ahead for its popular Google Photos app for mobile devices. With the update, the company plans to make it easier to organize, import and sort through your albums, as well as access shared content and screenshots, the company says. Some of the new features are designed to make the Google Photos app work better with on-device folders, while others are focused on sorting through larger libraries that have grown over the years and may have become unwieldy.</p>
+<p>For example, the app&#8217;s Library tab is getting a redesign that will allow you to view your photos organized in a grid or list where you can now filter by type &#8212; including albums, shared albums, favorites or on-device folders &#8212; then sort them as you&#8217;d like. This design tweak will likely be welcomed by those who now have far too many galleries to keep track of, and need a way to narrow things down when hunting for photos.</p>
+<p><div id="attachment_2287762" style="width: 362px" class="wp-caption aligncenter"><img aria-describedby="caption-attachment-2287762" loading="lazy" class="vertical  wp-image-2287762" src="https://techcrunch.com/wp-content/uploads/2022/03/Screen-Shot-2022-03-22-at-11.16.22-AM-1.jpg?w=680" alt="" width="352" height="529" /><p id="caption-attachment-2287762" class="wp-caption-text"><strong>Image Credits:</strong> Google</p></div></p><div id="tc-target-mid-article-2287722" class="tc-target-mid-article ad-unit--size-auto"></div>
+<p>Another feature is designed to help Google Photos become your centralized photo storage location, if it&#8217;s not already. Below the album grid, Google Photos is adding a new &#8220;import photos&#8221; section alongside the buttons for the (<a href="https://www.theverge.com/2021/12/3/22816460/google-photos-locked-folder-sensitive-images-android-phones" target="_blank" rel="noopener">newer</a>) Locked Folder, utilities, archive and trash features. This import option will allow users to copy photos from rival services including iCloud, Facebook and Pixieset; digitize their photos, videos and film; back up from device folders; move photos into Google Photos from a camera; or scan photos using Google&#8217;s PhotoScan.</p>
+<p>Not all these import options are new &#8212; PhotoScan, for instance, used to be under Utilities. And previously, users could set their app to back up the photos on their device. iOS users could even sync their Favorites from their iPhone&#8217;s photo gallery to Google Photos&#8217; favorites. There was also a way to import to Google Photos from other services within Facebook and iCloud. But there wasn&#8217;t a dedicated destination inside the Google Photos app where you could find all the different ways to import photos.</p>
+<p><div id="attachment_2287765" style="width: 443px" class="wp-caption aligncenter"><img aria-describedby="caption-attachment-2287765" loading="lazy" class="vertical size-large wp-image-2287765" src="https://techcrunch.com/wp-content/uploads/2022/03/Screen-Shot-2022-03-22-at-11.19.03-AM.jpg?w=433" alt="" width="433" height="680" srcset="https://techcrunch.com/wp-content/uploads/2022/03/Screen-Shot-2022-03-22-at-11.19.03-AM.jpg 787w, https://techcrunch.com/wp-content/uploads/2022/03/Screen-Shot-2022-03-22-at-11.19.03-AM.jpg?resize=96,150 96w, https://techcrunch.com/wp-content/uploads/2022/03/Screen-Shot-2022-03-22-at-11.19.03-AM.jpg?resize=191,300 191w, https://techcrunch.com/wp-content/uploads/2022/03/Screen-Shot-2022-03-22-at-11.19.03-AM.jpg?resize=768,1205 768w, https://techcrunch.com/wp-content/uploads/2022/03/Screen-Shot-2022-03-22-at-11.19.03-AM.jpg?resize=433,680 433w, https://techcrunch.com/wp-content/uploads/2022/03/Screen-Shot-2022-03-22-at-11.19.03-AM.jpg?resize=32,50 32w" sizes="(max-width: 433px) 100vw, 433px" /><p id="caption-attachment-2287765" class="wp-caption-text"><strong>Image Credits:</strong> Google</p></div></p>
+<p>Meanwhile, the app&#8217;s Sharing tab is also getting an update. It will now include sections for sharing photos with a partner, shared albums and conversations. This will make it easier to find, view and manage your various shared photos and videos, Google notes. This update will roll out today on Android and will come in the near future to users on iOS.</p><div class="piano-inline-promo"></div>
+<p>For Android users, Google Photos will also offer access to your screenshots saved on your device. Many Google Photos users don&#8217;t back up their device screenshots, in order to save on storage space, but still need to reference those photos at times. They&#8217;ll soon be able to tap on a new shortcut that appears at the top of their main photo grid to go directly to their screenshots, Google says.</p>
+<p><div id="attachment_2287757" style="width: 2010px" class="wp-caption aligncenter"><img aria-describedby="caption-attachment-2287757" loading="lazy" class="wp-image-2287757 size-full" src="https://techcrunch.com/wp-content/uploads/2022/03/Screenshot_shortcut.png" alt="" width="2000" height="1000" srcset="https://techcrunch.com/wp-content/uploads/2022/03/Screenshot_shortcut.png 2000w, https://techcrunch.com/wp-content/uploads/2022/03/Screenshot_shortcut.png?resize=150,75 150w, https://techcrunch.com/wp-content/uploads/2022/03/Screenshot_shortcut.png?resize=300,150 300w, https://techcrunch.com/wp-content/uploads/2022/03/Screenshot_shortcut.png?resize=768,384 768w, https://techcrunch.com/wp-content/uploads/2022/03/Screenshot_shortcut.png?resize=680,340 680w, https://techcrunch.com/wp-content/uploads/2022/03/Screenshot_shortcut.png?resize=1536,768 1536w, https://techcrunch.com/wp-content/uploads/2022/03/Screenshot_shortcut.png?resize=50,25 50w" sizes="(max-width: 2000px) 100vw, 2000px" /><p id="caption-attachment-2287757" class="wp-caption-text"><strong>Image Credits:</strong> Google</p></div></p>
+<p>Another Android-only feature will present users with contextual suggestions to copy text, crop or use Google Lens when viewing a screenshot. This follows the launch of <a href="https://techcrunch.com/2021/06/07/apples-live-text-lets-you-interact-with-text-in-your-photos/">Apple&#8217;s Live Text feature,</a> which now allows users to copy and paste text from photos.</p>
+<p>While Google Photos would often make suggestions of how to improve photos, its tips would be buried in the Utilities menu and wouldn&#8217;t be focused on screenshots, generally, beyond recommending their removal in the app&#8217;s clean-up suggestion to &#8220;clear the clutter.&#8221; But this feature acknowledges that users are saving screenshots because they actually want to do something with them, and don&#8217;t necessarily consider them all disposable. This particular feature is &#8220;coming soon&#8221; to Android, Google says. (It&#8217;s already live on iOS).</p>
+<p>Except where noted otherwise, the new features will roll out gradually to Google Photos users on iOS and Android over the weeks ahead.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://techcrunch.com/2022/03/22/google-photos-update-adds-a-handy-import-option-alongside-other-organizational-changes/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2287722</post-id>	</item>
+	</channel>
+</rss>
