@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://example.com/</id>
+  <title>Example, Inc.</title>
+  <subtitle>all your examples are belong to us</subtitle>
+  <updated>2003-12-13T18:30:02Z</updated>
+  <icon>/icon.jpg</icon>
+  <logo>/logo.jpg</logo>
+  <rights> © 2005 John Doe </rights>
+  <author>
+    <name>John Doe</name>
+    <email>JohnDoe@example.com</email>
+    <uri>http://example.com/~johndoe</uri>
+  </author>
+  <author>
+    <name>Mary Doe</name>
+    <email>MaryDoe@example.com</email>
+    <uri>http://example.com/~marydoe</uri>
+  </author>
+  <link rel="alternate" type="text/html" hreflang="en" href="http://example.com/" />
+  <link rel="self" type="application/atom+xml" href="http://example.com/feed.atom" />
+  <category term="sports" />
+  <category term="general" />
+  <contributor>
+    <name>Jane Doe</name>
+  </contributor>
+  <contributor>
+    <name>Mark Doe</name>
+  </contributor>
+  <generator uri="http://www.example.com/" version="1.0">Example Toolkit</generator>
+  <entry>
+    <id>http://example.com/blog/1234</id>
+    <title>Atom-Powered Robots Run Amok</title>
+    <updated>2003-12-13T18:30:02-05:00</updated>
+    <published>2003-12-13T08:29:29-04:00</published>
+    <author>
+      <name>John Doe</name>
+      <email>JohnDoe@example.com</email>
+      <uri>http://example.com/~johndoe</uri>
+    </author>
+    <author>
+      <name>Mary Doe</name>
+      <email>MaryDoe@example.com</email>
+      <uri>http://example.com/~marydoe</uri>
+    </author>
+    <summary>Some text.</summary>
+    <content>complete story here</content>
+    <link rel="alternate" type="text/html" href="http://example.org/2005/04/02/atom" />
+    <link rel="enclosure" type="audio/mpeg" length="1337" href="http://example.org/audio/ph34r_my_podcast.mp3" />
+    <category term="sports" />
+    <category term="general" />
+    <contributor>
+      <name>Sam Ruby</name>
+    </contributor>
+    <contributor>
+      <name>Joe Gregorio</name>
+    </contributor>
+    <source>
+      <id>http://example.org/</id>
+      <title>Fourty-Two</title>
+      <updated>2003-12-13T18:30:02Z</updated>
+      <rights>© 2005 Example, Inc.</rights>
+    </source>
+    <rights type="html">&amp;copy; 2005 John Doe</rights>
+  </entry>
+</feed>

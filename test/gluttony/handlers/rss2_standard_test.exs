@@ -1,15 +1,13 @@
 defmodule Gluttony.Handlers.RSS2StandardTest do
   use ExUnit.Case
 
-  # If CDATA is not getting pickedup, make sure this
-  # this files were not processed or formatted: https://github.com/qcam/saxy/issues/98
   @standard_rss2 File.read!("test/fixtures/rss2_standard.rss")
 
   setup_all do
     Gluttony.Parser.parse_string(@standard_rss2)
   end
 
-  describe "required rss 2.0 channel elements" do
+  describe "rss 2.0 feed elements" do
     test "title", %{feed: feed} do
       assert feed.title == "GoUpstate.com News Headlines"
     end
@@ -22,9 +20,7 @@ defmodule Gluttony.Handlers.RSS2StandardTest do
       assert feed.description ==
                "The latest news from GoUpstate.com, a Spartanburg Herald-Journal Web site."
     end
-  end
 
-  describe "optional rss 2.0 channel elements" do
     test "language", %{feed: feed} do
       assert feed.language == "en-us"
     end
@@ -110,7 +106,7 @@ defmodule Gluttony.Handlers.RSS2StandardTest do
     end
   end
 
-  describe "rss 2.0 item elements" do
+  describe "rss 2.0 entry elements" do
     test "title", %{entries: [entry | _]} do
       assert entry.title == "Atom-Powered Robots Run Amok"
     end

@@ -1,12 +1,19 @@
 defmodule Gluttony.Parser do
   @moduledoc """
   Deals with XML processing.
+
+  # Remarks
+  If CDATA is not getting pickedup, make sure the rss source
+  was not processed or formatted in any form. Since we are not using a separate event
+  to treat CDATA, we need to make sure there's no newlines between tag and content.
+  More information about why this is necessary ca be found here: https://github.com/qcam/saxy/issues/98.
   """
 
   @behaviour Saxy.Handler
 
   @itunes_namespace "http://www.itunes.com/dtds/podcast-1.0.dtd"
   @feedburner_namespace "http://rssnamespace.org/feedburner/ext/1.0"
+  @atom_namespace "http://www.w3.org/2005/Atom"
 
   def parse_string(xml) do
     Saxy.parse_string(xml, __MODULE__, [])
@@ -28,23 +35,23 @@ defmodule Gluttony.Parser do
   end
 
   @doc false
-  def handle_event(:start_element, {"rss", attributes}, state) do
-    handler =
-      case Map.new(attributes) do
-        %{"version" => "2.0"} ->
-          Gluttony.Handlers.RSS2Standard
+  def handle_event(:start_element, {name, attributes}, %{handler: nil} = state) do
+    case {name, Map.new(attributes)} do
+      {"rss", %{"version" => "2.0"}} ->
+        {:ok, %{state | handler: Gluttony.Handlers.RSS2Standard}}
 
-        %{"version" => "2.0", "xmlns:itunes" => @itunes_namespace} ->
-          Gluttony.Handlers.RSS2Itunes
+      {"rss", %{"version" => "2.0", "xmlns:itunes" => @itunes_namespace}} ->
+        {:ok, %{state | handler: Gluttony.Handlers.RSS2Itunes}}
 
-        %{"version" => "2.0", "xmlns:feedburner" => @feedburner_namespace} ->
-          Gluttony.Handlers.RSS2Feedburner
+      {"rss", %{"version" => "2.0", "xmlns:feedburner" => @feedburner_namespace}} ->
+        {:ok, %{state | handler: Gluttony.Handlers.RSS2Feedburner}}
 
-        _ ->
-          {:halt, "No handler available to parse this feed #{inspect(attributes)}"}
-      end
+      {"feed", %{"xmlns" => @atom_namespace}} ->
+        {:ok, %{state | handler: Gluttony.Handlers.Atom1Standard}}
 
-    {:ok, %{state | handler: handler}}
+      _ ->
+        {:halt, "No handler available to parse this feed #{inspect(attributes)}"}
+    end
   end
 
   @doc false
