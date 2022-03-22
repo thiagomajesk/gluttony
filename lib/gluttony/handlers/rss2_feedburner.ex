@@ -1,11 +1,17 @@
 defmodule Gluttony.Handlers.RSS2Feedburner do
-  # call default rss2_standard when there's no match
+  @behaviour Gluttony.Handler
 
-  def handle_element({channel, items}, attrs, stack) do
-    {%{}, %{}}
+  # TODO: Find spec and implement the feedburner extension.
+
+  alias Gluttony.Handlers.RSS2Standard
+
+  @impl true
+  def handle_element(attrs, stack) do
+    RSS2Standard.handle_element(attrs, stack)
   end
 
-  def handle_content({channel, items}, chars, stack) do
-    {%{}, %{}}
+  @impl true
+  def handle_content(chars, stack) do
+    RSS2Standard.handle_content(chars, stack)
   end
 end
