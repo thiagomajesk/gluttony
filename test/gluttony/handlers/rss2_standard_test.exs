@@ -3,7 +3,7 @@ defmodule Gluttony.Handlers.RSS2StandardTest do
 
   # If CDATA is not getting pickedup, make sure this
   # this files were not processed or formatted: https://github.com/qcam/saxy/issues/98
-  @standard_rss2 File.read!("test/fixtures/rss2_standard")
+  @standard_rss2 File.read!("test/fixtures/rss2_standard.rss")
 
   setup_all do
     Gluttony.Parser.parse_string(@standard_rss2)
