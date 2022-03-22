@@ -1,28 +1,44 @@
 defmodule Gluttony.Feed do
+  @moduledoc """
+  Defines a feed channel.
+  """
+
+  @type t :: __MODULE__
+
   defstruct [
+    :id,
     :title,
-    :link,
+    :url,
     :description,
+    :links,
+    :updated,
+    :authors,
     :language,
+    :icon,
+    :logo,
     :copyright,
-    :managing_editor,
-    :web_master,
-    :pub_date,
-    :last_build_date,
-    :generator,
-    :docs,
-    :cloud,
-    :ttl,
-    :image,
-    :rating,
-    :text_input,
-    :skip_hours,
-    :skip_days,
     categories: [],
     items: []
   ]
 end
 
 defmodule Gluttony.FeedItem do
-  defstruct [:title, :link, :guid, :pub_date, :description]
+  @moduledoc """
+  Defines a feed entry.
+  """
+
+  @type t :: __MODULE__
+
+  defstruct [
+    :id,
+    :title,
+    :url,
+    :description,
+    :links,
+    :updated,
+    :published,
+    :authors,
+    :categories,
+    :source
+  ]
 end

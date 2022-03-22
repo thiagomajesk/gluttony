@@ -13,13 +13,18 @@ defmodule Gluttony.Parser do
   end
 
   @doc false
-  def handle_event(:start_document, _prolog, _opts) do
-    {:ok, %{feed: %{}, entries: [], handler: nil, stack: []}}
+  def handle_event(:start_document, _prolog, opts) do
+    {:ok, %{feed: %{}, entries: [], handler: nil, stack: [], raw: opts[:raw] || true}}
   end
 
   @doc false
-  def handle_event(:end_document, _data, state) do
+  def handle_event(:end_document, _data, %{raw: true} = state) do
     {:ok, Map.take(state, [:feed, :entries])}
+  end
+
+  @doc false
+  def handle_event(:end_document, _data, %{handler: handler, raw: false} = state) do
+    {:ok, Gluttony.Handler.to_feed(handler, Map.take(state, [:feed, :entries]))}
   end
 
   @doc false

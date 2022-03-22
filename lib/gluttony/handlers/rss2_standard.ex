@@ -163,4 +163,9 @@ defmodule Gluttony.Handlers.RSS2Standard do
         {:cont, chars}
     end
   end
+
+  @impl true
+  def to_feed(_feed, _entries) do
+    raise "Not implemented"
+  end
 end

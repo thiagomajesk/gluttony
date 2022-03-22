@@ -14,4 +14,9 @@ defmodule Gluttony.Handlers.RSS2Itunes do
   def handle_content(chars, stack) do
     RSS2Standard.handle_content(chars, stack)
   end
+
+  @impl true
+  def to_feed(_feed, _entries) do
+    raise "Not implemented"
+  end
 end
