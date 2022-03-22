@@ -51,7 +51,7 @@ defmodule Gluttony.Handler do
     |> handle_result(state)
   end
 
-  defp handle_result(result, state) do
+  defp handle_result(result, %{entries: entries} = state) do
     case result do
       {:feed, keys, value} when is_list(keys) ->
         update_feed(state, keys, value)
@@ -60,7 +60,7 @@ defmodule Gluttony.Handler do
         update_feed(state, [key], value)
 
       {:entry, _chars_or_attrs} ->
-        Map.update!(state, :entries, &[%{} | &1])
+        %{state | entries: [%{} | entries]}
 
       {:entry, keys, value} when is_list(keys) ->
         update_entry(state, keys, value)
@@ -73,15 +73,15 @@ defmodule Gluttony.Handler do
     end
   end
 
-  defp update_feed(state, keys, value) do
-    feed = place_in(state.feed, keys, value)
-    Map.replace!(state, :feed, feed)
+  defp update_feed(%{feed: feed} = state, keys, value) do
+    feed = place_in(feed, keys, value)
+    %{state | feed: feed}
   end
 
-  defp update_entry(state, keys, value) do
-    {entry, entries} = pop_current_entry(state.entries)
+  defp update_entry(%{entries: entries} = state, keys, value) do
+    {entry, entries} = pop_current_entry(entries)
     entry = place_in(entry, keys, value)
-    Map.replace!(state, :entries, [entry | entries])
+    %{state | entries: [entry | entries]}
   end
 
   # Get current entry (latest created) or create a new one.

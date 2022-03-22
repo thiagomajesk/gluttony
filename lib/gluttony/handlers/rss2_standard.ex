@@ -1,8 +1,6 @@
 defmodule Gluttony.Handlers.RSS2Standard do
   @behaviour Gluttony.Handler
 
-  import Gluttony.Helpers
-
   @impl true
   def handle_element(attrs, stack) do
     case stack do
@@ -14,7 +12,7 @@ defmodule Gluttony.Handlers.RSS2Standard do
 
         cloud = %{
           domain: attrs["domain"],
-          port: parse_integer(attrs["port"]),
+          port: attrs["port"],
           path: attrs["path"],
           register_procedure: attrs["registerProcedure"],
           protocol: attrs["protocol"]
@@ -27,7 +25,7 @@ defmodule Gluttony.Handlers.RSS2Standard do
 
         enclosure = %{
           url: attrs["url"],
-          length: parse_integer(attrs["length"]),
+          length: attrs["length"],
           type: attrs["type"]
         }
 
@@ -69,11 +67,9 @@ defmodule Gluttony.Handlers.RSS2Standard do
         {:feed, :web_master, chars}
 
       ["pubDate", "channel" | _] ->
-        chars = parse_datetime(chars)
         {:feed, :pub_date, chars}
 
       ["lastBuildDate", "channel" | _] ->
-        chars = parse_datetime(chars)
         {:feed, :last_build_date, chars}
 
       ["category", "channel" | _] ->
@@ -86,22 +82,15 @@ defmodule Gluttony.Handlers.RSS2Standard do
         {:feed, :docs, chars}
 
       ["ttl", "channel" | _] ->
-        chars = parse_integer(chars)
         {:feed, :ttl, chars}
 
       ["rating", "channel" | _] ->
         {:feed, :rating, chars}
 
       ["hour", "skipHours", "channel" | _] ->
-        chars = parse_integer(chars)
         {:feed, :skip_hours, [chars]}
 
       ["day", "skipDays", "channel" | _] ->
-        chars =
-          chars
-          |> String.downcase()
-          |> String.to_existing_atom()
-
         {:feed, :skip_days, [chars]}
 
       #
@@ -117,11 +106,9 @@ defmodule Gluttony.Handlers.RSS2Standard do
         {:feed, [:image, :link], chars}
 
       ["width", "image" | _] ->
-        chars = parse_integer(chars)
         {:feed, [:image, :width], chars}
 
       ["height", "image" | _] ->
-        chars = parse_integer(chars)
         {:feed, [:image, :height], chars}
 
       ["description", "image" | _] ->
@@ -155,12 +142,10 @@ defmodule Gluttony.Handlers.RSS2Standard do
         {:entry, :guid, chars}
 
       ["pubDate", "item" | _] ->
-        date = parse_datetime(chars)
-        {:entry, :pub_date, date}
+        {:entry, :pub_date, chars}
 
       ["description", "item" | _] ->
-        cdata = parse_cdata(chars)
-        {:entry, :description, cdata}
+        {:entry, :description, chars}
 
       ["author", "item" | _] ->
         {:entry, :author, chars}

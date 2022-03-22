@@ -42,11 +42,11 @@ defmodule Gluttony.Handlers.RSS2StandardTest do
     end
 
     test "pub_date", %{feed: feed} do
-      assert feed.pub_date == ~U[2002-09-07 00:00:01Z]
+      assert feed.pub_date == "Sat, 07 Sep 2002 00:00:01 GMT"
     end
 
     test "last_build_date", %{feed: feed} do
-      assert feed.last_build_date == ~U[2002-09-07 09:42:31Z]
+      assert feed.last_build_date == "Sat, 07 Sep 2002 09:42:31 GMT"
     end
 
     test "categories", %{feed: feed} do
@@ -65,25 +65,25 @@ defmodule Gluttony.Handlers.RSS2StandardTest do
       assert %{
                domain: "rpc.sys.com",
                path: "/RPC2",
-               port: 80,
+               port: "80",
                protocol: "soap",
                register_procedure: "pingMe"
              } = feed.cloud
     end
 
     test "ttl", %{feed: feed} do
-      assert feed.ttl == 60
+      assert feed.ttl == "60"
     end
 
     test "image", %{feed: feed} do
       assert %{
                description:
                  "Breaking news and stories from GoUpstate.com, a Spartanburg Herald-Journal Web site.",
-               height: 35,
+               height: "35",
                link: "http://www.goupstate.com/",
                title: "GoUpstate.com News Headlines",
                url: "http://www.goupstate.com/images/goupstate_logo.gif",
-               width: 140
+               width: "140"
              } = feed.image
     end
 
@@ -102,11 +102,11 @@ defmodule Gluttony.Handlers.RSS2StandardTest do
     end
 
     test "skip_hours", %{feed: feed} do
-      assert feed.skip_hours == [24, 12]
+      assert feed.skip_hours == ["24", "12"]
     end
 
     test "skip_days", %{feed: feed} do
-      assert feed.skip_days == [:friday, :monday]
+      assert feed.skip_days == ["Friday", "Monday"]
     end
   end
 
@@ -138,7 +138,7 @@ defmodule Gluttony.Handlers.RSS2StandardTest do
     test "enclosure", %{entries: [entry | _]} do
       assert %{
                url: "http://www.scripting.com/mp3s/weatherReportSuite.mp3",
-               length: 12_216_320,
+               length: "12216320",
                type: "audio/mpeg"
              } = entry.enclosure
     end
@@ -148,7 +148,7 @@ defmodule Gluttony.Handlers.RSS2StandardTest do
     end
 
     test "pub_date", %{entries: [entry | _]} do
-      assert entry.pub_date == ~U[2002-05-19 15:21:36Z]
+      assert entry.pub_date == "Sun, 19 May 2002 15:21:36 GMT"
     end
 
     test "source", %{entries: [entry | _]} do

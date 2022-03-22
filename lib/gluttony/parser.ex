@@ -39,22 +39,22 @@ defmodule Gluttony.Parser do
           {:halt, "No handler available to parse this feed #{inspect(attributes)}"}
       end
 
-    {:ok, Map.put(state, :handler, handler)}
+    {:ok, %{state | handler: handler}}
   end
 
   @doc false
-  def handle_event(:start_element, {name, attributes}, %{handler: handler} = state) do
+  def handle_event(:start_element, {name, attributes}, %{handler: handler, stack: stack} = state) do
     # Push the current tag early to the stack so the calls
     # to :handle_element and :handle_content can consistently use
     # the stack to find the current scope we are processing.
-    state = Map.update!(state, :stack, &push(name, &1))
+    state = %{state | stack: push(name, stack)}
 
     {:ok, Gluttony.Handler.handle_element(handler, attributes, state)}
   end
 
   @doc false
-  def handle_event(:end_element, _name, state) do
-    {:ok, Map.update!(state, :stack, &pop(&1))}
+  def handle_event(:end_element, _name, %{stack: stack} = state) do
+    {:ok, %{state | stack: pop(stack)}}
   end
 
   @doc false
@@ -68,5 +68,5 @@ defmodule Gluttony.Parser do
 
   # Removes the last tag from the stack.
   defp pop([]), do: []
-  defp pop(stack), do: tl(stack)
+  defp pop([_head | tail]), do: tail
 end
