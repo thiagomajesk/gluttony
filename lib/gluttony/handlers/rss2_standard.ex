@@ -170,9 +170,4 @@ defmodule Gluttony.Handlers.RSS2Standard do
       _ -> {:cont, cached}
     end
   end
-
-  @impl true
-  def to_feed(_feed, _entries) do
-    raise "Not implemented"
-  end
 end

@@ -1,8 +1,6 @@
 defmodule Gluttony.Handlers.RSS2Itunes do
   @behaviour Gluttony.Handler
 
-  alias Gluttony.Handlers.RSS2Standard
-
   @impl true
   def handle_element(attrs, stack) do
     case stack do
@@ -22,7 +20,7 @@ defmodule Gluttony.Handlers.RSS2Itunes do
         {:feed, :itunes_categories, [attrs["text"]]}
 
       _ ->
-        RSS2Standard.handle_element(attrs, stack)
+        {:cont, attrs}
     end
   end
 
@@ -57,13 +55,8 @@ defmodule Gluttony.Handlers.RSS2Itunes do
         {:entry, :itunes_explicit, chars}
 
       _ ->
-        RSS2Standard.handle_content(chars, stack)
+        {:cont, chars}
     end
-  end
-
-  @impl true
-  def to_feed(_feed, _entries) do
-    raise "Not implemented"
   end
 
   @impl true
@@ -73,7 +66,7 @@ defmodule Gluttony.Handlers.RSS2Itunes do
         {:feed, :itunes_owner, cached}
 
       _ ->
-        RSS2Standard.handle_content(cached, stack)
+        {:cont, cached}
     end
   end
 end

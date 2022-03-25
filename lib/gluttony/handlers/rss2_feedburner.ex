@@ -3,25 +3,24 @@ defmodule Gluttony.Handlers.RSS2Feedburner do
 
   # TODO: Find spec and implement the feedburner extension.
 
-  alias Gluttony.Handlers.RSS2Standard
-
   @impl true
   def handle_element(attrs, stack) do
-    RSS2Standard.handle_element(attrs, stack)
+    case stack do
+      _ -> {:cont, attrs}
+    end
   end
 
   @impl true
   def handle_content(chars, stack) do
-    RSS2Standard.handle_content(chars, stack)
-  end
-
-  @impl true
-  def to_feed(_feed, _entries) do
-    raise "Not implemented"
+    case stack do
+      _ -> {:cont, chars}
+    end
   end
 
   @impl true
   def handle_cached(cached, stack) do
-    RSS2Standard.handle_content(cached, stack)
+    case stack do
+      _ -> {:cont, cached}
+    end
   end
 end

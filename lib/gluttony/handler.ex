@@ -48,11 +48,6 @@ defmodule Gluttony.Handler do
   """
   @callback handle_cached(cached :: term, stack :: stack()) :: result()
 
-  @doc """
-  Transforms the processed parsed data into a `Gluttony.Feed` struct.
-  """
-  @callback to_feed(feed :: map(), entries :: list(map())) :: Gluttony.Feed.t()
-
   @doc false
   def handle_element(impl, attrs, %{stack: stack} = state) do
     attrs
@@ -74,11 +69,6 @@ defmodule Gluttony.Handler do
     cached
     |> impl.handle_cached(stack)
     |> handle_result(state)
-  end
-
-  @doc false
-  def to_feed(impl, %{feed: feed, entries: entries}) do
-    impl.to_feed(feed, entries)
   end
 
   defp handle_result(result, %{entries: entries} = state) do

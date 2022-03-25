@@ -33,7 +33,7 @@ defmodule Gluttony.Handlers.Atom1StandardTest do
     end
 
     test "rights", %{feed: feed} do
-      assert feed.rights == " © 2005 John Doe "
+      assert feed.rights == "© 2005 John Doe"
     end
 
     test "authors", %{feed: feed} do

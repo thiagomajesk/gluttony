@@ -17,34 +17,23 @@ defmodule Gluttony.Parser do
 
   @doc false
   def handle_event(:start_document, _prolog, opts) do
-    {:ok, %{feed: %{}, entries: [], handler: nil, stack: [], raw: opts[:raw] || true, cache: %{}}}
+    {:ok, %{feed: %{}, entries: [], handlers: nil, stack: [], raw: opts[:raw] || true, cache: %{}}}
   end
 
   @doc false
-  def handle_event(:end_document, _data, %{raw: true} = state) do
+  def handle_event(:end_document, _data, state) do
     {:ok, Map.take(state, [:feed, :entries])}
   end
 
   @doc false
-  def handle_event(:end_document, _data, %{handler: handler, raw: false} = state) do
-    {:ok, Gluttony.Handler.to_feed(handler, Map.take(state, [:feed, :entries]))}
-  end
-
-  @doc false
-  def handle_event(:start_element, {name, attributes}, %{handler: nil} = state) do
-    # TODO: Support processing tags for multiple extensions at once
+  def handle_event(:start_element, {name, attributes}, %{handlers: nil} = state) do
     case {name, Map.new(attributes)} do
-      {"rss", %{"version" => "2.0", "xmlns:itunes" => @itunes_namespace}} ->
-        {:ok, %{state | handler: Gluttony.Handlers.RSS2Itunes}}
-
-      {"rss", %{"version" => "2.0", "xmlns:feedburner" => @feedburner_namespace}} ->
-        {:ok, %{state | handler: Gluttony.Handlers.RSS2Feedburner}}
-
-      {"rss", %{"version" => "2.0"}} ->
-        {:ok, %{state | handler: Gluttony.Handlers.RSS2Standard}}
+      {"rss", %{"version" => "2.0"} = attrs} ->
+        handlers = discover_handlers(attrs, Gluttony.Handlers.RSS2Standard)
+        {:ok, %{state | handlers: handlers}}
 
       {"feed", %{"xmlns" => @atom_namespace}} ->
-        {:ok, %{state | handler: Gluttony.Handlers.Atom1Standard}}
+        {:ok, %{state | handlers: [Gluttony.Handlers.Atom1Standard]}}
 
       _ ->
         {:halt, "No handler available to parse this feed #{inspect(attributes)}"}
@@ -52,25 +41,61 @@ defmodule Gluttony.Parser do
   end
 
   @doc false
-  def handle_event(:start_element, {name, attributes}, %{handler: handler, stack: stack} = state) do
+  def handle_event(:start_element, {name, attributes}, %{handlers: handlers, stack: stack} = state) do
     # Push the current tag early to the stack so the calls
     # to :handle_element and :handle_content can consistently use
     # the stack to find the current scope we are processing.
     state = %{state | stack: push(name, stack)}
 
-    {:ok, Gluttony.Handler.handle_element(handler, attributes, state)}
+    {:ok, dispatch_events(handlers, :handle_element, attributes, state)}
   end
 
   @doc false
-  def handle_event(:end_element, name, %{handler: handler, stack: stack, cache: cache} = state) do
+  def handle_event(:end_element, name, %{handlers: handlers, stack: stack, cache: cache} = state) do
     {cached, cache} = Map.pop(cache, to_string(name))
-    state = Gluttony.Handler.handle_cached(handler, cached, state)
+
+    state = dispatch_events(handlers, :handle_cached, cached, state)
+
     {:ok, %{state | stack: pop(stack), cache: cache}}
   end
 
   @doc false
-  def handle_event(:characters, chars, %{handler: handler} = state) do
-    {:ok, Gluttony.Handler.handle_content(handler, chars, state)}
+  def handle_event(:characters, "\n" <> _, state) do
+    {:ok, state}
+  end
+
+  @doc false
+  def handle_event(:characters, chars, %{handlers: handlers} = state) do
+    chars = String.trim(chars)
+
+    {:ok, dispatch_events(handlers, :handle_content, chars, state)}
+  end
+
+  # Iterate over all the handlers calling the respective
+  # processing function and returns the resulting state.
+  defp dispatch_events(handlers, fun, content, state) do
+    Enum.reduce(handlers, state, fn handler, state ->
+      apply(Gluttony.Handler, fun, [handler, content, state])
+    end)
+  end
+
+  # Discovers which handlers we should use based on existing namespaces.
+  # In the end, we reverse the list so we start processing the standard handler
+  # first and after that, the handlers that treat feed extensions (itunes, feedburner, etc).
+  defp discover_handlers(attrs, default) do
+    extensions =
+      Enum.reduce(attrs, [default], fn
+        {"xmlns:feedburner", @feedburner_namespace}, acc ->
+          [Gluttony.Handlers.RSS2Feedburner | acc]
+
+        {"xmlns:itunes", @itunes_namespace}, acc ->
+          [Gluttony.Handlers.RSS2Itunes | acc]
+
+        _kv, acc ->
+          acc
+      end)
+
+    Enum.reverse(extensions)
   end
 
   # Pushes a tag to the current stack.
