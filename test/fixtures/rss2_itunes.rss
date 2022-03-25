@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Hiking Treks</title>
+    <link>https://www.apple.com/itunes/podcasts/</link>
+    <language>en-us</language>
+    <copyright>&#169; 2020 John Appleseed</copyright>
+    <itunes:author>The Sunset Explorers</itunes:author>
+    <description>
+      Love to get outdoors and discover nature&apos;s treasures? Hiking Treks is the
+      show for you. We review hikes and excursions, review outdoor gear and interview
+      a variety of naturalists and adventurers. Look for new episodes each week.
+    </description>
+    <itunes:type>serial</itunes:type>
+    <itunes:owner>
+      <itunes:name>Sunset Explorers</itunes:name>
+      <itunes:email>mountainscape@icloud.com</itunes:email>
+    </itunes:owner>
+    <itunes:image
+      href="https://applehosted.podcasts.apple.com/hiking_treks/artwork.png"
+    />
+    <itunes:category text="Sports">
+      <itunes:category text="Wilderness"/>
+    </itunes:category>
+    <itunes:explicit>false</itunes:explicit>
+    <item>
+      <itunes:episodeType>trailer</itunes:episodeType>
+      <itunes:title>Hiking Treks Trailer</itunes:title>
+      <description>
+          <![CDATA[The Sunset Explorers share tips, techniques and recommendations for
+          great hikes and adventures around the United States. Listen on 
+          <a href="https://www.apple.com/itunes/podcasts/">Apple Podcasts</a>.]]>
+      </description>
+      <enclosure 
+        length="498537" 
+        type="audio/mpeg" 
+        url="http://example.com/podcasts/everything/AllAboutEverythingEpisode4.mp3"
+      />
+      <guid>aae20190418</guid>
+      <pubDate>Tue, 8 Jan 2019 01:15:00 GMT</pubDate>
+      <itunes:duration>1079</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+  </channel>
+</rss>

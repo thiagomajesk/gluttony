@@ -33,14 +33,14 @@ defmodule Gluttony.Parser do
   @doc false
   def handle_event(:start_element, {name, attributes}, %{handler: nil} = state) do
     case {name, Map.new(attributes)} do
-      {"rss", %{"version" => "2.0"}} ->
-        {:ok, %{state | handler: Gluttony.Handlers.RSS2Standard}}
-
       {"rss", %{"version" => "2.0", "xmlns:itunes" => @itunes_namespace}} ->
         {:ok, %{state | handler: Gluttony.Handlers.RSS2Itunes}}
 
       {"rss", %{"version" => "2.0", "xmlns:feedburner" => @feedburner_namespace}} ->
         {:ok, %{state | handler: Gluttony.Handlers.RSS2Feedburner}}
+
+      {"rss", %{"version" => "2.0"}} ->
+        {:ok, %{state | handler: Gluttony.Handlers.RSS2Standard}}
 
       {"feed", %{"xmlns" => @atom_namespace}} ->
         {:ok, %{state | handler: Gluttony.Handlers.Atom1Standard}}
