@@ -32,6 +32,7 @@ defmodule Gluttony.Parser do
 
   @doc false
   def handle_event(:start_element, {name, attributes}, %{handler: nil} = state) do
+    # TODO: Support processing tags for multiple extensions at once
     case {name, Map.new(attributes)} do
       {"rss", %{"version" => "2.0", "xmlns:itunes" => @itunes_namespace}} ->
         {:ok, %{state | handler: Gluttony.Handlers.RSS2Itunes}}
