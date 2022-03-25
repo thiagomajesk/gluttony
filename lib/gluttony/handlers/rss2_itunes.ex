@@ -19,4 +19,9 @@ defmodule Gluttony.Handlers.RSS2Itunes do
   def to_feed(_feed, _entries) do
     raise "Not implemented"
   end
+
+  @impl true
+  def handle_cached(cached, stack) do
+    RSS2Standard.handle_content(cached, stack)
+  end
 end

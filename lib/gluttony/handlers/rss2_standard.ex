@@ -165,6 +165,13 @@ defmodule Gluttony.Handlers.RSS2Standard do
   end
 
   @impl true
+  def handle_cached(cached, stack) do
+    case stack do
+      _ -> {:cont, cached}
+    end
+  end
+
+  @impl true
   def to_feed(_feed, _entries) do
     raise "Not implemented"
   end

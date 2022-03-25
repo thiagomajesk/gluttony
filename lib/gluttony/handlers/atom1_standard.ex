@@ -27,6 +27,12 @@ defmodule Gluttony.Handlers.Atom1Standard do
         link = attrs["href"]
         {:entry, :links, [link]}
 
+      ["author"] ->
+        {:cache, :author}
+
+      ["author", "entry"] ->
+        {:cache, :author}
+
       _ ->
         {:cont, attrs}
     end
@@ -63,7 +69,13 @@ defmodule Gluttony.Handlers.Atom1Standard do
         {:feed, :contributors, [chars]}
 
       ["name", "author"] ->
-        {:feed, :authors, [chars]}
+        {:cache, [:author, :name], chars}
+
+      ["email", "author"] ->
+        {:cache, [:author, :email], chars}
+
+      ["uri", "author"] ->
+        {:cache, [:author, :uri], chars}
 
       ["title", "entry"] ->
         {:entry, :title, chars}
@@ -84,7 +96,13 @@ defmodule Gluttony.Handlers.Atom1Standard do
         {:entry, :content, chars}
 
       ["name", "author", "entry"] ->
-        {:entry, :authors, [chars]}
+        {:cache, [:author, :name], chars}
+
+      ["email", "author", "entry"] ->
+        {:cache, [:author, :email], chars}
+
+      ["uri", "author", "entry"] ->
+        {:cache, [:author, :uri], chars}
 
       ["name", "contributor", "entry"] ->
         {:entry, :contributors, [chars]}
@@ -106,6 +124,20 @@ defmodule Gluttony.Handlers.Atom1Standard do
 
       _ ->
         {:cont, chars}
+    end
+  end
+
+  @impl true
+  def handle_cached(cached, stack) do
+    case stack do
+      ["author", "entry"] ->
+        {:entry, :authors, [cached]}
+
+      ["author"] ->
+        {:feed, :authors, [cached]}
+
+      _ ->
+        {:cont, cached}
     end
   end
 

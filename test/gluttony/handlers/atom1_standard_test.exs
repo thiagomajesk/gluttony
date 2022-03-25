@@ -37,7 +37,18 @@ defmodule Gluttony.Handlers.Atom1StandardTest do
     end
 
     test "authors", %{feed: feed} do
-      assert feed.authors == ["Mary Doe", "John Doe"]
+      assert feed.authors == [
+               %{
+                 email: "MaryDoe@example.com",
+                 name: "Mary Doe",
+                 uri: "http://example.com/~marydoe"
+               },
+               %{
+                 email: "JohnDoe@example.com",
+                 name: "John Doe",
+                 uri: "http://example.com/~johndoe"
+               }
+             ]
     end
 
     test "links", %{feed: feed} do
@@ -75,7 +86,18 @@ defmodule Gluttony.Handlers.Atom1StandardTest do
     end
 
     test "authors", %{entries: [entry | _]} do
-      assert entry.authors == ["Mary Doe", "John Doe"]
+      assert entry.authors == [
+               %{
+                 email: "MaryDoe@example.com",
+                 name: "Mary Doe",
+                 uri: "http://example.com/~marydoe"
+               },
+               %{
+                 email: "JohnDoe@example.com",
+                 name: "John Doe",
+                 uri: "http://example.com/~johndoe"
+               }
+             ]
     end
 
     test "summary", %{entries: [entry | _]} do

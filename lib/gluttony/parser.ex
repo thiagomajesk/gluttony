@@ -17,7 +17,7 @@ defmodule Gluttony.Parser do
 
   @doc false
   def handle_event(:start_document, _prolog, opts) do
-    {:ok, %{feed: %{}, entries: [], handler: nil, stack: [], raw: opts[:raw] || true}}
+    {:ok, %{feed: %{}, entries: [], handler: nil, stack: [], raw: opts[:raw] || true, cache: %{}}}
   end
 
   @doc false
@@ -61,8 +61,10 @@ defmodule Gluttony.Parser do
   end
 
   @doc false
-  def handle_event(:end_element, _name, %{stack: stack} = state) do
-    {:ok, %{state | stack: pop(stack)}}
+  def handle_event(:end_element, name, %{handler: handler, stack: stack, cache: cache} = state) do
+    {cached, cache} = Map.pop(cache, to_string(name))
+    state = Gluttony.Handler.handle_cached(handler, cached, state)
+    {:ok, %{state | stack: pop(stack), cache: cache}}
   end
 
   @doc false
