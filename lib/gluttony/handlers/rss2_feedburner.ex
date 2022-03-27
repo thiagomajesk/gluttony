@@ -1,4 +1,6 @@
 defmodule Gluttony.Handlers.RSS2Feedburner do
+  @moduledoc false
+
   @behaviour Gluttony.Handler
 
   # TODO: Find spec and implement the feedburner extension.

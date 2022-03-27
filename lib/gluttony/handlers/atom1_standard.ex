@@ -1,4 +1,6 @@
 defmodule Gluttony.Handlers.Atom1Standard do
+  @moduledoc false
+
   @behaviour Gluttony.Handler
 
   @impl true

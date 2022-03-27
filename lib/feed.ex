@@ -1,7 +1,5 @@
 defmodule Gluttony.Feed do
-  @moduledoc """
-  Defines a feed channel.
-  """
+  @moduledoc false
 
   @type t :: __MODULE__
 
@@ -23,9 +21,7 @@ defmodule Gluttony.Feed do
 end
 
 defmodule Gluttony.FeedItem do
-  @moduledoc """
-  Defines a feed entry.
-  """
+  @moduledoc false
 
   @type t :: __MODULE__
 

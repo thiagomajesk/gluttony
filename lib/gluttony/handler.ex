@@ -2,11 +2,11 @@ defmodule Gluttony.Handler do
   @moduledoc """
   This module defines the behaviour for handlers.
 
-  Both `handle_element/2` and `handle_content/2` should return on of the following result tuples:
+  Both `handle_element/2`, `handle_content/2` and `handle_cached/2` should return on of the following result tuples:
 
   - `{:entry, chars_or_attrs}` - To indicate that a new entry should be created.
-  - `{:entry, :key, value} - To indicate that a entry should be updated with the given key and value.
-  - `{:feed, :key, value} - To indicate that the feed should be updated with the given key and value.
+  - `{:entry, :key, value}` - To indicate that a entry should be updated with the given key and value.
+  - `{:feed, :key, value}` - To indicate that the feed should be updated with the given key and value.
   - `{:cache, :key}` - To indicate that the given key should be cached.
     Because successive calls with the same key will clean the previous value, this should only be called on `handle_element`.
     This will guarantee that the cache will live through the tag lifecycle, instead of being cleaned on whenever new content is found.

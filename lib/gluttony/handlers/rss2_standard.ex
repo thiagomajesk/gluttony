@@ -1,4 +1,6 @@
 defmodule Gluttony.Handlers.RSS2Standard do
+  @moduledoc false
+
   @behaviour Gluttony.Handler
 
   @impl true

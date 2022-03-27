@@ -1,4 +1,6 @@
 defmodule Gluttony.Helpers do
+  @moduledoc false
+
   @doc """
   Transforms a term into a underscore atom key.
   """

@@ -1,12 +1,18 @@
 defmodule Gluttony.MixProject do
   use Mix.Project
 
+  @version "0.1.0"
+  @url "https://github.com/thiagomajesk/gluttony"
+
   def project do
     [
       app: :gluttony,
-      version: "0.1.0",
+      version: @version,
       elixir: "~> 1.13",
       start_permanent: Mix.env() == :prod,
+      description: description(),
+      package: package(),
+      docs: docs(),
       deps: deps()
     ]
   end
@@ -18,6 +24,31 @@ defmodule Gluttony.MixProject do
     ]
   end
 
+  defp description() do
+    "Compliant RSS 2.0 and Atom 1.0 parser"
+  end
+
+  defp package do
+    [
+      maintainers: ["Thiago Majesk Goulart"],
+      licenses: ["AGPL-3.0-only"],
+      links: %{"GitHub" => @url},
+      files: ~w(lib mix.exs README.md LICENSE)
+    ]
+  end
+
+  defp docs() do
+    [
+      source_ref: "v#{@version}",
+      main: "README",
+      canonical: "http://hexdocs.pm/gluttony",
+      source_url: @url,
+      extras: [
+        "README.md": [filename: "README"],
+      ]
+    ]
+  end
+
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
@@ -25,7 +56,8 @@ defmodule Gluttony.MixProject do
       {:httpoison, "~> 1.8"},
       {:floki, "~> 0.32.0"},
       {:timex, "~> 3.0"},
-      {:phoenix_html, "~> 3.2"}
+      {:phoenix_html, "~> 3.2"},
+      {:ex_doc, "~> 0.28.0", only: :dev, runtime: false}
     ]
   end
 end
