@@ -13,6 +13,7 @@ defmodule Gluttony.Parser do
 
   @itunes_namespace "http://www.itunes.com/dtds/podcast-1.0.dtd"
   @feedburner_namespace "http://rssnamespace.org/feedburner/ext/1.0"
+  @googleplay_namespace "http://www.google.com/schemas/play-podcasts/1.0"
   @atom_namespace "http://www.w3.org/2005/Atom"
 
   @doc false
@@ -90,6 +91,9 @@ defmodule Gluttony.Parser do
 
         {"xmlns:itunes", @itunes_namespace}, acc ->
           [Gluttony.Handlers.RSS2Itunes | acc]
+
+        {"xmlns:googleplay", @googleplay_namespace}, acc ->
+          [Gluttony.Handlers.RSS2Googleplay | acc]
 
         _kv, acc ->
           acc
