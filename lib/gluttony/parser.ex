@@ -74,10 +74,11 @@ defmodule Gluttony.Parser do
 
   # Iterate over all the handlers calling the respective
   # processing function and returns the resulting state.
-  defp dispatch_events(handlers, fun, content, state) do
-    Enum.reduce(handlers, state, fn handler, state ->
-      apply(Gluttony.Handler, fun, [handler, content, state])
-    end)
+  defp dispatch_events([], _fun, _content, state), do: state
+
+  defp dispatch_events([handler | handlers], fun, content, state) do
+    state = apply(Gluttony.Handler, fun, [handler, content, state])
+    dispatch_events(handlers, fun, content, state)
   end
 
   # Discovers which handlers we should use based on existing namespaces.
