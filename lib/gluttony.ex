@@ -23,9 +23,12 @@ defmodule Gluttony do
 
     When a error happens, the reason is returned:
 
-      {:halt, reason} = Gluttone.parse_string(xml)
+      {:error, reason} = Gluttone.parse_string(xml)
   """
   def parse_string(xml, opts \\ []) do
-    Saxy.parse_string(xml, Gluttony.Parser, opts)
+    case Saxy.parse_string(xml, Gluttony.Parser, opts) do
+      {:ok, result} -> {:ok, result}
+      {:halt, reason, _buffer} -> {:error, reason}
+    end
   end
 end

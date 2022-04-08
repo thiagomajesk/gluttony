@@ -37,4 +37,8 @@ defmodule GluttonyTest do
       assert Enum.count(entries) == 20
     end
   end
+
+  test "parse_string/2 returns proper error result" do
+    assert {:error, "No handler available to parse this feed []"} = Gluttony.parse_string("<xml></xml>")
+  end
 end
