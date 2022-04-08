@@ -57,6 +57,7 @@ defmodule Gluttony.MixProject do
       {:floki, "~> 0.32.0"},
       {:timex, "~> 3.0"},
       {:phoenix_html, "~> 3.2"},
+      {:exvcr, "~> 0.11", only: :test},
       {:ex_doc, "~> 0.28.0", only: :dev, runtime: false}
     ]
   end

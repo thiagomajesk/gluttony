@@ -1,7 +1,10 @@
 defmodule GluttonyTest do
   use ExUnit.Case
+  use ExVCR.Mock, adapter: ExVCR.Adapter.Hackney
 
   setup_all do
+    ExVCR.Config.cassette_library_dir("fixture/vcr_cassettes")
+
     xml1 = File.read!("test/fixtures/other/atom1_aws_blog.rss")
     xml2 = File.read!("test/fixtures/other/atom1_the_next_web.rss")
     xml3 = File.read!("test/fixtures/other/rss2_jovem_nerd.rss")
@@ -40,5 +43,13 @@ defmodule GluttonyTest do
 
   test "parse_string/2 returns proper error result" do
     assert {:error, "No handler available to parse this feed []"} = Gluttony.parse_string("<xml></xml>")
+  end
+
+  test "fetch_feed/2 properly fetches feed" do
+    use_cassette "jovem_nerd_feed" do
+      assert {:ok, %{feed: feed, entries: entries}} = Gluttony.fetch_feed("https://www.jovemnerd.com.br/feed/")
+      assert feed.title == "Jovem Nerd"
+      assert Enum.count(entries) == 3000
+    end
   end
 end

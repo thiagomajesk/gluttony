@@ -25,7 +25,20 @@ defmodule Gluttony do
 
       {:error, reason} = Gluttone.parse_string(xml)
   """
-  def parse_string(xml, opts \\ []) do
+  def parse_string(xml, opts \\ []), do: parse(xml, opts)
+
+  @doc """
+  Fetches the given url and parses the response.
+  See `parse_string/2` for more information on the result values.
+  """
+  def fetch_feed(url, opts \\ []) do
+    with {:ok, response} <- HTTPoison.get(url),
+         {:ok, result} <- parse(response.body, opts) do
+      {:ok, result}
+    end
+  end
+
+  defp parse(xml, opts) do
     case Saxy.parse_string(xml, Gluttony.Parser, opts) do
       {:ok, result} -> {:ok, result}
       {:halt, reason, _buffer} -> {:error, reason}
