@@ -17,7 +17,7 @@ defmodule Gluttony.Handler do
   Its also possible to pass a list as the path to create a nested structure (all intermidiate values will be created).
   """
 
-  import Gluttony.Helpers
+  alias Gluttony.State
 
   @type attrs :: list({binary(), term()})
   @type stack :: list(binary())
@@ -49,14 +49,14 @@ defmodule Gluttony.Handler do
   @callback handle_cached(cached :: term, stack :: stack()) :: result()
 
   @doc false
-  def handle_element(impl, attrs, %{stack: stack} = state) do
+  def handle_element(impl, attrs, %State{stack: stack} = state) do
     attrs
     |> impl.handle_element(stack)
     |> handle_result(state)
   end
 
   @doc false
-  def handle_content(impl, chars, %{stack: stack} = state) do
+  def handle_content(impl, chars, %State{stack: stack} = state) do
     chars
     |> impl.handle_content(stack)
     |> handle_result(state)
@@ -65,64 +65,40 @@ defmodule Gluttony.Handler do
   @doc false
   def handle_cached(_impl, nil, state), do: state
 
-  def handle_cached(impl, cached, %{stack: stack} = state) do
+  def handle_cached(impl, cached, %State{stack: stack} = state) do
     cached
     |> impl.handle_cached(stack)
     |> handle_result(state)
   end
 
-  defp handle_result(result, %{entries: entries} = state) do
+  defp handle_result(result, %State{entries: entries} = state) do
     case result do
       {:feed, keys, value} when is_list(keys) ->
-        update_feed(state, keys, value)
+        State.update_feed(state, keys, value)
 
       {:feed, key, value} ->
-        update_feed(state, [key], value)
+        State.update_feed(state, [key], value)
 
       {:entry, _chars_or_attrs} ->
         %{state | entries: [%{} | entries]}
 
       {:entry, keys, value} when is_list(keys) ->
-        update_entry(state, keys, value)
+        State.update_entry(state, keys, value)
 
       {:entry, key, value} ->
-        update_entry(state, [key], value)
+        State.update_entry(state, [key], value)
 
       {:cache, key} ->
-        update_cache(state, [key])
+        State.update_cache(state, [key])
 
       {:cache, keys, value} when is_list(keys) ->
-        update_cache(state, keys, value)
+        State.update_cache(state, keys, value)
 
       {:cache, key, value} ->
-        update_cache(state, [key], value)
+        State.update_cache(state, [key], value)
 
       {:cont, _chars_or_attrs} ->
         state
     end
   end
-
-  defp update_feed(%{feed: feed} = state, keys, value) do
-    feed = place_in(feed, keys, value)
-    %{state | feed: feed}
-  end
-
-  defp update_entry(%{entries: entries} = state, keys, value) do
-    {entry, entries} = pop_current_entry(entries)
-    entry = place_in(entry, keys, value)
-    %{state | entries: [entry | entries]}
-  end
-
-  defp update_cache(%{cache: cache} = state, [key | keys], value \\ %{}) do
-    # Converts the first key (actual cache key) to a string.
-    # This allows us to use the cache key as a string to match the Saxy event.
-    # Because of this, we don't have to convert the tag name to atom to compare.
-    keys = [to_string(key) | keys]
-    cache = place_in(cache, keys, value)
-    %{state | cache: cache}
-  end
-
-  # Get current entry (latest created) or create a new one.
-  defp pop_current_entry([]), do: {nil, []}
-  defp pop_current_entry([entry | entries]), do: {entry, entries}
 end

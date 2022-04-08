@@ -52,4 +52,8 @@ defmodule GluttonyTest do
       assert Enum.count(entries) == 3000
     end
   end
+
+  test "raw false returns a properly build feed", %{xml4: xml} do
+    assert {:ok, %Gluttony.Feed{}} = Gluttony.parse_string(xml, raw: false)
+  end
 end

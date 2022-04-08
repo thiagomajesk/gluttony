@@ -4,6 +4,7 @@ defmodule Gluttony.Feed do
   @type t :: __MODULE__
 
   defstruct [
+    :__meta__,
     :id,
     :title,
     :url,
@@ -17,24 +18,5 @@ defmodule Gluttony.Feed do
     :copyright,
     categories: [],
     items: []
-  ]
-end
-
-defmodule Gluttony.FeedItem do
-  @moduledoc false
-
-  @type t :: __MODULE__
-
-  defstruct [
-    :id,
-    :title,
-    :url,
-    :description,
-    :links,
-    :updated,
-    :published,
-    :authors,
-    :categories,
-    :source
   ]
 end

@@ -41,6 +41,15 @@ defmodule Gluttony.Helpers do
   end
 
   @doc """
+  Accepts two values and concatenate as lists.
+  """
+  def safe_concat(term1, term2) do
+    term1 = term1 || []
+    term2 = term2 || []
+    Enum.concat(term1, term2)
+  end
+
+  @doc """
   Puts the value in the given path, creating intermidiate values
   if necessary. If the value is a list, it'll append the new value to existing ones.
   """

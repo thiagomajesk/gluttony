@@ -9,6 +9,7 @@ defmodule Gluttony.Parser do
   More information about why this is necessary ca be found here: https://github.com/qcam/saxy/issues/98.
   """
 
+  alias Gluttony.State
   @behaviour Saxy.Handler
 
   @itunes_namespace "http://www.itunes.com/dtds/podcast-1.0.dtd"
@@ -18,16 +19,16 @@ defmodule Gluttony.Parser do
 
   @doc false
   def handle_event(:start_document, _prolog, opts) do
-    {:ok, %{feed: %{}, entries: [], handlers: nil, stack: [], raw: opts[:raw] || true, cache: %{}}}
+    {:ok, %State{raw: Keyword.get(opts, :raw, true)}}
   end
 
   @doc false
   def handle_event(:end_document, _data, state) do
-    {:ok, Map.take(state, [:feed, :entries])}
+    {:ok, State.result(state)}
   end
 
   @doc false
-  def handle_event(:start_element, {name, attributes}, %{handlers: nil} = state) do
+  def handle_event(:start_element, {name, attributes}, %State{handlers: nil} = state) do
     case {name, Map.new(attributes)} do
       {"rss", %{"version" => "2.0"} = attrs} ->
         handlers = discover_handlers(attrs, Gluttony.Handlers.RSS2Standard)
@@ -42,22 +43,22 @@ defmodule Gluttony.Parser do
   end
 
   @doc false
-  def handle_event(:start_element, {name, attributes}, %{handlers: handlers, stack: stack} = state) do
+  def handle_event(:start_element, {name, attributes}, %State{handlers: handlers} = state) do
     # Push the current tag early to the stack so the calls
     # to :handle_element and :handle_content can consistently use
     # the stack to find the current scope we are processing.
-    state = %{state | stack: push(name, stack)}
+    state = State.push(state, name)
 
     {:ok, dispatch_events(handlers, :handle_element, attributes, state)}
   end
 
   @doc false
-  def handle_event(:end_element, name, %{handlers: handlers, stack: stack, cache: cache} = state) do
+  def handle_event(:end_element, name, %{handlers: handlers, cache: cache} = state) do
     {cached, cache} = Map.pop(cache, to_string(name))
 
     state = dispatch_events(handlers, :handle_cached, cached, state)
 
-    {:ok, %{state | stack: pop(stack), cache: cache}}
+    {:ok, %{State.pop(state) | cache: cache}}
   end
 
   @doc false
@@ -102,12 +103,4 @@ defmodule Gluttony.Parser do
 
     Enum.reverse(extensions)
   end
-
-  # Pushes a tag to the current stack.
-  defp push(tag, []), do: [tag]
-  defp push(tag, stack), do: [tag | stack]
-
-  # Removes the last tag from the stack.
-  defp pop([]), do: []
-  defp pop([_head | tail]), do: tail
 end
