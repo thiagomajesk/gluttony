@@ -32,10 +32,10 @@ defmodule Gluttony.Parser do
     case {name, Map.new(attributes)} do
       {"rss", %{"version" => "2.0"} = attrs} ->
         handlers = discover_handlers(attrs, Gluttony.Handlers.RSS2Standard)
-        {:ok, %{state | handlers: handlers}}
+        {:ok, %{state | handlers: handlers, type: :rss2}}
 
       {"feed", %{"xmlns" => @atom_namespace}} ->
-        {:ok, %{state | handlers: [Gluttony.Handlers.Atom1Standard]}}
+        {:ok, %{state | handlers: [Gluttony.Handlers.Atom1Standard], type: :atom1}}
 
       _ ->
         {:halt, "No handler available to parse this feed #{inspect(attributes)}"}

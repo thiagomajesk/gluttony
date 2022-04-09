@@ -1,25 +1,23 @@
 defmodule Gluttony.Mapper do
   @moduledoc false
 
-  import Gluttony.Helpers
-
   alias Gluttony.{Feed, Entry}
   alias Gluttony.Accessor
 
-  def map(feed, entries) do
-    feed = map_feed(feed)
-    entries = Enum.map(entries, &map_entry/1)
+  def map(type, feed, entries) do
+    feed = map_feed(type, feed)
+    entries = Enum.map(entries, &map_entry(type, &1))
     Map.put(feed, :entries, entries)
   end
 
-  defp map_feed(feed) do
+  defp map_feed(type, feed) do
     %Feed{
       id: Accessor.get(feed, [:guid, :id]),
       title: Accessor.get(feed, [:title]),
       url: Accessor.get(feed, [:link]),
       description: Accessor.get(feed, [:description, :subtitle]),
       links: Accessor.get(feed, [:links]),
-      updated: Accessor.get(feed, [:pub_date, :updated]),
+      updated: Accessor.get_parse(feed, [:pub_date, :updated], :datetime, type),
       authors: map_authors(feed),
       contributors: Accessor.get(feed, [:contributors]),
       language: Accessor.get(feed, [:language]),
@@ -31,15 +29,15 @@ defmodule Gluttony.Mapper do
     }
   end
 
-  defp map_entry(entry) do
+  defp map_entry(type, entry) do
     %Entry{
       id: Accessor.get(entry, [:guid, :id]),
       title: Accessor.get(entry, [:title]),
       url: Accessor.get(entry, [:link]),
       description: Accessor.get(entry, [:description, :subtitle]),
       links: Accessor.get(entry, [:links]),
-      updated: Accessor.get(entry, [:pub_date, :updated]),
-      published: Accessor.get(entry, [:published]),
+      updated: Accessor.get_parse(entry, [:pub_date, :updated], :datetime, type),
+      published: Accessor.get_parse(entry, [:published], :datetime, type),
       authors: map_authors(entry),
       contributors: Accessor.get(entry, [:contributors]),
       categories: Accessor.get(entry, [:categories]),

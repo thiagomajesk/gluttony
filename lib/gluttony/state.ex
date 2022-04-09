@@ -4,7 +4,7 @@ defmodule Gluttony.State do
   alias __MODULE__
   import Gluttony.Helpers
 
-  defstruct [:raw, :handlers, stack: [], cache: %{}, feed: %{}, entries: []]
+  defstruct [:type, :raw, :handlers, stack: [], cache: %{}, feed: %{}, entries: []]
 
   def update_feed(%State{feed: feed} = state, keys, value) do
     feed = place_in(feed, keys, value)
@@ -35,11 +35,11 @@ defmodule Gluttony.State do
   def pop(%State{stack: [_head | tail]} = state), do: %State{state | stack: tail}
 
   def result(%State{raw: true} = state) do
-    Map.take(state, [:entries, :feed])
+    Map.take(state, [:type, :entries, :feed])
   end
 
-  def result(%State{raw: false, feed: feed, entries: entries}) do
-    Gluttony.Mapper.map(feed, entries)
+  def result(%State{raw: false, type: type, feed: feed, entries: entries}) do
+    Gluttony.Mapper.map(type, feed, entries)
   end
 
   # Get current entry (latest created) or create a new one.
