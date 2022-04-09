@@ -31,3 +31,10 @@ The data I'm using to run the benchmarks is similar to what [`fast_rss`](https:/
 ### Metrics
 
 In the worst cases, Gluttony was more memory efficient than the current slowest alternative by using `0.0246 GB` compared to [`feedraptor's`](https://github.com/merongivian/feedraptor) surprising `8.22 GB`. Not only this, but in some cases finishing parsing the whole RSS feed `424.26x` faster than the current worst alternative.
+
+## TODOs
+
+- Better document available options
+- Add typespecs to the common result interface (`Feed` / `Entry`)
+- Add struct `Gluttony.Access.KeyNotFound<:author, :contributors>` to track fields not found vs empty fields
+- Add conditional and incremental access logic to new `Gluttony.Access` module   
