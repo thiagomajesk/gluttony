@@ -13,6 +13,7 @@ defmodule Gluttony.Entry do
     :updated,
     :published,
     :authors,
+    :contributors,
     :categories,
     :source
   ]

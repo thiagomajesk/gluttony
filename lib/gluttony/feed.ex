@@ -12,6 +12,7 @@ defmodule Gluttony.Feed do
     :links,
     :updated,
     :authors,
+    :contributors,
     :language,
     :icon,
     :logo,

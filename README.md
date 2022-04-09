@@ -36,5 +36,3 @@ In the worst cases, Gluttony was more memory efficient than the current slowest 
 
 - Better document available options
 - Add typespecs to the common result interface (`Feed` / `Entry`)
-- Add struct `Gluttony.Access.KeyNotFound<:author, :contributors>` to track fields not found vs empty fields
-- Add conditional and incremental access logic to new `Gluttony.Access` module   
