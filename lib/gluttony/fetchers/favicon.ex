@@ -1,4 +1,9 @@
 defmodule Gluttony.Fetchers.Favicon do
+  @moduledoc """
+  Retrieves icons available in the given URL.
+  Exposes the same functions as `HTTPoison`.
+  """
+
   use HTTPoison.Base
 
   def process_response_body(body) do

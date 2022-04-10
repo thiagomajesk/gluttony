@@ -1,4 +1,9 @@
 defmodule Gluttony.Fetchers.Opengraph do
+  @moduledoc """
+  Retrieves opengraph information available in the given URL.
+  Exposes the same functions as `HTTPoison`.
+  """
+
   use HTTPoison.Base
 
   @tags ~w(

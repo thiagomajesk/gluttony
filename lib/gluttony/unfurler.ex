@@ -1,12 +1,18 @@
 defmodule Gluttony.Unfurler do
   @moduledoc """
   Enriches feed data by unfurling available urls.
-
-  For feeds, it returns favicons and images available in the URL.
-  FOr entries, it returns the available opengraph information on the page.
+  Uses `Gluttony.Fetchers.Favicon` and `Gluttony.Fetchers.Opengraph` internally.
   """
 
   alias Gluttony.{Feed, Entry}
+
+  @doc """
+  Accepts a `Gluttony.Feed` or `Gluttony.Entry` struct and retrieves data from the url.
+
+  For `Feed`, it returns favicons and images available in the given URL.
+  For `Entry`, it returns available opengraph information on the page.
+  """
+  def unfurl(term)
 
   def unfurl(%Feed{url: nil}), do: nil
 

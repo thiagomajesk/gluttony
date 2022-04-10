@@ -19,11 +19,16 @@ defmodule Gluttony do
 
     Parsing a xml string from a RSS feed:
 
-      {:ok, %{feed: feed, entries: entries}} = Gluttone.parse_string(xml)
+      {:ok, %{feed: feed, entries: entries}} = Gluttony.parse_string(xml)
 
     When a error happens, the reason is returned:
 
-      {:error, reason} = Gluttone.parse_string(xml)
+      {:error, reason} = Gluttony.parse_string(xml)
+
+    You can retrieve a common result interface by specifing the `raw` option as `false`.
+    This might be usefull to retrieve only relevant and common information, since RSS 2.0 and Atom 1.0 are very different specs:
+
+      {:ok, %Gluttony.Feed{}} = Gluttony.parse_string(xml, raw: false)
   """
   def parse_string(xml, opts \\ []), do: parse(xml, opts)
 
