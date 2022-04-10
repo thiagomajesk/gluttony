@@ -11,7 +11,7 @@ by adding `gluttony` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:gluttony, "~> 0.1.0"}
+    {:gluttony, "~> 0.2.0"}
   ]
 end
 ```
