@@ -58,8 +58,8 @@ defmodule Gluttony.Mapper do
     metadata =
       Enum.reduce(map, %{}, fn {k, v}, metadata ->
         case {to_string(k), v} do
-          {"googleplay_" <> key, v} -> put_in(metadata, [:googleplay, key], v)
-          {"itunes_" <> key, v} -> put_in(metadata, [:itunes, key], v)
+          {"googleplay_" <> key, v} -> Gluttony.Helpers.place_in(metadata, [:googleplay, key], v)
+          {"itunes_" <> key, v} -> Gluttony.Helpers.place_in(metadata, [:itunes, key], v)
           _ -> metadata
         end
       end)
