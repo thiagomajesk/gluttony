@@ -18,6 +18,6 @@ defmodule Gluttony.Feed do
     :logo,
     :copyright,
     categories: [],
-    items: []
+    entries: []
   ]
 end
