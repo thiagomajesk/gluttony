@@ -54,11 +54,11 @@ defmodule Gluttony.MixProject do
     [
       {:saxy, "~> 1.4"},
       {:httpoison, "~> 1.8"},
-      {:floki, "~> 0.32.0"},
+      {:floki, "~> 0.34"},
       {:timex, "~> 3.0"},
       {:phoenix_html, "~> 3.2"},
-      {:exvcr, "~> 0.11", only: :test},
-      {:ex_doc, "~> 0.28.0", only: :dev, runtime: false}
+      {:exvcr, "~> 0.13", only: :test},
+      {:ex_doc, "~> 0.29", only: :dev, runtime: false}
     ]
   end
 end
