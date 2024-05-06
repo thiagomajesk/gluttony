@@ -44,7 +44,7 @@ defmodule Gluttony.MixProject do
       canonical: "http://hexdocs.pm/gluttony",
       source_url: @url,
       extras: [
-        "README.md": [filename: "README"],
+        "README.md": [filename: "README"]
       ]
     ]
   end
@@ -53,10 +53,10 @@ defmodule Gluttony.MixProject do
   defp deps do
     [
       {:saxy, "~> 1.4"},
-      {:httpoison, "~> 1.8"},
+      {:httpoison, "~> 1.8 or ~> 2.0"},
       {:floki, "~> 0.34"},
       {:timex, "~> 3.0"},
-      {:phoenix_html, "~> 3.2"},
+      {:phoenix_html, "~> 3.2 or ~> 4.0"},
       {:exvcr, "~> 0.13", only: :test},
       {:ex_doc, "~> 0.29", only: :dev, runtime: false}
     ]
