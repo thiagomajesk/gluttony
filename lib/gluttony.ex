@@ -43,10 +43,29 @@ defmodule Gluttony do
     end
   end
 
+  @doc """
+  Parses a stream of input and returns the values.
+
+  # Examples
+
+    Parsing an XML stream from an RSS feed:
+
+      stream = File.stream!("rss_feed.xml", :line, [encoding: :utf8])
+      {:ok, %{feed: feed, entries: entries}} = Gluttony.parse_stream(stream)
+  """
+  def parse_stream(stream, opts \\ []) do
+    case Saxy.parse_stream(stream, Gluttony.Parser, opts) do
+      {:ok, result} -> {:ok, result}
+      {:halt, reason, _buffer} -> {:error, reason}
+      {:error, reason} -> {:error, reason}
+    end
+  end
+
   defp parse(xml, opts) do
     case Saxy.parse_string(xml, Gluttony.Parser, opts) do
       {:ok, result} -> {:ok, result}
       {:halt, reason, _buffer} -> {:error, reason}
+      {:error, reason} -> {:error, reason}
     end
   end
 end
