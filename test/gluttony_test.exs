@@ -56,4 +56,14 @@ defmodule GluttonyTest do
   test "raw false returns a properly build feed", %{xml4: xml} do
     assert {:ok, %Gluttony.Feed{}} = Gluttony.parse_string(xml, raw: false)
   end
+
+  describe "parse_stream/2" do
+    test "it can parse a streamed feed" do
+      stream = File.stream!("test/fixtures/other/atom1_aws_blog.rss", 8192)
+
+      assert {:ok, %{feed: feed, entries: entries}} = Gluttony.parse_stream(stream, raw: true)
+      assert feed.title == "AWS News Blog"
+      assert Enum.count(entries) == 20
+    end
+  end
 end
