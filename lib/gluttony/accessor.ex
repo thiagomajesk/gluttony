@@ -47,7 +47,7 @@ defmodule Gluttony.Accessor do
 
   @doc """
   Accessor for feed and entry data.
-  Returns the first value found or returns a `Gluttony.Access.EmptyValue` struct.
+  Returns the first value found or returns a `Gluttony.Accessor.EmptyValue` struct.
   """
   def get(container, keys) do
     Enum.reduce(keys, %EmptyValue{}, fn
@@ -60,7 +60,7 @@ defmodule Gluttony.Accessor do
   end
 
   @doc """
-  Acts like `get/2`, but parsed the value accordinly to the expected type.
+  Acts like `get/2`, but parses the value accordingly to the expected type.
   """
   def get_parse(container, keys, expected, type) do
     case {expected, get(container, keys)} do

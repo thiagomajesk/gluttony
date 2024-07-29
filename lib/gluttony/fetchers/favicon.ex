@@ -1,6 +1,6 @@
 defmodule Gluttony.Fetchers.Favicon do
   @moduledoc """
-  Retrieves icons available in the given URL.
+  Retrieves icons available at the given URL.
   Exposes the same functions as `HTTPoison`.
   """
 

@@ -3,7 +3,7 @@ defmodule Gluttony.Entry do
   Defines a common entry interface for RSS 2.0 and Atom 1.0 feeds.
   """
 
-  @type t :: __MODULE__
+  @type t :: %__MODULE__{}
 
   defstruct [
     :__meta__,
