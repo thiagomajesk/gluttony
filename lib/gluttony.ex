@@ -26,7 +26,7 @@ defmodule Gluttony do
       {:error, reason} = Gluttony.parse_string(xml)
 
     You can retrieve a common result interface by specifying the `raw` option as `false`.
-    This might be usefull to retrieve only relevant and common information, since RSS 2.0 and Atom 1.0 are very different specs:
+    This might be useful to retrieve only relevant and common information, since RSS 2.0 and Atom 1.0 are very different specs:
 
       {:ok, %Gluttony.Feed{}} = Gluttony.parse_string(xml, raw: false)
   """
