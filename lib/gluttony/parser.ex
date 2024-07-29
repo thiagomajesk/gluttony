@@ -6,7 +6,7 @@ defmodule Gluttony.Parser do
   If CDATA is not getting pickedup, make sure the rss source
   was not processed or formatted in any form. Since we are not using a separate event
   to treat CDATA, we need to make sure there's no newlines between tag and content.
-  More information about why this is necessary ca be found here: https://github.com/qcam/saxy/issues/98.
+  More information about why this is necessary can be found here: https://github.com/qcam/saxy/issues/98.
   """
 
   alias Gluttony.State

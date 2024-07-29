@@ -5,7 +5,7 @@ Ingests and parses RSS feeds and returns raw data that can be enriched by unfurl
 
 ## Installation
 
-Add `gluttony` to the of dependencies in `mix.exs`:
+Add `gluttony` to the list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
@@ -32,5 +32,5 @@ In the worst cases, Gluttony was more memory efficient than the current slowest 
 
 ## TODOs
 
-- Better document available options
+- Better document the available options
 - Add typespecs to the common result interface (`Feed` / `Entry`)

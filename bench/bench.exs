@@ -16,7 +16,7 @@ files = Map.new(data, fn name ->
 end)
 
 
-bechmark = %{
+benchmark = %{
   "gluttony" => &Gluttony.parse_string/1,
   "elixir_feed_parser" => &ElixirFeedParser.parse/1,
   "feed_raptor" => &Feedraptor.parse/1,
