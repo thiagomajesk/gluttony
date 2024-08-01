@@ -23,7 +23,7 @@ benchmark = %{
   "feeder_ex" => &FeederEx.parse/1
 }
 
-Benchee.run(bechmark,
+Benchee.run(benchmark,
   warmup: 5,
   time: 30,
   memory_time: 1,

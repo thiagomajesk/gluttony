@@ -1,6 +1,6 @@
 defmodule Gluttony.Unfurler do
   @moduledoc """
-  Enriches feed data by unfurling available urls.
+  Enriches feed data by unfurling available URLs.
   Uses `Gluttony.Fetchers.Favicon` and `Gluttony.Fetchers.Opengraph` internally.
   """
 
