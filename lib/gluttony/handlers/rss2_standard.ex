@@ -149,6 +149,9 @@ defmodule Gluttony.Handlers.RSS2Standard do
       ["description", "item" | _] ->
         {:entry, :description, chars}
 
+      ["content:encoded", "item" | _] ->
+        {:entry, :content, chars}
+
       ["author", "item" | _] ->
         {:entry, :author, chars}
 
