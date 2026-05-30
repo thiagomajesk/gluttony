@@ -78,4 +78,27 @@ defmodule GluttonyTest do
       assert Enum.count(entries) == 20
     end
   end
+
+  describe "parse_string/2" do
+    test "ignores whitespace before CDATA content" do
+      xml = """
+      <rss version="2.0">
+        <channel>
+          <title>Example</title>
+          <link>https://example.com</link>
+          <description>Example feed</description>
+          <item>
+            <title>Entry</title>
+            <description>
+              <![CDATA[Some text.]]>
+            </description>
+          </item>
+        </channel>
+      </rss>
+      """
+
+      assert {:ok, %{entries: [entry]}} = Gluttony.parse_string(xml)
+      assert entry.description == "Some text."
+    end
+  end
 end

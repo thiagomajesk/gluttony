@@ -1,12 +1,6 @@
 defmodule Gluttony.Parser do
   @moduledoc """
   Deals with XML processing.
-
-  # Remarks
-  If CDATA is not getting pickedup, make sure the rss source
-  was not processed or formatted in any form. Since we are not using a separate event
-  to treat CDATA, we need to make sure there's no newlines between tag and content.
-  More information about why this is necessary can be found here: https://github.com/qcam/saxy/issues/98.
   """
 
   alias Gluttony.State
@@ -64,15 +58,11 @@ defmodule Gluttony.Parser do
   end
 
   @doc false
-  def handle_event(:characters, "\n" <> _, state) do
-    {:ok, state}
-  end
-
-  @doc false
   def handle_event(:characters, chars, %{handlers: handlers} = state) do
-    chars = String.trim(chars)
-
-    {:ok, dispatch_events(handlers, :handle_content, chars, state)}
+    case String.trim(chars) do
+      "" -> {:ok, state}
+      chars -> {:ok, dispatch_events(handlers, :handle_content, chars, state)}
+    end
   end
 
   # Iterate over all the handlers calling the respective
