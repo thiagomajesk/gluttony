@@ -1,3 +1,4 @@
+# credo:disable-for-this-file Credo.Check.Refactor.CyclomaticComplexity
 defmodule Gluttony.Handler do
   @moduledoc """
   This module defines the behaviour for handlers.

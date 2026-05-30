@@ -38,19 +38,19 @@ defmodule Gluttony.Handlers.RSS2ItunesTest do
   end
 
   describe "itunes rss 2.0 entry elements" do
-    test "itunes_episode_type", %{entries: [entry | _]} do
+    test "itunes_episode_type", %{entries: [entry | _entries]} do
       assert entry.itunes_episode_type == "trailer"
     end
 
-    test "itunes_title", %{entries: [entry | _]} do
+    test "itunes_title", %{entries: [entry | _entries]} do
       assert entry.itunes_title == "Hiking Treks Trailer"
     end
 
-    test "itunes_duration", %{entries: [entry | _]} do
+    test "itunes_duration", %{entries: [entry | _entries]} do
       assert entry.itunes_duration == "1079"
     end
 
-    test "itunes_explicit", %{entries: [entry | _]} do
+    test "itunes_explicit", %{entries: [entry | _entries]} do
       assert entry.itunes_explicit == "false"
     end
   end

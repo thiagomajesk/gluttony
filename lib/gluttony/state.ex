@@ -1,8 +1,9 @@
 defmodule Gluttony.State do
   @moduledoc false
 
-  alias __MODULE__
   import Gluttony.Helpers
+
+  alias __MODULE__
 
   defstruct [:type, :raw, :handlers, stack: [], cache: %{}, feed: %{}, entries: []]
 

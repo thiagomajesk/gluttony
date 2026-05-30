@@ -43,7 +43,10 @@ end
 defmodule Gluttony.Accessor do
   @moduledoc false
 
-  alias Gluttony.Accessor.{EmptyValue, Unparsed}
+  alias Gluttony.Accessor.EmptyValue
+  alias Gluttony.Accessor.Unparsed
+  alias Phoenix.HTML
+  alias Phoenix.HTML.Safe
 
   @doc """
   Accessor for feed and entry data.
@@ -64,11 +67,11 @@ defmodule Gluttony.Accessor do
   """
   def get_parse(container, keys, expected, type) do
     case {expected, get(container, keys)} do
-      {_, %EmptyValue{} = not_found} -> not_found
+      {_expected, %EmptyValue{} = not_found} -> not_found
       {:datetime, value} -> parse_datetime(value, type)
       {:integer, value} -> parse_integer(value)
       {:cdata, value} -> parse_cdata(value)
-      {_, value} -> value
+      {_expected, value} -> value
     end
   end
 
@@ -83,20 +86,20 @@ defmodule Gluttony.Accessor do
   defp parse_datetime(str, format) do
     case Timex.parse(str, format) do
       {:ok, datetime} -> datetime
-      {:error, _} -> %Unparsed{__value__: str, __expected__: :datetime}
+      {:error, _reason} -> %Unparsed{__value__: str, __expected__: :datetime}
     end
   end
 
   defp parse_integer(str) do
     case Integer.parse(str) do
-      {integer, _} -> integer
+      {integer, _rest} -> integer
       :error -> %Unparsed{__value__: str, __expected__: :integer}
     end
   end
 
   defp parse_cdata(term) when is_binary(term) do
     term
-    |> Phoenix.HTML.html_escape()
-    |> Phoenix.HTML.Safe.to_iodata()
+    |> HTML.html_escape()
+    |> Safe.to_iodata()
   end
 end

@@ -3,26 +3,26 @@ defmodule Gluttony.Handlers.RSS2Feedburner do
 
   @behaviour Gluttony.Handler
 
-  # TODO: Find spec and implement the feedburner extension.
+  # Pending: find the spec and implement the feedburner extension.
 
   @impl true
   def handle_element(attrs, stack) do
     case stack do
-      _ -> {:cont, attrs}
+      _stack -> {:cont, attrs}
     end
   end
 
   @impl true
   def handle_content(chars, stack) do
     case stack do
-      _ -> {:cont, chars}
+      _stack -> {:cont, chars}
     end
   end
 
   @impl true
   def handle_cached(cached, stack) do
     case stack do
-      _ -> {:cont, cached}
+      _stack -> {:cont, cached}
     end
   end
 end

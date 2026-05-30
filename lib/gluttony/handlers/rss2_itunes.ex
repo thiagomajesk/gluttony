@@ -1,3 +1,4 @@
+# credo:disable-for-this-file Credo.Check.Refactor.CyclomaticComplexity
 defmodule Gluttony.Handlers.RSS2Itunes do
   @moduledoc false
 
@@ -21,7 +22,7 @@ defmodule Gluttony.Handlers.RSS2Itunes do
         attrs = Map.new(attrs)
         {:feed, :itunes_categories, [attrs["text"]]}
 
-      _ ->
+      _stack ->
         {:cont, attrs}
     end
   end
@@ -44,19 +45,19 @@ defmodule Gluttony.Handlers.RSS2Itunes do
       ["itunes:explicit", "channel"] ->
         {:feed, :itunes_explicit, chars}
 
-      ["itunes:episodeType", "item" | _] ->
+      ["itunes:episodeType", "item" | _rest] ->
         {:entry, :itunes_episode_type, chars}
 
-      ["itunes:title", "item" | _] ->
+      ["itunes:title", "item" | _rest] ->
         {:entry, :itunes_title, chars}
 
-      ["itunes:duration", "item" | _] ->
+      ["itunes:duration", "item" | _rest] ->
         {:entry, :itunes_duration, chars}
 
-      ["itunes:explicit", "item" | _] ->
+      ["itunes:explicit", "item" | _rest] ->
         {:entry, :itunes_explicit, chars}
 
-      _ ->
+      _stack ->
         {:cont, chars}
     end
   end
@@ -67,7 +68,7 @@ defmodule Gluttony.Handlers.RSS2Itunes do
       ["itunes:owner", "channel"] ->
         {:feed, :itunes_owner, cached}
 
-      _ ->
+      _stack ->
         {:cont, cached}
     end
   end

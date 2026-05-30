@@ -73,8 +73,7 @@ defmodule Gluttony.Handlers.RSS2StandardTest do
 
     test "image", %{feed: feed} do
       assert %{
-               description:
-                 "Breaking news and stories from GoUpstate.com, a Spartanburg Herald-Journal Web site.",
+               description: "Breaking news and stories from GoUpstate.com, a Spartanburg Herald-Journal Web site.",
                height: "35",
                link: "http://www.goupstate.com/",
                title: "GoUpstate.com News Headlines",
@@ -107,31 +106,31 @@ defmodule Gluttony.Handlers.RSS2StandardTest do
   end
 
   describe "rss 2.0 entry elements" do
-    test "title", %{entries: [entry | _]} do
+    test "title", %{entries: [entry | _entries]} do
       assert entry.title == "Atom-Powered Robots Run Amok"
     end
 
-    test "link", %{entries: [entry | _]} do
+    test "link", %{entries: [entry | _entries]} do
       assert entry.link == "http://example.org/2003/12/13/atom03"
     end
 
-    test "description", %{entries: [entry | _]} do
+    test "description", %{entries: [entry | _entries]} do
       assert entry.description == "Some text."
     end
 
-    test "author", %{entries: [entry | _]} do
+    test "author", %{entries: [entry | _entries]} do
       assert entry.author == "lawyer@boyer.net (Lawyer Boyer)"
     end
 
-    test "categories", %{entries: [entry | _]} do
+    test "categories", %{entries: [entry | _entries]} do
       assert entry.categories == ["MSFT", "Grateful Dead"]
     end
 
-    test "comments", %{entries: [entry | _]} do
+    test "comments", %{entries: [entry | _entries]} do
       assert entry.comments == "http://ekzemplo.com/entry/4403/comments"
     end
 
-    test "enclosure", %{entries: [entry | _]} do
+    test "enclosure", %{entries: [entry | _entries]} do
       assert %{
                url: "http://www.scripting.com/mp3s/weatherReportSuite.mp3",
                length: "12216320",
@@ -139,15 +138,15 @@ defmodule Gluttony.Handlers.RSS2StandardTest do
              } = entry.enclosure
     end
 
-    test "guid", %{entries: [entry | _]} do
+    test "guid", %{entries: [entry | _entries]} do
       assert entry.guid == "http://inessential.com/2002/09/01.php#a2"
     end
 
-    test "pub_date", %{entries: [entry | _]} do
+    test "pub_date", %{entries: [entry | _entries]} do
       assert entry.pub_date == "Sun, 19 May 2002 15:21:36 GMT"
     end
 
-    test "source", %{entries: [entry | _]} do
+    test "source", %{entries: [entry | _entries]} do
       assert entry.source == "Tomalak's Realm"
     end
   end

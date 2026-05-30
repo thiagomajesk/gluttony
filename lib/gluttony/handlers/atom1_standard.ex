@@ -1,3 +1,4 @@
+# credo:disable-for-this-file Credo.Check.Refactor.CyclomaticComplexity
 defmodule Gluttony.Handlers.Atom1Standard do
   @moduledoc false
 
@@ -35,7 +36,7 @@ defmodule Gluttony.Handlers.Atom1Standard do
       ["author", "entry"] ->
         {:cache, :author}
 
-      _ ->
+      _stack ->
         {:cont, attrs}
     end
   end
@@ -124,7 +125,7 @@ defmodule Gluttony.Handlers.Atom1Standard do
       ["rights", "entry"] ->
         {:entry, :rights, chars}
 
-      _ ->
+      _stack ->
         {:cont, chars}
     end
   end
@@ -138,7 +139,7 @@ defmodule Gluttony.Handlers.Atom1Standard do
       ["author"] ->
         {:feed, :authors, [cached]}
 
-      _ ->
+      _stack ->
         {:cont, cached}
     end
   end

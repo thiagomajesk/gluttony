@@ -38,9 +38,7 @@ defmodule Gluttony do
   """
   def fetch_feed(url, opts \\ []) do
     with {:ok, response} <- HTTPoison.get(url),
-         {:ok, result} <- parse(response.body, opts) do
-      {:ok, result}
-    end
+         do: parse(response.body, opts)
   end
 
   @doc """

@@ -69,23 +69,23 @@ defmodule Gluttony.Handlers.Atom1StandardTest do
   end
 
   describe "atom 1.0 entry elements" do
-    test "id", %{entries: [entry | _]} do
+    test "id", %{entries: [entry | _entries]} do
       assert entry.id == "http://example.com/blog/1234"
     end
 
-    test "title", %{entries: [entry | _]} do
+    test "title", %{entries: [entry | _entries]} do
       assert entry.title == "Atom-Powered Robots Run Amok"
     end
 
-    test "updated", %{entries: [entry | _]} do
+    test "updated", %{entries: [entry | _entries]} do
       assert entry.updated == "2003-12-13T18:30:02-05:00"
     end
 
-    test "published", %{entries: [entry | _]} do
+    test "published", %{entries: [entry | _entries]} do
       assert entry.published == "2003-12-13T08:29:29-04:00"
     end
 
-    test "authors", %{entries: [entry | _]} do
+    test "authors", %{entries: [entry | _entries]} do
       assert entry.authors == [
                %{
                  email: "MaryDoe@example.com",
@@ -100,30 +100,30 @@ defmodule Gluttony.Handlers.Atom1StandardTest do
              ]
     end
 
-    test "summary", %{entries: [entry | _]} do
+    test "summary", %{entries: [entry | _entries]} do
       assert entry.summary == "Some text."
     end
 
-    test "content", %{entries: [entry | _]} do
+    test "content", %{entries: [entry | _entries]} do
       assert entry.content == "complete story here"
     end
 
-    test "links", %{entries: [entry | _]} do
+    test "links", %{entries: [entry | _entries]} do
       assert entry.links == [
                "http://example.org/audio/ph34r_my_podcast.mp3",
                "http://example.org/2005/04/02/atom"
              ]
     end
 
-    test "categories", %{entries: [entry | _]} do
+    test "categories", %{entries: [entry | _entries]} do
       assert entry.categories == ["general", "sports"]
     end
 
-    test "contributors", %{entries: [entry | _]} do
+    test "contributors", %{entries: [entry | _entries]} do
       assert entry.contributors == ["Joe Gregorio", "Sam Ruby"]
     end
 
-    test "source", %{entries: [entry | _]} do
+    test "source", %{entries: [entry | _entries]} do
       assert %{
                id: "http://example.org/",
                title: "Fourty-Two",
@@ -132,7 +132,7 @@ defmodule Gluttony.Handlers.Atom1StandardTest do
              } = entry.source
     end
 
-    test "rights", %{entries: [entry | _]} do
+    test "rights", %{entries: [entry | _entries]} do
       assert entry.rights == "&copy; 2005 John Doe"
     end
   end

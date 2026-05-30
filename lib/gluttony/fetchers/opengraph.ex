@@ -53,9 +53,7 @@ defmodule Gluttony.Fetchers.Opengraph do
     {property, content}
   end
 
-  defp selectors() do
-    @tags
-    |> Enum.map(&"meta[property=\"#{&1}\"]")
-    |> Enum.join(",")
+  defp selectors do
+    Enum.map_join(@tags, ",", &"meta[property=\"#{&1}\"]")
   end
 end

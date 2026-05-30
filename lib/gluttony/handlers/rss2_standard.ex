@@ -1,3 +1,4 @@
+# credo:disable-for-this-file Credo.Check.Refactor.CyclomaticComplexity
 defmodule Gluttony.Handlers.RSS2Standard do
   @moduledoc false
 
@@ -6,10 +7,10 @@ defmodule Gluttony.Handlers.RSS2Standard do
   @impl true
   def handle_element(attrs, stack) do
     case stack do
-      ["item", "channel" | _] ->
+      ["item", "channel" | _rest] ->
         {:entry, attrs}
 
-      ["cloud", "channel" | _] ->
+      ["cloud", "channel" | _rest] ->
         attrs = Map.new(attrs)
 
         cloud = %{
@@ -22,7 +23,7 @@ defmodule Gluttony.Handlers.RSS2Standard do
 
         {:feed, :cloud, cloud}
 
-      ["enclosure", "item" | _] ->
+      ["enclosure", "item" | _rest] ->
         attrs = Map.new(attrs)
 
         enclosure = %{
@@ -33,7 +34,7 @@ defmodule Gluttony.Handlers.RSS2Standard do
 
         {:entry, :enclosure, enclosure}
 
-      _ ->
+      _stack ->
         {:cont, attrs}
     end
   end
@@ -44,124 +45,124 @@ defmodule Gluttony.Handlers.RSS2Standard do
       #
       # Required channel elements
       #
-      ["title", "channel" | _] ->
+      ["title", "channel" | _rest] ->
         {:feed, :title, chars}
 
-      ["link", "channel" | _] ->
+      ["link", "channel" | _rest] ->
         {:feed, :link, chars}
 
-      ["description", "channel" | _] ->
+      ["description", "channel" | _rest] ->
         {:feed, :description, chars}
 
       #
       # Optional channel elements
       #
-      ["language", "channel" | _] ->
+      ["language", "channel" | _rest] ->
         {:feed, :language, chars}
 
-      ["copyright", "channel" | _] ->
+      ["copyright", "channel" | _rest] ->
         {:feed, :copyright, chars}
 
-      ["managingEditor", "channel" | _] ->
+      ["managingEditor", "channel" | _rest] ->
         {:feed, :managing_editor, chars}
 
-      ["webMaster", "channel" | _] ->
+      ["webMaster", "channel" | _rest] ->
         {:feed, :web_master, chars}
 
-      ["pubDate", "channel" | _] ->
+      ["pubDate", "channel" | _rest] ->
         {:feed, :pub_date, chars}
 
-      ["lastBuildDate", "channel" | _] ->
+      ["lastBuildDate", "channel" | _rest] ->
         {:feed, :last_build_date, chars}
 
-      ["category", "channel" | _] ->
+      ["category", "channel" | _rest] ->
         {:feed, :categories, [chars]}
 
-      ["generator", "channel" | _] ->
+      ["generator", "channel" | _rest] ->
         {:feed, :generator, chars}
 
-      ["docs", "channel" | _] ->
+      ["docs", "channel" | _rest] ->
         {:feed, :docs, chars}
 
-      ["ttl", "channel" | _] ->
+      ["ttl", "channel" | _rest] ->
         {:feed, :ttl, chars}
 
-      ["rating", "channel" | _] ->
+      ["rating", "channel" | _rest] ->
         {:feed, :rating, chars}
 
-      ["hour", "skipHours", "channel" | _] ->
+      ["hour", "skipHours", "channel" | _rest] ->
         {:feed, :skip_hours, [chars]}
 
-      ["day", "skipDays", "channel" | _] ->
+      ["day", "skipDays", "channel" | _rest] ->
         {:feed, :skip_days, [chars]}
 
       #
       # channel image elements
       #
-      ["url", "image" | _] ->
+      ["url", "image" | _rest] ->
         {:feed, [:image, :url], chars}
 
-      ["title", "image" | _] ->
+      ["title", "image" | _rest] ->
         {:feed, [:image, :title], chars}
 
-      ["link", "image" | _] ->
+      ["link", "image" | _rest] ->
         {:feed, [:image, :link], chars}
 
-      ["width", "image" | _] ->
+      ["width", "image" | _rest] ->
         {:feed, [:image, :width], chars}
 
-      ["height", "image" | _] ->
+      ["height", "image" | _rest] ->
         {:feed, [:image, :height], chars}
 
-      ["description", "image" | _] ->
+      ["description", "image" | _rest] ->
         {:feed, [:image, :description], chars}
 
       #
       # Channel textInput element
       #
-      ["title", "textInput" | _] ->
+      ["title", "textInput" | _rest] ->
         {:feed, [:text_input, :title], chars}
 
-      ["description", "textInput" | _] ->
+      ["description", "textInput" | _rest] ->
         {:feed, [:text_input, :description], chars}
 
-      ["name", "textInput" | _] ->
+      ["name", "textInput" | _rest] ->
         {:feed, [:text_input, :name], chars}
 
-      ["link", "textInput" | _] ->
+      ["link", "textInput" | _rest] ->
         {:feed, [:text_input, :link], chars}
 
       #
       # Item element
       #
-      ["title", "item" | _] ->
+      ["title", "item" | _rest] ->
         {:entry, :title, chars}
 
-      ["link", "item" | _] ->
+      ["link", "item" | _rest] ->
         {:entry, :link, chars}
 
-      ["guid", "item" | _] ->
+      ["guid", "item" | _rest] ->
         {:entry, :guid, chars}
 
-      ["pubDate", "item" | _] ->
+      ["pubDate", "item" | _rest] ->
         {:entry, :pub_date, chars}
 
-      ["description", "item" | _] ->
+      ["description", "item" | _rest] ->
         {:entry, :description, chars}
 
-      ["author", "item" | _] ->
+      ["author", "item" | _rest] ->
         {:entry, :author, chars}
 
-      ["category", "item" | _] ->
+      ["category", "item" | _rest] ->
         {:entry, :categories, [chars]}
 
-      ["comments", "item" | _] ->
+      ["comments", "item" | _rest] ->
         {:entry, :comments, chars}
 
-      ["source", "item" | _] ->
+      ["source", "item" | _rest] ->
         {:entry, :source, chars}
 
-      _ ->
+      _stack ->
         {:cont, chars}
     end
   end
@@ -169,7 +170,7 @@ defmodule Gluttony.Handlers.RSS2Standard do
   @impl true
   def handle_cached(cached, stack) do
     case stack do
-      _ -> {:cont, cached}
+      _stack -> {:cont, cached}
     end
   end
 end

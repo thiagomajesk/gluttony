@@ -6,7 +6,7 @@ defmodule Gluttony.Handlers.RSS2Content do
   @impl true
   def handle_element(attrs, stack) do
     case stack do
-      _ ->
+      _stack ->
         {:cont, attrs}
     end
   end
@@ -14,10 +14,10 @@ defmodule Gluttony.Handlers.RSS2Content do
   @impl true
   def handle_content(chars, stack) do
     case stack do
-      ["content:encoded", "item" | _] ->
+      ["content:encoded", "item" | _rest] ->
         {:entry, :content, chars}
 
-      _ ->
+      _stack ->
         {:cont, chars}
     end
   end
@@ -25,7 +25,7 @@ defmodule Gluttony.Handlers.RSS2Content do
   @impl true
   def handle_cached(cached, stack) do
     case stack do
-      _ -> {:cont, cached}
+      _stack -> {:cont, cached}
     end
   end
 end

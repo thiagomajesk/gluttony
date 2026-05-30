@@ -13,6 +13,7 @@ defmodule Gluttony.MixProject do
       description: description(),
       package: package(),
       docs: docs(),
+      aliases: aliases(),
       deps: deps()
     ]
   end
@@ -69,7 +70,19 @@ defmodule Gluttony.MixProject do
       {:timex, "~> 3.0"},
       {:phoenix_html, "~> 3.2 or ~> 4.0"},
       {:exvcr, "~> 0.13", only: :test},
+      {:credo, "~> 1.7", only: [:dev, :test], runtime: false},
       {:ex_doc, "~> 0.29", only: :dev, runtime: false}
+    ]
+  end
+
+  defp aliases do
+    [
+      quality: [
+        "format --check-formatted",
+        "compile --warnings-as-errors",
+        "credo --strict",
+        "cmd env MIX_ENV=test mix test"
+      ]
     ]
   end
 end

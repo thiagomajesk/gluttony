@@ -3,8 +3,9 @@ defmodule Gluttony.Parser do
   Deals with XML processing.
   """
 
-  alias Gluttony.State
   @behaviour Saxy.Handler
+
+  alias Gluttony.State
 
   @itunes_namespace "http://www.itunes.com/dtds/podcast-1.0.dtd"
   @feedburner_namespace "http://rssnamespace.org/feedburner/ext/1.0"
@@ -33,7 +34,7 @@ defmodule Gluttony.Parser do
       {"feed", %{"xmlns" => @atom_namespace}} ->
         {:ok, %{state | handlers: [Gluttony.Handlers.Atom1Standard], type: :atom1}}
 
-      _ ->
+      _attributes ->
         {:halt, "No handler available to parse this feed #{inspect(attributes)}"}
     end
   end

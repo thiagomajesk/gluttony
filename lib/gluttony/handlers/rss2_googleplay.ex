@@ -18,7 +18,7 @@ defmodule Gluttony.Handlers.RSS2Googleplay do
         attrs = Map.new(attrs)
         {:entry, :googleplay_image, attrs["href"]}
 
-      _ ->
+      _stack ->
         {:cont, attrs}
     end
   end
@@ -41,7 +41,7 @@ defmodule Gluttony.Handlers.RSS2Googleplay do
       ["googleplay:description", "item", "channel"] ->
         {:entry, :googleplay_description, chars}
 
-      _ ->
+      _stack ->
         {:cont, chars}
     end
   end
@@ -49,7 +49,7 @@ defmodule Gluttony.Handlers.RSS2Googleplay do
   @impl true
   def handle_cached(cached, stack) do
     case stack do
-      _ ->
+      _stack ->
         {:cont, cached}
     end
   end

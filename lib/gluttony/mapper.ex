@@ -1,8 +1,9 @@
 defmodule Gluttony.Mapper do
   @moduledoc false
 
-  alias Gluttony.{Feed, Entry}
   alias Gluttony.Accessor
+  alias Gluttony.Entry
+  alias Gluttony.Feed
 
   def map(type, feed, entries) do
     feed = map_feed(type, feed)
@@ -66,9 +67,14 @@ defmodule Gluttony.Mapper do
     metadata =
       Enum.reduce(map, %{}, fn {k, v}, metadata ->
         case {to_string(k), v} do
-          {"googleplay_" <> key, v} -> Gluttony.Helpers.place_in(metadata, [:googleplay, key], v)
-          {"itunes_" <> key, v} -> Gluttony.Helpers.place_in(metadata, [:itunes, key], v)
-          _ -> metadata
+          {"googleplay_" <> key, v} ->
+            Gluttony.Helpers.place_in(metadata, [:googleplay, key], v)
+
+          {"itunes_" <> key, v} ->
+            Gluttony.Helpers.place_in(metadata, [:itunes, key], v)
+
+          _metadata ->
+            metadata
         end
       end)
 

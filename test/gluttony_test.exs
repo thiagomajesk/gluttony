@@ -61,8 +61,8 @@ defmodule GluttonyTest do
 
   test "raw false prioritizes content:encoded for rss 2.0 descriptions" do
     use_cassette "new_jersey_monitor_feed" do
-      assert {:ok, %{entries: [raw_entry | _]}} = Gluttony.fetch_feed(@namespace_feed_url)
-      assert {:ok, %Gluttony.Feed{entries: [entry | _]}} = Gluttony.fetch_feed(@namespace_feed_url, raw: false)
+      assert {:ok, %{entries: [raw_entry | _raw_entries]}} = Gluttony.fetch_feed(@namespace_feed_url)
+      assert {:ok, %Gluttony.Feed{entries: [entry | _entries]}} = Gluttony.fetch_feed(@namespace_feed_url, raw: false)
 
       assert raw_entry.description
       assert entry.description == raw_entry.content

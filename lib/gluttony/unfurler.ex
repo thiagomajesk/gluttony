@@ -4,7 +4,10 @@ defmodule Gluttony.Unfurler do
   Uses `Gluttony.Fetchers.Favicon` and `Gluttony.Fetchers.Opengraph` internally.
   """
 
-  alias Gluttony.{Feed, Entry}
+  alias Gluttony.Entry
+  alias Gluttony.Feed
+  alias Gluttony.Fetchers.Favicon
+  alias Gluttony.Fetchers.Opengraph
 
   @doc """
   Accepts a `Gluttony.Feed` or `Gluttony.Entry` struct and retrieves data from the url.
@@ -17,7 +20,7 @@ defmodule Gluttony.Unfurler do
   def unfurl(%Feed{url: nil}), do: nil
 
   def unfurl(%Feed{url: url}) do
-    case Gluttony.Fetchers.Favicon.get(url) do
+    case Favicon.get(url) do
       {:ok, response} -> response.body
       {:error, _reason} -> nil
     end
@@ -26,7 +29,7 @@ defmodule Gluttony.Unfurler do
   def unfurl(%Entry{url: nil}), do: nil
 
   def unfurl(%Entry{url: url}) do
-    case Gluttony.Fetchers.Opengraph.get(url) do
+    case Opengraph.get(url) do
       {:ok, response} -> response.body
       {:error, _reason} -> nil
     end

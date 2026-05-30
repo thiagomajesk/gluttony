@@ -31,15 +31,15 @@ defmodule Gluttony.Handlers.RSS2GoogleplayTest do
   end
 
   describe "googleplay rss 2.0 entry elements" do
-    test "googleplay_author", %{entries: [entry | _]} do
+    test "googleplay_author", %{entries: [entry | _entries]} do
       assert entry.googleplay_author == "Engima"
     end
 
-    test "googleplay_description", %{entries: [entry | _]} do
+    test "googleplay_description", %{entries: [entry | _entries]} do
       assert entry.googleplay_description == "We look at all the things that are out there that we'd like to know."
     end
 
-    test "googleplay_image", %{entries: [entry | _]} do
+    test "googleplay_image", %{entries: [entry | _entries]} do
       assert entry.googleplay_image == "http://sample.com/podcasts/unknown/Episode1.jpg"
     end
   end

@@ -13,7 +13,7 @@ defmodule Gluttony.Handlers.RSS2ContentTest do
   end
 
   describe "content rss 2.0 entry elements" do
-    test "content", %{entries: [entry | _]} do
+    test "content", %{entries: [entry | _entries]} do
       assert entry.content =~ ~s(<figure)
     end
   end
