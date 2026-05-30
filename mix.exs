@@ -8,7 +8,7 @@ defmodule Gluttony.MixProject do
     [
       app: :gluttony,
       version: @version,
-      elixir: "~> 1.13",
+      elixir: "~> 1.12",
       start_permanent: Mix.env() == :prod,
       description: description(),
       package: package(),
@@ -63,7 +63,7 @@ defmodule Gluttony.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:saxy, "~> 1.4"},
+      {:saxy, "~> 1.6"},
       {:httpoison, "~> 1.8 or ~> 2.0"},
       {:floki, "~> 0.34"},
       {:timex, "~> 3.0"},
