@@ -20,11 +20,11 @@ Documentation can be found at <https://hexdocs.pm/gluttony>.
 
 ## Benchmarks
 
-Thanks to [`Saxy`](https://github.com/qcam/saxy), Gluttony is probably one of the fastest libraries to parse RSS feeds out there. That is, libraries that use pure Elixir of course (without low level NIFs). You can run the benchmark project or see previous results in the `/bench` folder.
+Thanks to [`Saxy`](https://github.com/qcam/saxy), Gluttony is probably one of the fastest RSS libraries in the ecosystem (not counting low level NIF wrappers). You can run the benchmark locally by yourself with `elixir bench/bench.exs`. Also check the existing results in [`/bench/output/result.md`](/bench/output/result.md).
 
 > ⚠️ Notice that I'm currently using WSL2 to run the benchmarks, so the results may actually be more optimistic without the virtualization layer. I'm also currently only yielding half of the available resources from my machine to the VM.
 
-The data I'm using to run the benchmarks is similar to what [`fast_rss`](https://github.com/avencera/fast_rss) (another RSS feed library that uses Rust for speed) is also using, so take a look on their benchmarks for some intersting comparissons.
+The data I'm using to run the benchmarks is similar to what [`fast_rss`](https://github.com/avencera/fast_rss) (another RSS feed library that uses Rust for speed) is also using, so take a look on their benchmarks for some interesting comparisons.
 
 ### Metrics
 

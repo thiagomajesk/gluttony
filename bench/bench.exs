@@ -1,3 +1,15 @@
+Mix.install(
+  [
+    {:benchee, "== 1.1.0"},
+    {:benchee_markdown, "== 0.2.7"},
+    {:floki, "== 0.32.0", override: true},
+    {:gluttony, path: Path.expand("..", __DIR__), override: true},
+    {:feedraptor, "== 0.3.0"},
+    {:elixir_feed_parser, "== 0.0.1"},
+    {:feeder_ex, "== 1.1.0"}
+  ]
+)
+
 data = [
   "anxiety",
   "ben",
@@ -8,13 +20,13 @@ data = [
 ]
 
 files = Map.new(data, fn name ->
-  content = "data/#{name}.rss"
-  |> Path.expand(__DIR__)
-  |> File.read!()
+  content =
+    "data/#{name}.rss"
+    |> Path.expand(__DIR__)
+    |> File.read!()
 
   {name, content}
 end)
-
 
 benchmark = %{
   "gluttony" => &Gluttony.parse_string/1,
@@ -29,7 +41,7 @@ Benchee.run(benchmark,
   memory_time: 1,
   inputs: files,
   formatters: [
-    {Benchee.Formatters.Markdown, file: Path.expand("output/parse.md", __DIR__)},
+    {Benchee.Formatters.Markdown, file: Path.expand("output/result.md", __DIR__)},
     Benchee.Formatters.Console
   ]
 )
