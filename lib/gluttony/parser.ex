@@ -16,6 +16,8 @@ defmodule Gluttony.Parser do
   @feedburner_namespace "http://rssnamespace.org/feedburner/ext/1.0"
   @googleplay_namespace "http://www.google.com/schemas/play-podcasts/1.0"
   @atom_namespace "http://www.w3.org/2005/Atom"
+  @content_namespace "http://purl.org/rss/1.0/modules/content/"
+  @dc_namespace "http://purl.org/dc/elements/1.1/"
 
   @doc false
   def handle_event(:start_document, _prolog, opts) do
@@ -96,6 +98,12 @@ defmodule Gluttony.Parser do
 
         {"xmlns:googleplay", @googleplay_namespace}, acc ->
           [Gluttony.Handlers.RSS2Googleplay | acc]
+
+        {"xmlns:content", @content_namespace}, acc ->
+          [Gluttony.Handlers.RSS2Content | acc]
+
+        {"xmlns:dc", @dc_namespace}, acc ->
+          [Gluttony.Handlers.RSS2DC | acc]
 
         _kv, acc ->
           acc

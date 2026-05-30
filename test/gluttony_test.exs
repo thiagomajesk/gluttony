@@ -2,6 +2,8 @@ defmodule GluttonyTest do
   use ExUnit.Case
   use ExVCR.Mock, adapter: ExVCR.Adapter.Hackney
 
+  @namespace_feed_url "https://newjerseymonitor.com/feed/"
+
   setup_all do
     ExVCR.Config.cassette_library_dir("fixture/vcr_cassettes")
 
@@ -55,6 +57,16 @@ defmodule GluttonyTest do
 
   test "raw false returns a properly build feed", %{xml4: xml} do
     assert {:ok, %Gluttony.Feed{}} = Gluttony.parse_string(xml, raw: false)
+  end
+
+  test "raw false prioritizes content:encoded for rss 2.0 descriptions" do
+    use_cassette "new_jersey_monitor_feed" do
+      assert {:ok, %{entries: [raw_entry | _]}} = Gluttony.fetch_feed(@namespace_feed_url)
+      assert {:ok, %Gluttony.Feed{entries: [entry | _]}} = Gluttony.fetch_feed(@namespace_feed_url, raw: false)
+
+      assert raw_entry.description
+      assert entry.description == raw_entry.content
+    end
   end
 
   describe "parse_stream/2" do

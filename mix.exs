@@ -17,6 +17,17 @@ defmodule Gluttony.MixProject do
     ]
   end
 
+  def cli do
+    [
+      preferred_envs: [
+        vcr: :test,
+        "vcr.delete": :test,
+        "vcr.check": :test,
+        "vcr.show": :test
+      ]
+    ]
+  end
+
   # Run "mix help compile.app" to learn about applications.
   def application do
     [

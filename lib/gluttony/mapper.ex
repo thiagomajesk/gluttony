@@ -34,7 +34,7 @@ defmodule Gluttony.Mapper do
       id: Accessor.get(entry, [:guid, :id]),
       title: Accessor.get(entry, [:title]),
       url: Accessor.get(entry, [:link]),
-      description: Accessor.get(entry, [:description, :subtitle]),
+      description: map_description(type, entry),
       links: Accessor.get(entry, [:links]),
       updated: Accessor.get_parse(entry, [:pub_date, :updated], :datetime, type),
       published: Accessor.get_parse(entry, [:published], :datetime, type),
@@ -52,6 +52,14 @@ defmodule Gluttony.Mapper do
       value when not is_list(value) -> [value]
       value -> value
     end
+  end
+
+  defp map_description(:rss2, entry) do
+    Access.get(entry, :content) || Accessor.get(entry, [:description, :subtitle])
+  end
+
+  defp map_description(_type, entry) do
+    Accessor.get(entry, [:description, :subtitle])
   end
 
   defp metadata(map) do
